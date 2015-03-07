@@ -1,0 +1,46 @@
+#+TITLE:     2015-03-07-systems-meeting-minutes
+#+AUTHOR:    khushpreet
+#+EMAIL:     khushpreet@vlabs.ac.in
+#+DATE:      <2015-03-07 Sat>
+
+* Meeting minutes
+- Stable configuration of system has to be version controlled.
+
+- Log In should be key based.
+
+- Dynamic entries will be backed up but needs no to be version
+  controlled.
+
+- Ansible server should have LDAP users.
+
+- It should have Public keys.
+
+- It should not allow root access using ssh.
+
+- Ansible is limited to access by Zubair. If in any case that Zubair
+  is not available, a hard copy of the password will be with
+  Prof. Venkatesh Choppella.  
+
+- Put the links of wiki in repository for the information regarding
+  systems. 
+ 
+* Entire knowledge base:
+- people
+- repository
+- wiki
+- Bitbucket issue tracker
+
+Note: project management should not be there in systems repository.
+
+** Repository
+- systems/ 
+       index.txt
+       build/
+           makefile
+       src/
+           index.org {or .txt}
+           network 
+           services
+
+- Model should be documented and checked into this repository.
+  
