@@ -3,7 +3,7 @@
 
 * Introduction
 This document presents and details out the  network
-architecture and ints components of virtual labs.
+architecture and its components of virtual labs.
 
 * Network Diagram
 
@@ -25,10 +25,10 @@ Figure below gives the higher level architecture:
   the individual labs
 + All servers and service tasks like DNS, ADS are automated
   using Ansible
-+ Ansible will take a request for configuration change and perofrm the
++ Ansible will take a request for configuration change and perform the
   house keeping
 + There will be only one user access allowed on Ansible
-+ Labs will deployed using the ADS service 
++ Labs will be deployed using the ADS service 
 
 
 ** Security: 
