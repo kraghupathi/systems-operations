@@ -1,5 +1,5 @@
-#+title:   The Base1 Cluster
-
+#+title: The Base1 Cluster
+#+SETUPFILE: org-templates/level-0.org
 * Introduction and Motivation
 
 The purpose of this cluster is to run a set of virtual labs.  The /ab
