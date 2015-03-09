@@ -13,7 +13,8 @@ Our goal is to incorporate several security measures ([[wiki:Defense_in_depth_co
 Depth]]) that can hopefully detect and frustrate an attacker.
 
  - ssh access :: All machines are accessible only via ssh key based
-                 protocols, not passwords.
+                 protocols, not passwords.   ssh access from a public
+                 network to =root= is completely disabled. 
 
  - Minimize IP's exposed to the internet :: Very few (one or two)
       machines are exposed to the internet.
@@ -28,12 +29,23 @@ Depth]]) that can hopefully detect and frustrate an attacker.
 
  - Firewall rules :: On every machine or container. 
 
- - Using fail2ban :: Works with the firewall to ban IPs involved in brute-force attacks.
+ - Using fail2ban :: Works with the firewall to ban IPs involved in
+                     brute-force attacks.
 
-* Network
+* Design of Base1-cluster's Network
 
-The network is divided into public and private components (see
-fig-network-diagram).  
+The network is divided into public and private components (see [[fig:network-diagram]]).  
+
+#   Source  at 
+#    [[https://docs.google.com/a/vlabs.ac.in/drawings/d/1e9YL9YXbA1KZwEQ0HDiQhV9014J6EzKoR0zsKXMrgwQ/edit]]
+
+<<<fig-network-diagram>>>
+#+CAPTION:  Network Diagram
+#+LABEL:  fig-network-diagram
+#+NAME: fig-network-diagram
+
+[[./diagrams/network-diagram.png]]
+
 
 ** Public 
 
@@ -58,11 +70,6 @@ component.
 
 * Use cases
 
-
-
-
-
-
  -  Nagios ::  monitors and provides alerts for applications, and
                services.  Alerts are generated when things go wrong
                and as well when the problem is been resolved
@@ -71,27 +78,15 @@ component.
                     the individual labs.  
 
  - All servers and service tasks like DNS, ADS are automated
-  using Ansible
+  using Ansible.
  
- -  Ansible will take a request for configuration change and perofrm the
-  house keeping
+ -  Ansible will take a request for configuration change and perform the
+  house keeping. 
 
- - Labs will deployed using the ADS service 
-
-
-** Security: 
-
-Security will be provided by the following:
-
-
-:   Source  at 
-:    [[https://docs.google.com/a/vlabs.ac.in/drawings/d/1e9YL9YXbA1KZwEQ0HDiQhV9014J6EzKoR0zsKXMrgwQ/edit]]
-
-<<<fig-network-diagram>>>
-#+CAPTION:  Network Diagram
-#+LABEL:  fig-network-diagram
-
-[[./diagrams/network-diagram.png]]
+ - Labs will deployed using the ADS service. 
 
 * Machines
+
+
+
 
