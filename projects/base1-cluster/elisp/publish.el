@@ -96,7 +96,7 @@
 
  (setq popl  '("popl" :components ("org-notes" "org-static")))
 
- (require 'org-publish)
+ (require 'ox-publish)
  (load-file "./elisp/htmlize.el")
 
  (setq org-publish-project-alist
