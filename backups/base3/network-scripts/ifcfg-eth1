@@ -1,0 +1,6 @@
+DEVICE="eth1"
+HWADDR="5C:F3:FC:4A:1F:AE"
+NM_CONTROLLED="no"
+ONBOOT="yes"
+TYPE="Ethernet"
+BRIDGE=br1
