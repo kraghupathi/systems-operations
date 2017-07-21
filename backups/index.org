@@ -1,0 +1,16 @@
+#+Title: Backups of important container configuration files
+#+Author: Systems Team
+
+* Introduction
+  Version control all important configuration files that there in
+  base3( currently ) machine. 
+
+
+  Add important container configuration files into "backups" directory
+  with proper container name( example: ldap.vlabs.ac.in,
+  http.vlabs.ac.in,etc). 
+
+  - NOTE :: Need to update these files at least once in a month. So
+            that, even if you loose regular backup on physical
+            machine( rsnapshot)( worst case), we can get backup from
+            the backups that are version controled
