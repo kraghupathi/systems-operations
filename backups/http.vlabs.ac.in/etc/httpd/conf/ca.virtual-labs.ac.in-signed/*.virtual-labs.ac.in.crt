@@ -1,0 +1,78 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=IN, ST=Andhra Pradesh, L=Hyderabad, O=Virtual Labs, OU=VLEAD, CN=ca.virtual-labs.ac.in/name=ca.virtual-labs.ac.in/emailAddress=help@virtual-labs.ac.in
+        Validity
+            Not Before: Nov 29 09:17:20 2012 GMT
+            Not After : Nov 27 09:17:20 2022 GMT
+        Subject: C=IN, ST=Andhra Pradesh, L=Hyderabad, O=Virtual Labs, OU=VLEAD, CN=*.virtual-labs.ac.in/name=*.virtual-labs.ac.in/emailAddress=help@virtual-labs.ac.in
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:c6:bf:dc:48:27:27:41:95:5a:e7:80:80:d2:e0:
+                    40:74:cb:65:4d:24:67:32:2a:c4:f2:ee:c0:47:c5:
+                    77:a2:23:80:e9:33:1a:b0:c6:e5:05:36:ff:3a:67:
+                    48:8e:c8:93:1d:04:27:3b:2b:ba:88:f8:04:f8:84:
+                    d8:da:65:26:e9:94:b0:0d:c1:c9:40:d7:ec:e8:14:
+                    b0:b4:57:8f:0c:0d:6f:b1:66:db:8f:67:94:13:bc:
+                    5a:77:80:8c:a3:23:1a:9e:83:3d:0f:16:03:08:93:
+                    03:a0:03:c9:36:03:6a:58:fb:f7:c3:5a:b0:c9:df:
+                    49:c8:07:6b:3a:67:a2:9c:a1
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                5A:48:AF:C7:99:E9:56:69:4F:1B:48:AF:36:A5:64:90:86:48:13:7A
+            X509v3 Authority Key Identifier: 
+                keyid:B9:0A:23:CA:68:4F:68:10:39:F5:FC:8F:C3:F7:0B:09:EA:8E:63:BC
+                DirName:/C=IN/ST=Andhra Pradesh/L=Hyderabad/O=Virtual Labs/OU=VLEAD/CN=ca.virtual-labs.ac.in/name=ca.virtual-labs.ac.in/emailAddress=help@virtual-labs.ac.in
+                serial:C2:AA:D1:A6:54:35:52:E2
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: sha1WithRSAEncryption
+        15:9a:0f:39:10:f5:e7:72:3a:8a:34:a8:8b:4b:c2:e5:a3:5d:
+        e9:d6:4a:55:5c:bd:11:75:57:ac:24:aa:a2:8f:43:5b:ac:43:
+        46:18:ab:11:3b:e0:4d:f3:ee:fd:3c:7c:d6:95:a2:09:41:a9:
+        f0:49:fd:6d:2e:ec:5f:96:cb:cc:29:26:cf:fb:3b:69:ea:60:
+        63:a8:e9:e5:d1:1d:00:0b:42:de:de:5d:07:ed:2c:03:8f:93:
+        e4:49:e0:ef:9d:73:c1:37:ed:bb:1c:89:b6:f7:30:79:0c:37:
+        dc:16:8e:39:e8:76:36:16:5d:73:1b:00:d9:61:23:12:6a:d1:
+        27:d4
+-----BEGIN CERTIFICATE-----
+MIIEpDCCBA2gAwIBAgIBBDANBgkqhkiG9w0BAQUFADCByTELMAkGA1UEBhMCSU4x
+FzAVBgNVBAgTDkFuZGhyYSBQcmFkZXNoMRIwEAYDVQQHEwlIeWRlcmFiYWQxFTAT
+BgNVBAoTDFZpcnR1YWwgTGFiczEOMAwGA1UECxMFVkxFQUQxHjAcBgNVBAMTFWNh
+LnZpcnR1YWwtbGFicy5hYy5pbjEeMBwGA1UEKRMVY2EudmlydHVhbC1sYWJzLmFj
+LmluMSYwJAYJKoZIhvcNAQkBFhdoZWxwQHZpcnR1YWwtbGFicy5hYy5pbjAeFw0x
+MjExMjkwOTE3MjBaFw0yMjExMjcwOTE3MjBaMIHHMQswCQYDVQQGEwJJTjEXMBUG
+A1UECBMOQW5kaHJhIFByYWRlc2gxEjAQBgNVBAcTCUh5ZGVyYWJhZDEVMBMGA1UE
+ChMMVmlydHVhbCBMYWJzMQ4wDAYDVQQLEwVWTEVBRDEdMBsGA1UEAxQUKi52aXJ0
+dWFsLWxhYnMuYWMuaW4xHTAbBgNVBCkUFCoudmlydHVhbC1sYWJzLmFjLmluMSYw
+JAYJKoZIhvcNAQkBFhdoZWxwQHZpcnR1YWwtbGFicy5hYy5pbjCBnzANBgkqhkiG
+9w0BAQEFAAOBjQAwgYkCgYEAxr/cSCcnQZVa54CA0uBAdMtlTSRnMirE8u7AR8V3
+oiOA6TMasMblBTb/OmdIjsiTHQQnOyu6iPgE+ITY2mUm6ZSwDcHJQNfs6BSwtFeP
+DA1vsWbbj2eUE7xad4CMoyManoM9DxYDCJMDoAPJNgNqWPv3w1qwyd9JyAdrOmei
+nKECAwEAAaOCAZowggGWMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQG
+CWCGSAGG+EIBDQQnFiVFYXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmlj
+YXRlMB0GA1UdDgQWBBRaSK/HmelWaU8bSK82pWSQhkgTejCB/gYDVR0jBIH2MIHz
+gBS5CiPKaE9oEDn1/I/D9wsJ6o5jvKGBz6SBzDCByTELMAkGA1UEBhMCSU4xFzAV
+BgNVBAgTDkFuZGhyYSBQcmFkZXNoMRIwEAYDVQQHEwlIeWRlcmFiYWQxFTATBgNV
+BAoTDFZpcnR1YWwgTGFiczEOMAwGA1UECxMFVkxFQUQxHjAcBgNVBAMTFWNhLnZp
+cnR1YWwtbGFicy5hYy5pbjEeMBwGA1UEKRMVY2EudmlydHVhbC1sYWJzLmFjLmlu
+MSYwJAYJKoZIhvcNAQkBFhdoZWxwQHZpcnR1YWwtbGFicy5hYy5pboIJAMKq0aZU
+NVLiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDANBgkqhkiG9w0B
+AQUFAAOBgQAVmg85EPXncjqKNKiLS8Llo13p1kpVXL0RdVesJKqij0NbrENGGKsR
+O+BN8+79PHzWlaIJQanwSf1tLuxflsvMKSbP+ztp6mBjqOnl0R0AC0Le3l0H7SwD
+j5PkSeDvnXPBN+27HIm29zB5DDfcFo456HY2Fl1zGwDZYSMSatEn1A==
+-----END CERTIFICATE-----
