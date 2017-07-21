@@ -1,0 +1,6 @@
+NETWORKING="yes"
+HOSTNAME="ldap.virtual-labs.ac.in"
+GATEWAYDEV="venet0"
+NETWORKING_IPV6="yes"
+#IPV6_DEFAULTDEV="venet0"
+IPV6_DEFAULTDEV="venet0"

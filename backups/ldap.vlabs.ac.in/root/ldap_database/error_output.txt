@@ -1,0 +1,1 @@
+bdb_monitor_db_open: monitoring disabled; configure monitor database to enable

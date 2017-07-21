@@ -1,0 +1,1300 @@
+dn: dc=virtual-labs,dc=ac,dc=in
+objectClass: dcObject
+objectClass: organization
+dc: virtual-labs
+o: Virtual labs
+description: This is base entry for virtual labs ldap server
+
+dn: ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: organizationalUnit
+ou: people
+description: All people in the organisation
+
+dn: ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: organizationalUnit
+ou: groups
+description: All groups in organisation
+
+dn: cn=Saurabh Barjatiya,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Saurabh Barjatiya
+sn: Barjatiya
+givenName: Saurabh
+mail: saurabh.barjatiya@iiit.ac.in
+mail: barjatiya.saurabh@gmail.com
+ou: people
+homePhone: 040 6653 1293
+displayName: Saurabh Barjatiya
+telephoneNumber: 93939 14337
+postalAddress: OFQ F2, IIIT Hyderabad, Hyderabad, Gachibowli, 500032
+uid: saurabh
+uidNumber: 501
+gidNumber: 501
+homeDirectory: /home/saurabh
+loginShell: /bin/bash
+gecos: Saurabh Barjatiya
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16786
+
+dn: cn=admin,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: admin
+gidNumber: 501
+description: Group of all virtual labs system or server administrators
+memberUid: saurabh
+memberUid: haneef
+memberUid: travula
+memberUid: yogesh
+memberUid: soumya
+memberUid: shankar
+memberUid: sanchita
+memberUid: ashay
+memberUid: sripathi
+
+dn: ou=hosts,dc=virtual-labs,dc=ac,dc=in
+objectClass: organizationalUnit
+ou: hosts
+description: Group of important hosts for converting host names to IP addresse
+ s
+
+dn: cn=engg,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: engg
+gidNumber: 502
+description: Group of all virtual labs engineers
+memberUid: chandan
+memberUid: saurabh
+memberUid: nirmala
+memberUid: jayashree.prasad
+memberUid: devi
+memberUid: ishan
+memberUid: avinash
+memberUid: yogesh
+memberUid: madhavi.puliraju
+memberUid: swathy
+memberUid: aditya
+memberUid: barun
+memberUid: jatin
+memberUid: khushpreet
+memberUid: sripathi
+memberUid: ambika
+memberUid: apurvtyagi
+memberUid: sravanthi
+
+dn: cn=Chandan Gupta,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Chandan Gupta
+sn: Gupta
+givenName: Chandan
+mail: chandan@virtual-labs.ac.in
+mail: chandan.gupta@gmail.com
+ou: people
+displayName: Chandan Gupta
+telephoneNumber: 97033 30781
+postalAddress: A12, Anand Niwas, IIIT, Hyderabad, 500032
+uid: chandan
+uidNumber: 504
+gidNumber: 501
+homeDirectory: /home/chandan
+loginShell: /bin/bash
+gecos: Chandan Gupta
+shadowLastChange: 15639
+shadowMax: 999999
+shadowWarning: 999999
+
+dn: cn=Mohd Haneef,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn:: TW9oZCBIYW5lZWYg
+sn: Haneef
+givenName: Mohd
+mail: haneef.md@iiit.ac.in
+mail: mdhaneef.85@gmail.com
+ou: people
+displayName: Mohd Haneef
+telephoneNumber: 99853 92912
+postalAddress: IIIT Hyderabad, Hyderabad, Gachibowli, 500032
+uid: haneef
+uidNumber: 508
+gidNumber: 501
+homeDirectory: /home/haneef
+loginShell: /bin/bash
+gecos: Mohd Haneef
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 15646
+
+dn: cn=ra,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: ra
+gidNumber: 503
+description: Group of all RAs
+memberUid: ishan
+
+dn: cn=dnc,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: dnc
+gidNumber: 504
+description:: R3JvdXAgZm9yIGFjY2VzcyB0byBETkMgbWVldGluZyByZXBvc2l0b3J5IGRuYy12
+ bGFicyA=
+memberUid: choppell
+memberUid: suresh.purini
+memberUid: nirmala
+memberUid: chandan
+
+dn: cn=Suresh Purini,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Suresh Purini
+sn: Purini
+givenName: Suresh
+mail: suresh.purini@iiit.ac.in
+ou: people
+displayName: Suresh Purini
+telephoneNumber: 91-40-6653-1413
+postalAddress: IIIT, Gachibowli, Hyderabad, 500032
+uid: suresh.purini
+uidNumber: 520
+gidNumber: 504
+homeDirectory: /home/suresh.purini
+loginShell: /bin/bash
+gecos: Suresh Purini
+shadowLastChange: 0
+shadowMax: 999999
+shadowWarning: 999999
+
+dn: cn=vlead-hr,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: vlead-hr
+gidNumber: 505
+description:: VkxFQUQgam9iIHJlc3VtZXMgZXRjLiA=
+memberUid: choppell
+memberUid: nirmala
+memberUid: chandan
+memberUid: vinuta
+
+dn: cn=Ishan Sharma,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Ishan Sharma
+sn: Ishan
+givenName: Sharma
+mail: ishan.sharma@research.iiit.ac.in
+ou: people
+displayName:: SXNoYW4gU2hhcm1hCQ==
+postalAddress: IIIT Hyderabad
+uid: ishan
+uidNumber: 523
+gidNumber: 503
+homeDirectory: /home/ishan
+loginShell: /bin/bash
+gecos: Ishan Sharma
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16126
+
+dn: cn=nagios,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: nagios
+gidNumber: 506
+description: Group for nagios
+
+dn: cn=Siddharth Bhat,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Siddharth Bhat
+sn: Bhat
+givenName: Siddharth
+mail: siddu.druid@gmail.com
+ou: people
+displayName: Siddharth Bhat
+telephoneNumber: 900 876 5043
+postalAddress: FIITJEE
+uid: siddharth
+uidNumber: 563
+gidNumber: 503
+homeDirectory: /home/siddharth
+loginShell: /bin/bash
+gecos: Siddharth Bhat
+shadowLastChange: 0
+shadowMax: 999999
+shadowWarning: 999999
+
+dn: cn=Madhavi Puliraju,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Madhavi Puliraju
+sn: Puliraju
+givenName: Madhavi
+mail: madhavipuliraju@gmail.com
+ou: people
+displayName: Madhavi Puliraju
+telephoneNumber: 9866188505
+postalAddress: IIIT-H
+uid: madhavi.puliraju
+uidNumber: 569
+gidNumber: 503
+homeDirectory: /home/madhavi.puliraju
+loginShell: /bin/bash
+gecos: Madhavi Puliraju
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16501
+
+dn: cn=Devi Prasad,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Devi Prasad
+sn: Mala
+givenName: Devi Prasad
+mail: dprasadm@gmail.com
+ou: people
+displayName: Devi Prasad
+telephoneNumber: 81060 69739
+postalAddress: Begumpet, Hyderabad
+uid: deviprasad
+uidNumber: 577
+gidNumber: 502
+homeDirectory: /home/devi
+loginShell: /bin/bash
+gecos: Devi Prasad
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16184
+
+dn: cn=Thirumal Ravula,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Thirumal Ravula
+sn: Ravula
+givenName: Thirumal
+mail: travula@vlabs.ac.in
+ou: people
+displayName: Thirumal
+postalAddress: IIIT Hyderabad
+uid: travula
+uidNumber: 584
+gidNumber: 502
+homeDirectory: /home/thirumal.ravula
+loginShell: /bin/bash
+gecos: thiruamal
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16500
+
+dn: cn=Khushpreet Kaur,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Khushpreet Kaur
+sn: Kushpreet
+givenName: Kaur
+mail: khushpreet@vlabs.ac.in
+ou: people
+displayName: khushpreet
+postalAddress: IIIT Hyderabad
+uid: khushpreet
+uidNumber: 597
+gidNumber: 502
+homeDirectory: /home/khushpreet
+loginShell: /bin/bash
+gecos: khushpreet
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16443
+
+dn: cn=Venkatesh Choppella,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Venkatesh Choppella
+sn: Choppella
+givenName: Venkatesh
+mail: venkatesh.choppella@iiit.ac.in
+ou: people
+displayName: Venkatesh Choppella
+telephoneNumber: 96527 40281
+postalAddress: IIIT, Hyderabad, 500032
+uid: venkatesh
+uidNumber: 509
+gidNumber: 502
+homeDirectory: /home/choppella
+loginShell: /bin/bash
+gecos: Venkatesh Choppella
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16220
+
+dn: cn=Yogesh Agrawal,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Yogesh Agrawal
+sn: Yogesh
+givenName: Agrawal
+mail: yogesh@vlabs.ac.in
+ou: people
+displayName: Yogesh
+postalAddress: IIIT Hyderabad
+uid: yogesh
+uidNumber: 586
+gidNumber: 502
+homeDirectory: /home/yogesh
+loginShell: /bin/bash
+gecos: yogesh
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16500
+
+dn: cn=Sai Krishna,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sai Krishna
+sn: Sai
+givenName: Krishna
+mail: saikrishna.sripada@research.iiit.ac.in
+ou: people
+displayName:: U2FpIEtyaXNobmEJ
+postalAddress: IIIT Hyderabad
+uid: saikrishna
+uidNumber: 603
+homeDirectory: /home/saikrishna
+loginShell: /bin/bash
+gecos: Sai Krishna
+shadowMax: 999999
+shadowWarning: 999999
+gidNumber: 502
+shadowLastChange: 16289
+
+dn: cn=MS Soumya,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: MS Soumya
+sn: Soumya
+givenName: Soumya
+mail: soumya@vlabs.ac.in
+ou: people
+displayName:: TVMgU291bXlhCQ==
+postalAddress: IIIT Hyderabad
+uid: soumya
+uidNumber: 604
+homeDirectory: /home/soumya
+loginShell: /bin/bash
+gecos: MS Soumya
+shadowMax: 999999
+shadowWarning: 999999
+gidNumber: 502
+shadowLastChange: 16465
+
+dn: cn=Geeta Bose,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Geeta
+cn: Geeta Bose
+sn: Bose
+givenName: Geeta
+mail: geeta@vlabs.ac.in
+ou: people
+displayName: Geeta Bose
+uid: geeta
+uidNumber: 613
+gidNumber: 502
+homeDirectory: /home/geeta
+loginShell: /bin/bash
+gecos: geeta
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16287
+
+dn: cn=Sripathi Kammari,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sripathi
+cn: Sripathi Kammari
+sn: Kammari
+givenName: Sripathi
+mail: sripathi@vlabs.ac.in
+ou: people
+displayName: Sripathi
+uid: sripathi
+uidNumber: 617
+gidNumber: 503
+homeDirectory: /home/sripathi
+loginShell: /bin/bash
+gecos: sripathi
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16851
+
+dn: cn=Shiva Shankar,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+sn: shankar
+givenName: shankar
+mail: shankar@vlabs.ac.in
+ou: people
+displayName: Shankar
+uid: shankar
+uidNumber: 618
+gidNumber: 503
+homeDirectory: /home/shankar
+loginShell: /bin/bash
+gecos: shankar
+shadowMax: 999999
+shadowWarning: 999999
+postalAddress: IIIT-H
+cn: Shiva Shankar
+shadowLastChange: 16343
+
+dn: cn=Arnav Agrawal,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Arnav
+cn: Arnav Agrawal
+sn: Agrawal
+givenName: Arnav
+mail: arnav@vlabs.ac.in
+mail: arnavkumar.agrawal@students.iiit.ac.in
+ou: people
+displayName: Arnav Agrawal
+uid: arnav
+uidNumber: 623
+gidNumber: 502
+homeDirectory: /home/arnav
+loginShell: /bin/bash
+gecos: ArnavA
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+telephoneNumber: 8790529404
+
+dn: cn=Umang Sharma,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Umang
+cn: Umang Sharma
+sn: Sharma
+givenName: Umang
+mail: umang@vlabs.ac.in
+mail: umange@gmail.com
+ou: people
+displayName: Umang Sharma
+uid: umang
+uidNumber: 625
+gidNumber: 502
+homeDirectory: /home/umang
+loginShell: /bin/bash
+gecos: UmangS
+shadowMax: -1
+shadowWarning: 999999
+telephoneNumber: 9985341596
+shadowLastChange: 16440
+
+dn: cn=Saumya Gurtu,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Saumya
+cn: Saumya Gurtu
+sn: Gurtu
+givenName: Saumya
+mail: saumya.gurtu@vlabs.ac.in
+mail: saumya.gurtu@research.iiit.ac.in
+ou: people
+displayName: Saumya Gurtu
+uid: saumya
+uidNumber: 627
+gidNumber: 502
+homeDirectory: /home/saumya
+loginShell: /bin/bash
+gecos: SaumyaG
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+telephoneNumber: 8790533025
+
+dn: cn=Sarthak Agarwal,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sarthak
+cn: Sarthak Agarwal
+sn: Agarwal
+givenName: Sarthak
+mail: sarthak@vlabs.ac.in
+mail: sarthak.a@research.iiit.ac.in
+ou: people
+displayName: Sarthak Agarwal
+uid: sarthak
+uidNumber: 628
+gidNumber: 502
+homeDirectory: /home/sarthak
+loginShell: /bin/bash
+gecos: SarthakA
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16438
+telephoneNumber: 9581243782
+
+dn: cn=Himangi Saraogi,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Himangi
+cn: Himangi Saraogi
+sn: Saraogi
+givenName: Himangi
+mail: himangi@vlabs.ac.in
+mail: himangi.saraogi@students.iiit.ac.in
+ou: people
+displayName: Himangi Saraogi
+uid: himangi
+uidNumber: 630
+gidNumber: 502
+homeDirectory: /home/himangi
+loginShell: /bin/bash
+gecos: HimangiS
+shadowMax: -1
+shadowWarning: 999999
+telephoneNumber: 9581560554
+shadowLastChange: 16438
+
+dn: cn=Garima Ahuja,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Garima
+cn: Garima Ahuja
+sn: Ahuja
+givenName: Garima
+ou: people
+displayName: Garima Ahuja
+uid: garima
+uidNumber: 633
+gidNumber: 502
+homeDirectory: /home/garima
+loginShell: /bin/bash
+gecos: GarimaA
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+telephoneNumber: 7799081442
+mail: garima@vlabs.ac.in
+
+dn: cn=Surya Sashank Nistala,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Surya Sashank
+cn: Surya Sashank Nistala
+sn: Nistala
+givenName: Himangi
+mail: suryasashank.nistala@students.iiit.ac.in
+ou: people
+displayName: Surya Sashank
+uid: surya
+uidNumber: 631
+gidNumber: 502
+homeDirectory: /home/surya
+loginShell: /bin/bash
+gecos: SuryaS
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+telephoneNumber: 9951929424
+
+dn: cn=integrators,ou=groups,dc=virtual-labs,dc=ac,dc=in
+objectClass: top
+objectClass: posixGroup
+cn: integrators
+gidNumber: 507
+description: Group of all vlead integrators.
+memberUid: test-user
+
+dn: cn=Sravanthi Bhattlapenumarthi,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sravanthi Bhattlapenumarthi
+sn: Bhattlapenumarthi
+givenName: Sravanthi
+mail: sravanthi@vlabs.ac.in
+ou: people
+displayName: Sravanthi B
+telephoneNumber: 08897487405
+postalAddress: 504, Sri Krishna Gayatri Towers, Indraprastha, Phase 2, Saidaba
+ d, Hyderabad, 500059
+uid: sravanthi
+uidNumber: 635
+gidNumber: 505
+homeDirectory: /home/sravanthi
+loginShell: /bin/bash
+gecos: Sravanthi Bhattlapenumarthi
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16875
+
+dn: cn=Sanchita Dixit,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sanchita Dixit
+sn: Dixit
+givenName: Sanchita
+mail: sanchita@vlabs.ac.in
+ou: people
+displayName: Sanchita D
+telephoneNumber: 09923969160
+postalAddress: IIIT Hyderabad
+uid: sanchita
+uidNumber: 636
+gidNumber: 502
+homeDirectory: /home/sanchita
+loginShell: /bin/bash
+gecos: Sanchita Dixit
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16506
+
+dn: cn=Sandeep Amanaganti,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sandeep Amanaganti
+sn: Amanaganti
+givenName: Sandeep
+mail: sandeep@vlabs.ac.in
+mail: sandeep_amanaganti@yahoo.com
+ou: people
+displayName: Sandeep A
+telephoneNumber: 09849493018
+postalAddress: Flat No.101, Block B, Sri Sai Heights, street no. 8, Habsiguda,
+  Hyderabad 500007
+uid: sandeep
+uidNumber: 637
+gidNumber: 502
+homeDirectory: /home/sandeep
+loginShell: /bin/bash
+gecos: Sandeep Amanaganti
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16510
+
+dn: cn=Nikhil Karthik,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Nikhil Karthik
+sn: Karthik
+givenName: Nikhil
+mail: nikhil162punnam@gmail.com
+ou: people
+displayName: Nikhil K
+telephoneNumber: +91-7597023796
+postalAddress: 5-4-100/4, Bhavani Colony, Rajendranagar, Hyd-30
+uid: nikhil
+uidNumber: 638
+gidNumber: 502
+homeDirectory: /home/nikhil
+loginShell: /bin/bash
+gecos: Nikhil Karthik
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16615
+
+dn: cn=SaiSambaSiva Potti,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: SaiSambaSiva Potti
+sn: Potti
+givenName: SaiSambaSiva
+mail: psaisambasiva@gmail.com
+ou: people
+displayName: SaiSambaSiva P
+telephoneNumber: 09933960282
+postalAddress: Flat no: 4, Krishna apartments, Lakshmipuram, Guntur, Guntur Di
+ st, A.P
+uid: saisamba
+uidNumber: 639
+gidNumber: 502
+homeDirectory: /home/saisamba
+loginShell: /bin/bash
+gecos: SaiSambaSiva Potti
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16591
+
+dn: cn=Priya Ramachandran,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Priya Ramanchandran
+cn: Priya Ramachandran
+sn: Ramachandran
+givenName:: UHJpeWEg
+mail: priya@vlabs.ac.in
+ou: people
+displayName: Priya Ramachandran
+telephoneNumber: 9949 350 745
+postalAddress: IIIT-H
+uid: priya
+uidNumber: 640
+gidNumber: 502
+homeDirectory: /home/priya
+loginShell: /bin/bash
+gecos: Priya
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+
+dn: cn=Dinesh Padisetti,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Dinesh Padisetti
+sn: Padisetti
+givenName: Dinesh
+mail: dinesh.padisetti@vlabs.ac.in
+ou: people
+displayName: Dinesh Padisetti
+postalAddress: IIIT-H
+uid: dinesh.padisetti
+uidNumber: 641
+gidNumber: 502
+homeDirectory: /home/dinesh.padisetti
+loginShell: /bin/bash
+gecos: Dinesh
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16714
+
+dn: cn=Tejaswinee Kelkar,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Tejaswinee Kelkar
+sn: Tejasminee
+givenName: Kelkar
+mail: tejaswinee.k@research.iiit.ac.in
+mail: tejaswineek@gmail.com
+ou: people
+homePhone: 00000
+displayName:: VGVqYXN3aW5lZSBLZWxrYXIg
+telephoneNumber: 81868 54706
+postalAddress: Room no 16, GH, IIIT H, Gachibowli, Hyderabad
+uid: tejaskelkar
+uidNumber: 642
+gidNumber: 502
+homeDirectory: /home/tejaskelkar
+loginShell: /bin/bash
+gecos: Tejaswinee Kelkar
+shadowMax: 999999
+shadowWarning: 999999
+shadowLastChange: 16729
+
+dn: cn=Virupaksha Sadhana,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Virupaksha Sadhana
+sn: Virupaksha
+givenName: Sadhana
+mail: sadhana@vlabs.ac.in
+ou: people
+displayName: Virupaksha Sadhana
+telephoneNumber: 9160896546
+postalAddress: IIIT-H
+uid: sadhana
+uidNumber: 643
+gidNumber: 502
+homeDirectory: /home/sadhana
+loginShell: /bin/bash
+gecos: Sadhana
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16763
+
+dn: cn=Modepu Sravanthi,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Modepu Sravanthi
+sn: Modepu
+givenName: Sravanthi
+mail: sravanthimodepu@vlabs.ac.in
+ou: people
+displayName: Modepu Sravanthi
+telephoneNumber: 9705651490
+postalAddress: IIIT-H
+uid: modepusravanthi
+uidNumber: 644
+gidNumber: 502
+homeDirectory: /home/modepusravanthi
+loginShell: /bin/bash
+gecos: Sravanthi
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16807
+
+dn: cn=Aswin Rag,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Aswin Rag
+sn: Rag
+givenName: Aswin
+mail: aswin@vlabs.ac.in
+ou: people
+displayName: Aswin Rag
+telephoneNumber: 9526655558
+postalAddress: IIIT-H
+uid: aswin
+uidNumber: 646
+gidNumber: 502
+homeDirectory: /home/aswin
+loginShell: /bin/bash
+gecos: Aswin
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16806
+
+dn: cn=Ashay Maheswari,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Ashay Maheswari
+sn: Maheswari
+givenName: Ashay
+mail: ashay@vlabs.ac.in
+ou: people
+displayName: Ashay Maheswari
+telephoneNumber: 8827893665
+postalAddress: IIIT-H
+uid: ashay
+uidNumber: 645
+gidNumber: 502
+homeDirectory: /home/ashay
+loginShell: /bin/bash
+gecos: Ashay
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16861
+
+dn: cn=Lalit Mohan,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Lalit
+cn: Lalit Mohan
+sn: Mohan
+givenName: Lalit
+mail: lalit@vlabs.ac.in
+ou: people
+displayName: Lalit Mohan
+telephoneNumber: 9849986236
+postalAddress: IIIT-H
+uid: lalit
+uidNumber: 647
+gidNumber: 502
+homeDirectory: /home/lalit
+loginShell: /bin/bash
+gecos: Lalit
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+
+dn: cn=Ravi Shankar,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Ravi
+cn: Ravi Shankar
+sn: Shankar
+givenName: Ravi
+mail: ravi@vlabs.ac.in
+ou: people
+displayName: Ravi Shankar
+telephoneNumber: 9177792945
+postalAddress:: SUlJVC1IICA=
+uid: ravi
+uidNumber: 648
+gidNumber: 502
+homeDirectory: /home/ravi
+loginShell: /bin/bash
+gecos: Ravi
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+
+dn: cn=Raghupathi Kammari,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Raghupathi
+cn: Raghupathi Kammari
+sn: Kammari
+givenName: Raghupathi
+mail: raghupathi@vlabs.ac.in
+ou: people
+displayName:: UmFnaHVwYXRoaSA=
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: raghupathi
+uidNumber: 649
+gidNumber: 502
+homeDirectory: /home/raghupathi
+loginShell: /bin/bash
+gecos: Raghupathi
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16916
+
+dn: cn=Rekha Singhal,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Rekha
+cn: Rekha Singhal
+sn: Singhal
+givenName: Rekha
+mail: rekhasinghal1@hotmail.com
+ou: people
+displayName: Rekha Singhal
+telephoneNumber: 9885173542
+postalAddress:: MjhBLCBsYW5lICMyLCBIaWxscmlkZ2UgVmlsbGFzIEdhY2hpYm93bGkgSHlkZX
+ JhYmFkLCBUUyAtIDUwMDAzMiA=
+uid: rekha
+uidNumber: 661
+gidNumber: 502
+homeDirectory: /home/rekha
+loginShell: /bin/bash
+gecos: Rekha
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+
+dn: cn=Raghav Mittal,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Raghav
+cn: Raghav Mittal
+sn: Mittal
+givenName: Raghav
+mail: raghav.mittal@st.niituniversity.in
+ou: people
+displayName: Raghav
+telephoneNumber: 8827893665
+postalAddress:: SUlJVC1IICA=
+uid: raghav
+uidNumber: 650
+gidNumber: 502
+homeDirectory: /home/raghav
+loginShell: /bin/bash
+gecos: Raghav
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Raj Manvar,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Raj
+cn: Raj Manvar
+sn: Manvar
+givenName: Raj
+mail: raj.manvar@students.iiit.ac.in
+ou: people
+displayName: Raj
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: raj
+uidNumber: 651
+gidNumber: 502
+homeDirectory: /home/raj
+loginShell: /bin/bash
+gecos: Raj
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Sasank Viswantha,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Sasank
+cn: Sasank Viswantha
+sn: Viswantha
+givenName: Sasank
+mail: sasank14168@mechyd.ac.in
+ou: people
+displayName: Sasank
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: sasank
+uidNumber: 652
+gidNumber: 502
+homeDirectory: /home/sasank
+loginShell: /bin/bash
+gecos: Sasank
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Srivalya Elluru,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Srivalya
+cn: Srivalya Elluru
+sn: Elluru
+givenName: Srivalya
+mail: srivalya.elluru@gmail.com
+ou: people
+displayName: Srivalya
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: srivalya
+uidNumber: 653
+gidNumber: 502
+homeDirectory: /home/srivalya
+loginShell: /bin/bash
+gecos: Srivalya
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Ammanamanchi Deepthi,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Ammanamanchi
+cn: Ammanamanchi Deepthi
+sn: Deepthi
+givenName: Ammanamnchi
+mail: namratha8a@gmail.com
+ou: people
+displayName: Ammanamanchi
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: ammanamanchi
+uidNumber: 654
+gidNumber: 502
+homeDirectory: /home/ammanamanchi
+loginShell: /bin/bash
+gecos: Ammanamanchi
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Rama Shanbhag,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Rama
+cn: Rama Shanbhag
+sn: Shanbhag
+givenName: Rama
+mail: ramashanbhag31@gmail.com
+ou: people
+displayName: Rama
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: rama
+uidNumber: 655
+gidNumber: 502
+homeDirectory: /home/rama
+loginShell: /bin/bash
+gecos: Rama
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Harsha Vattem,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Harsha
+cn: Harsha Vattem
+sn: Vattem
+givenName: Harsha
+mail: hvattem@gmail.com
+ou: people
+displayName:: SGFyc2hhIA==
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: Harsha
+uidNumber: 656
+gidNumber: 502
+homeDirectory: /home/harsha
+loginShell: /bin/bash
+gecos: Harsha
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Anshuman Karthik,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Anshuman
+cn: Anshuman Karthik
+sn: Karthik
+givenName: Anshuman
+mail: poseidon1414@gmail.com
+ou: people
+displayName: Anshuman
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: anshuman
+uidNumber: 657
+gidNumber: 502
+homeDirectory: /home/anshuman
+loginShell: /bin/bash
+gecos: Anshuman
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Ian Galvin,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Ian
+cn: Ian Galvin
+sn: Galvin
+givenName: Ian
+mail: raghupathi@vlabs.ac.in
+ou: people
+displayName: Ian
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: ian
+uidNumber: 658
+gidNumber: 502
+homeDirectory: /home/ian
+loginShell: /bin/bash
+gecos: Ian
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Jahanvi Ayyaniki,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Jananvi
+cn: Jahanvi Ayyaniki
+sn: Ayyaniki
+givenName: Jahanvi
+mail: jahnaviayyanki@gmail.com
+ou: people
+displayName: Jahanvi
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: jahanvi
+uidNumber: 659
+gidNumber: 502
+homeDirectory: /home/jahanvi
+loginShell: /bin/bash
+gecos: Jahanvi
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Meghana Bandaru,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Meghana
+cn: Meghana Bandaru
+sn: Bandaru
+givenName: Meghana
+mail: meghanabandaru.it2018@outlook.com
+ou: people
+displayName: Meghana
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: meghana
+uidNumber: 660
+gidNumber: 502
+homeDirectory: /home/meghana
+loginShell: /bin/bash
+gecos: Meghana
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Dheeraj Satyavolu,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Dheeraj
+cn: Dheeraj Satyavolu
+sn: Satyavolu
+givenName: Dheeraj
+mail: sdheeru1997@gmail.com
+ou: people
+displayName: Dheeraj
+telephoneNumber: 9491176251
+postalAddress:: SUlJVC1IICA=
+uid: dheeraj
+uidNumber: 662
+gidNumber: 502
+homeDirectory: /home/dheeraj
+loginShell: /bin/bash
+gecos: Dheeraj
+shadowMax: -1
+shadowWarning: 999999
+shadowLastChange: 16954
+
+dn: cn=Ganesh Sai,ou=people,dc=virtual-labs,dc=ac,dc=in
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: Ganesh
+cn: Ganesh Sai
+sn: Sai
+givenName: Ganesh
+mail:
+ou: people
+displayName: Ganesh
+telephoneNumber: 7416006624
+postalAddress:: SUlJVC1IICA=
+uid: ganesh
+uidNumber: 663
+gidNumber: 502
+homeDirectory: /home/ganesh
+loginShell: /bin/bash
+gecos: Ganesh
+shadowLastChange: 0
+shadowMax: -1
+shadowWarning: 999999
+
