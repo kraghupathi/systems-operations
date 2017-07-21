@@ -1,0 +1,213 @@
+#+Title: Restore Base2 containers
+#+Author: Vlead Systems team
+* Introduction
+  Due to HDDs failure on base2 machine, Base2 machine is down.
+  base2 machine was configured with RAID50.
+
+  In this kind of configuration if two hdds fails at the same time, we
+  can not recover data( i.e data is gone). This was what happened.
+
+  Called Saurabh about this issue and said the problem to him. He
+  tried recover but since two hdds failed, we could not recover data.
+
+  we had backup at =/mnt/san1/backup_snapshots/=. 
+
+* Install fresh CentOS-6.9
+  - Installed CentOS-6.9
+  - Grub issue was there. Systems was not booting. It was hanged at
+    grub only. 
+
+    Next day Saurabh has come to server room to solve this issue. He
+    modified =/etc/grub.conf= file. In this file he had replaced two
+    lines.
+    
+    1. (first) Module line. And replaced module with kernel
+    2. (second) module line. And replaced module with initrd
+    3. Rebooted the machine. problem solved
+  - Updated the OS on base2 machine. Above grub problem encountered
+    again, this time I could modify the grub.conf file. everthing was
+    fine.
+  - Restore network configuration file on BASE2 machine.
+    From the backup =/mnt/san1/backup_snapshots/= we have taken base2
+    directory from the above location. And copied to appropriate
+    location =/etc/sysconfig/network-scripts/= and restarted network
+    again. Network configuration was success. 
+    
+* Copy backed up files to BASE3 machine
+  Copy files from base2 ( =/mnt/san1/backup_snapshots/hourly.0/=) to
+  base3 (=/mnt/das1/restore/=).
+* Restore base2 containers in BASE3 machine
+** Public DNS
+*** On host/base3 machine
+   #+BEGIN_EXAMPLE
+   vzctl create 12161 --ostemplate  centos-6-x86_64 --hostname ns1-pub.vlabs.ac.in --diskspace 10G:12G
+   vzctl set 12161 --netif_add eth0,,,,br1 --save
+   vzctl set 12161 --onboot yes --save
+   #+END_EXAMPLE
+*** Inside the container
+    #+BEGIN_EXAMPLE
+    yum erase bind
+    yum install bind -y
+    service named restart
+    yum install bind-utils -y
+    #+END_EXAMPLE
+*** On host/base3 machine
+    #+BEGIN_EXAMPLE
+    rsync -ar --progress  ns1-pub.virtual-labs.ac.in/vz/private/12161/var/ /vz/private/12161/var/
+    cp restore/ns1-pub.virtual-labs.ac.in/vz/private/12161/etc/named* /vz/private/12161/etc/
+    vzctl restart 12161
+    #+END_EXAMPLE
+** Private DNS 
+*** On host/base3 machine
+   #+BEGIN_EXAMPLE
+   vzctl create 12160 --ostemplate centos-6-x86_64 --hostname ns3-pvt.vlabs.ac.in --diskspace 10G:12G
+   vzctl set 12160 --netif_add eth0,,,,br1 --save
+   vzctl set 12160 --onboot yes --save
+   vzctl start 12160
+   #+END_EXAMPLE
+*** Inside the container
+    Modified =/etc/sysconfig/network-scripts/ifcfg-eth0=
+    #+BEGIN_EXAMPLE
+    DEVICE=eth0
+    BOOTPROTO=static
+    ONBOOT=yes
+    IPADDR=10.4.12.160
+    NETMASK=255.255.252.0
+    GATEWAY=10.4.12.236
+    DNS1=10.4.12.160
+    DNS2=10.4.12.221
+    NM_CONTROLLED=no
+    #+END_EXAMPLE
+    #+BEGIN_EXAMPLE
+    service network restart
+    #+END_EXAMPLE
+*** On host/base3 machine
+    #+BEGIN_EXAMPLE
+    rsync -ar --progress ns3-pvt.virtual-labs.ac.in/vz/private/12160/var/named/ /vz/private/12160/var/named/
+    rsync -ar --progress ns3-pvt.virtual-labs.ac.in/vz/private/12160/etc/ /vz/private/12160/etc/
+    vzctl restart 12160
+    #+END_EXAMPLE
+** LDAP server
+*** On host/base3 machine
+    #+BEGIN_EXAMPLE
+    zctl create 13165 --ostemplate centos-6-x86_64 --hostname ldap.virtual-labs.ac.in --diskspace 20G:30G
+    vzctl set 13165 --netif_add eth0,,,,br1 --save
+    vzctl set 13165 --onboot yes --save
+    #+END_EXAMPLE
+*** Inside the container
+    - Enter into container from base/host machine
+    #+BEGIN_EXAMPLE
+    vzctl enter 13165
+    #+END_EXAMPLE
+    #+BEGIN_EXAMPLE
+    cd ldap_database/
+    service slapd stop
+    mv /var/lib/ldap /var/lib/ldap2
+    mkdir /var/lib/ldap
+    slapadd -l ldap_database.ldif -f /etc/openldap/slapd.conf 
+    chown -R ldap:ldap /var/lib/ldap
+    service slapd start
+    #+END_EXAMPLE
+
+*** On Host/Base3 machine
+    #+BEGIN_EXAMPLE
+    rsync /mnt/das1/restore/ldap.virtual-labs.ac.in/vz/private/13165/etc/ /vz/private/13165/etc/
+    rsync -ar --progress /mnt/das1/restore/ldap.virtual-labs.ac.in/vz/private/13165/etc/ /vz/private/13165/etc/
+    rsync -ar --progress /mnt/das1/restore/ldap.virtual-labs.ac.in/vz/private/13165/root/ /vz/private/13165/root/
+    rsync -ar /mnt/das1/restore/ldap.virtual-labs.ac.in/ldap_database /vz/private/13165/root/
+    #+END_EXAMPLE
+** SSH tunnel
+*** On Host/Base machine
+  #+BEGIN_EXAMPLE
+  vzctl create 12169 --ostemplate centos-6-x86_64 --hostname ssh-tunnel.virtual-labs.ac.in --diskspace 150G:200G
+  vzctl set 12169 --netif_add eth0,,,,br1 --save
+  vzctl set 12169 --onboot yes --save
+  #+END_EXAMPLE
+*** Inside the container
+    Modified =/etc/sysconfig/network-scripts/ifcfg-eth0=
+    #+BEGIN_EXAMPLE
+    DEVICE=eth0
+    BOOTPROTO=static
+    ONBOOT=yes
+    IPADDR=10.4.12.169
+    NETMASK=255.255.252.0
+    GATEWAY=10.4.12.236
+    DNS1=10.4.12.160
+    DNS2=10.4.12.221
+    NM_CONTROLLED=no
+    #+END_EXAMPLE
+    #+BEGIN_EXAMPLE
+    service network restart
+    #+END_EXAMPLE
+**** Install ldap client
+    - yum install nss-pam-ldapd
+      #+BEGIN_EXAMPLE
+      yum install nss-pam-ldapd     
+      getent passwd
+      #+END_EXAMPLE
+    - Refereance
+      
+    http://www.sbarjatiya.com/notes_wiki/index.php/OpenLDAP_client_configuration
+*** On Host/Base Machine
+    #+BEGIN_EXAMPLE
+    rsync -ar --progress /mnt/das1/restore/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/etc/  /vz/private/12169/etc/
+    rsync -ar --progress /mnt/das1/restore/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/home  /vz/private/12169/
+    rsync -ar --progress /mnt/das1/restore/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/root/  /vz/private/12169/root/
+    #rsync -ar /mnt/das1/restore/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/etc/nscd.conf /vz/private/12169/etc/nscd.conf 
+    mv /vz/private/12169/etc/nslcd.conf /vz/private/12169/etc/nslcd.conf-default
+    rsync -ar /mnt/das1/restore/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/etc/nslcd.conf /vz/private/12169/etc/nslcd.conf
+    mv /vz/private/12169/etc/nsswitch.conf /vz/private/12169/etc/nsswitch.conf-default
+    rsync -ar /mnt/das1/restore/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/etc/nsswitch.conf /vz/private/12169/etc/nsswitch.c
+    #+END_EXAMPLE
+
+** HTTP
+*** On Host/Base3 machine   
+   #+BEGIN_EXAMPLE
+   vzctl create 12159 --ostemplate centos-6-x86_64 --hostname http.virtual-labs.ac.in --diskspace 100G:200G
+   vzctl set 12159 --netif_add eth0,,,,br1 --save
+   vzctl set 12159 --onboot yes --save
+   #+END_EXAMPLE
+*** Inside the container
+   #+BEGIN_EXAMPLE
+   yum install httpd mod_ssl -y
+   yum install awstats -y
+   #+END_EXAMPLE
+*** On Host/base3 machine
+    #+BEGIN_EXAMPLE
+    rsync -ar --progress /mnt/das1/restore/http.virtual-labs.ac.in/vz/private/12159/etc/ /vz/private/12159/etc/
+    rsync -ar --progress /mnt/das1/restore/http.virtual-labs.ac.in/vz/private/12159/root/ /vz/private/12159/root/
+    rsync -ar --progress /mnt/das1/restore/http.virtual-labs.ac.in/vz/private/12159/var/ /vz/private/12159/var/
+    #+END_EXAMPLE
+
+** TODO Pascal
+*** On base/host machine
+    #+BEGIN_EXAMPLE
+    vzctl create 12159 --ostemplate centos-6-x86_64 --hostname http.virtual-labs.ac.in --diskspace 10G:20G    
+    #+END_EXAMPLE
+** TODO vlead-assets
+* What we have?
+  We have backup configuration files of following containers at
+  =/mnt/san1/backup_snapshots/= till *11th Jan 2017*. We have no idea
+  about backup after that date(*11th Jan 2017*). Saurabh also told the
+  same thing. He had no idea about the backup.
+  
+  1. Public-DNS  ( restored)
+  2. Private-DNS ( restored)
+  3. LDAP server ( restored)
+  4. SSH-Tunnel  ( restored)
+  5. HTTP container ( restored) 
+
+     Above containers are restored successfully. Steps to restored are
+     documented [[Restore base2 containers in BASE3 machine][Here]].
+  6. Pascal ( No idea how to restore)
+  7. vlead-assets ( was not being used by any vlead admin)
+     
+* Lost information
+  - Wiki container was not backed up
+  - files.vlabs.ac.in was not backed up
+
+    The above containers were not backed up so we lost the data.
+
+* Set Backup for all important containers
+    Backup of all above containers will be available at
+    =/mnt/san1/backup-snapshots/= on base3 machine
