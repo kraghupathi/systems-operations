@@ -1,0 +1,475 @@
+;$ORIGIN virtual-labs.ac.in.
+$TTL 600 ;10 minutes
+@ SOA ns3-pvt.virtual-labs.ac.in. root.virtual-labs.ac.in. (
+				2017071901 ;serial
+				900        ; refresh (15 minutes)
+                                300        ; retry (5 minutes)
+                                2592000    ; expire (4 weeks 2 days)
+                                3600       ; minimum (1 hour)
+                                )
+			NS	ns3-pvt.virtual-labs.ac.in.
+			NS	ns4-pvt.virtual-labs.ac.in.
+			;A	54.85.93.7
+			;A	54.183.30.65
+			A	13.56.35.86
+			MX      10 ASPMX.L.GOOGLE.COM.
+                        MX      20 ALT1.ASPMX.L.GOOGLE.COM.
+                        MX      20 ALT2.ASPMX.L.GOOGLE.COM.
+                        MX      30 ASPMX2.GOOGLEMAIL.COM.
+                        MX      30 ASPMX3.GOOGLEMAIL.COM.
+
+
+ns1-pub			A	10.4.12.161
+ns1		IN      CNAME   ns1-pub
+ns2-pub			A	10.4.12.202
+ns2		IN      CNAME   ns2-pub
+ns3-pvt			A	10.4.12.160
+ns4-pvt			A	10.4.12.221
+
+;Base machines addresses
+
+base1	IN A 10.4.12.21
+base2	IN A 10.4.12.22
+base3	IN A 10.4.12.23
+base4	IN A 10.4.12.24
+
+; Copied from ns1 zone file leaving ns1, ns2 and commented entries
+;www             IN      A       54.183.30.65
+www             IN      A       13.56.35.86
+;www             IN      A       54.85.93.7
+mail            IN      CNAME   mail.vlabs.ac.in.
+
+;=================== BASE 1 ====================================
+ads-test	IN	A	10.4.14.204 ; it is a vm on base1
+
+;=================== BASE 2 ==========================
+ca              IN      A       10.4.12.151
+ldap            IN      A       10.4.12.152
+vlead           IN      A       10.4.14.188
+;storage-manager IN      A       10.4.12.154
+;forums          IN      A       10.4.12.158
+http            IN      A       10.4.12.159
+outreach-oauth        IN      A       10.4.12.15
+ssh-tunnel      IN      A       10.4.12.169
+;ras             IN      A       10.4.12.181
+vlead-assets.vlead    IN      A       10.4.12.198
+assets.vlead		IN	A	10.4.12.190
+;popl-tas        IN      A       10.4.12.162
+pascal          IN      A       10.4.12.165 
+lik		IN	A	10.4.14.183
+portable-media	IN	A	10.4.14.184
+cse08		IN	A	10.4.12.180
+cse28		IN	A	10.4.12.180
+systems-bzr	IN	A	10.4.12.183
+git-server	IN	A	10.4.12.185
+proxy-test	IN	A	10.4.14.185
+ldappasswd.vlead	IN	A	10.4.15.89
+t4e2015		IN	A	10.4.12.82  ; added by Ashay on Feb 29 2016
+fp-edx-demo	IN	A	10.4.15.90
+
+;=================== BASE 3 ===========================
+proxy           	IN      A       10.4.12.237 ; this is the stpi-proxy container
+proxy.vlead           	IN      A       10.4.12.237 ; this is the stpi-proxy container added on March 16th 2016
+sage            	IN      A       10.4.12.204 
+community       	IN      A       10.4.12.206
+db              	IN      A       10.4.12.213
+files              	IN      A       10.4.12.134
+developer       	IN      A       10.4.12.219
+stpi-router     	IN      A       10.4.12.236
+stpi-proxy      	IN      A       10.4.12.237
+gateone         	IN      A       10.4.12.201
+gateone.cse05   	IN      CNAME	gateone
+gateone.cse09   	IN      CNAME   gateone
+;accounts        	IN      A       10.4.12.215
+;deploy          	IN      A       10.4.12.218
+;microwave       	IN      A       10.4.12.251
+agile			IN	A	10.4.12.253
+mech26			IN	A	10.4.13.207
+eee06			IN	A	10.4.13.208
+mech08                  IN	A       10.4.13.209
+phy01           	IN	A	10.4.13.210
+chs13			IN	A	10.4.13.211
+aerospaceengg		IN	A	10.4.13.212
+combustion		IN	A	10.4.13.213
+cse04-iiith		IN	A	10.4.12.52
+cse06-iiith             IN      A       10.4.12.53
+cse07-iiith             IN      A       10.4.12.54
+cse09-iiith		IN	A	10.4.12.55
+cse05-iiith             IN      A       10.4.12.56
+cse13-iiith             IN      A       10.4.12.57
+cse16-iiith		IN	A	10.4.12.58
+cse17-iiith             IN      A       10.4.12.59
+cse21-iiith             IN      A       10.4.12.60
+cse24-iiith             IN      A       10.4.12.61
+cse30-iiith		IN	A	10.4.12.62
+eerc02-iiith		IN	A	10.4.12.64
+eerc04-iiith		IN	A	10.4.12.65
+eerc05-iiith		IN	A	10.4.12.66
+cse23-iiith             IN      A       10.4.12.67
+cse10-iitkgp            IN      A       10.4.12.68
+civil13-iitb		IN	A	10.4.12.69
+ccnsb01-iiith		IN	A	10.4.12.70
+ccnsb02-iiith		IN	A	10.4.12.71
+ccnsb03-iiith		IN	A	10.4.12.72
+ccnsb04-iiith		IN	A	10.4.12.73
+ccnsb05-iiith		IN	A	10.4.12.74
+ccnsb07-iiith		IN	A	10.4.12.75
+mech01-iitg		IN	A	10.4.12.79
+eee06-dei		IN	A	10.4.12.80
+aws-backup		IN	A	10.4.12.81
+attendance              IN      A       10.4.15.202
+lbd			IN      A       10.4.15.134
+;=================== BASE 4 ===========================
+csnginx			IN      A       10.4.12.251
+translators	IN	A	10.4.12.254
+resource-generator	IN	A	10.4.12.253
+content-server	IN	A	10.4.12.252
+music           IN      A       10.4.15.171
+staging.music   IN      A       10.4.15.171 ; hosted on the same container as music
+iiith-outreach	IN	A	10.4.15.105
+irc-login       IN      A       10.4.14.226
+labs-info       IN      A       10.4.14.225 
+analytics	IN	A	10.4.15.177
+glpi		IN	A	10.4.12.135
+ci		IN	A	10.4.12.30
+stats-demo	IN	A	10.4.15.133
+renarration	IN	A	10.4.15.141 ; renarration created on req by Anon
+gateone.test	IN	A	10.4.14.149 ;added by soumya for testing gateone services by anagh 2015-07-14 expiry Aug-15-2015 contact Apurv
+popl-clients	IN	A	10.4.15.128 ;added by soumya for testing gateone services by anagh 2015-07-14 expiry Aug-15-2015 contact Apurv
+popl-servers	IN	A	10.4.15.129 ;added by soumya for testing gateone services by anagh 2015-07-15 expiry Aug-15-2015 contact Apurv
+gateone-copy	IN	A	10.4.15.201 ;added by soumya for testing gateone services by anagh 2015-07-14 expiry Aug-15-2015 contact Apurv
+webhooks        IN      A       10.4.15.185 ;added by yogesh on 9th Feb 2016; Issue#633
+ads-team1 	IN	A	10.4.15.189 ;added by yogesh on 27th May 2016 for summer workshop purpose
+ads-team2	IN	A	10.4.15.208 ; added by Ashay
+ads-team3	IN	A 	10.4.15.186 ; added by Ashay
+ads-team4	IN	A	10.4.15.187 ; added by Ashay	
+ads-team5	IN	A	10.4.15.188 ; added by Ashay
+;===================================================================
+popl-clients	IN	A	10.4.15.128 ; added by soumya for testing gateone services by anagh 2015-07-14
+logserver       IN      A       10.4.14.105 ; misplaced list
+vml             IN      A       10.4.14.177 ; misplaced list
+;chandan         IN      A       10.4.12.200 ; in misplaced list, should be checked and removed if unecessary
+;kirti           IN      A       10.4.12.239 ; in misplaced list, should be cheked and removed if unecessary
+test            IN      A       10.4.12.217 ;  in misplaced list, should be cheked and removed if unecessary
+time            IN      A       10.4.12.172 ; in misplaced list, should be checked and removed if unecessary
+vlabs-dependencies	IN	A	10.4.15.135 ;labs dependencies packages
+issues  	IN	A	10.4.15.142 ;issues portal deployed by jayanth
+;qa		IN	A	10.4.14.142 ;qa issues portal deployed by jayanth
+qa.vlead	IN	A	10.4.14.142 ;entry added on March 16th by yogesh
+cstest		IN	A	10.4.15.144 ; regarding the auto installation of client side dependencies.added by Siva on August 26th 2015.
+test-landing	IN	A	10.4.15.150 ; for the new landing page testing. Added by Soumya 2015-08-31. container owner Madhavi.
+vlead-wiki	IN	A	10.4.12.163
+files		IN	A	10.4.14.189
+vlabs-dev	IN	A	10.4.13.252
+dev     	IN	CNAME	vlabs-dev
+staging-dev	IN	A	10.4.13.253
+vlabs-stage	IN	A	10.4.15.101
+;================================================
+;;;;:::::::::::::::: Amazon :::::::::::::::::::::
+;================================================
+;image-processing        IN      A       10.4.12.159
+;iiith-ds                IN      A       10.4.12.159
+;cpl                     IN      A       10.4.12.159
+;nagios                  IN      A       54.85.93.7
+;reverseproxy            IN      A       54.85.93.7
+;hybrid-electronic       IN      A       10.4.12.159
+;virtual-english         IN      A       10.4.12.159
+;cdpeslab                IN      A       10.4.12.159
+;mmlaboratory            IN      A       10.4.12.159
+;industrial-automation   IN      A       10.4.12.159
+;emt                     IN      A       10.4.12.159
+;nlp                     IN      A       10.4.12.159
+;dld                     IN      A       10.4.12.159
+;computer-graphics       IN      A       10.4.12.159
+;pattern-recognition     IN      A       10.4.12.159
+;cryptography            IN      A       10.4.12.159
+;virtual-power		IN	A	10.4.12.159
+;artificial-nn		IN	A	10.4.12.159
+;ansible-server		IN	A	54.85.93.7
+;geo			IN	A	54.85.93.7
+;iiith-co                IN      A       10.4.12.159
+;iiith-vlsi              IN      A       10.4.12.159
+;iitk-mrmst              IN      A       54.85.93.7
+;iitk-va                 IN      A       54.85.93.7
+;iitk-ufls               IN      A 	54.85.93.7
+;iitk-ae                 IN      A 	54.85.93.7
+;iitk-ca                 IN      A 	54.85.93.7
+;aws-ldap		IN	A	54.164.169.56      
+;integration-team	IN	A	54.85.93.7
+
+ansible		IN	A	52.4.150.142
+router		IN	A	54.85.93.7
+nagios		IN	A	54.85.93.7
+ads		IN	A	54.85.93.7
+ossec-server	IN	A	54.85.93.7
+reverseproxy	IN	A	54.85.93.7
+bandwidthd	IN	A	54.85.93.7
+stats		IN	A	54.85.93.7
+cse01-iiith             IN              A       54.85.93.7
+cse02-iiith             IN              A       54.85.93.7
+cse15-iiith             IN              A       54.85.93.7
+cse18-iiith             IN              A       54.85.93.7
+cse19-iiith             IN              A       54.85.93.7
+cse20-iiith             IN              A       54.85.93.7
+emt-iiith               IN              A       54.85.93.7
+cse29-iiith             IN              A       54.85.93.7
+cse22-iiith             IN              A       54.85.93.7
+cse11-iiith             IN              A       54.85.93.7
+cse14-iiith             IN              A       54.85.93.7
+eerc03-iiith            IN              A       54.85.93.7
+phy14-iiith             IN              A       54.85.93.7
+ccnsb06-iiith           IN              A       54.85.93.7
+eerc01-iiith            IN              A       54.85.93.7
+csc-iiith	        IN              A       54.85.93.7
+bmi-iitr		IN		A	54.85.93.7
+bmsip-iitr		IN		A	54.85.93.7 
+em-iitr			IN		A	54.85.93.7	
+sl-iitr			IN		A	54.85.93.7	
+va-iitk			IN		A	54.85.93.7	
+ufls-iitk		IN		A	54.85.93.7	
+vlae-iitk		IN		A	54.85.93.7	
+vcal-iitk		IN		A	54.85.93.7	
+pev-au			IN		A	54.85.93.7	
+pevii-au		IN		A	54.85.93.7	
+mrmsmtbs-iitk		IN		A	54.85.93.7
+ve-iitg			IN		A	54.85.93.7
+vem-iitg		IN		A	54.85.93.7
+ergonomics-iitg		IN		A	54.85.93.7
+anthropology-iitg	IN		A	54.85.93.7
+sl-coep		        IN              A       54.85.93.7
+plc-coep	        IN      	A       54.85.93.7
+em-coep 		IN      	A       54.85.93.7
+va-coep 		IN    		A       54.85.93.7
+mm-coep 		IN     		A       54.85.93.7
+fab-coep        	IN   		A       54.85.93.7
+bmsp-coep      		IN     		A       54.85.93.7
+ial-coep      		IN     		A       54.85.93.7
+ied-nitk		IN		A	54.85.93.7
+sa-nitk			IN		A	54.85.93.7
+fm-nitk			IN		A	54.85.93.7
+sm-nitk			IN		A	54.85.93.7
+mm-nitk			IN		A	54.85.93.7
+mdmv-nitk		IN		A	54.85.93.7
+uorepc-nitk		IN		A	54.85.93.7
+vssd-iitd		IN		A	54.85.93.7
+qnm-iitd		IN		A	54.85.93.7
+msvs-dei		IN		A	54.85.93.7
+vp-dei			IN		A	54.85.93.7
+he-coep                 IN              A       54.85.93.7
+eem-iitd                IN              A       54.85.93.7
+pe-iitb                 IN              A       54.85.93.7
+ce-iitb                 IN              A       54.85.93.7
+ee-iitb                 IN              A       54.85.93.7
+vc-dei			IN		A	54.85.93.7
+bsa-iiith		IN		A	54.85.93.7
+cds-iiith               IN              A       54.85.93.7 
+smfe-iiith               IN              A       54.85.93.7
+ssp-iiith               IN              A       54.85.93.7
+sd-iiith               IN              A       54.85.93.7
+cl-iiith               IN              A       54.85.93.7
+ge-iiith               IN              A       54.85.93.7
+mi-iiith               IN              A       54.85.93.7
+mas-iiith               IN              A       54.85.93.7
+mfs-iiith               IN              A       54.85.93.7
+nlp-iiith               IN              A       54.85.93.7
+cp-iiith               IN              A        54.85.93.7
+ps-iiith               IN              A        54.85.93.7
+ssl-iitg               IN              A        54.85.93.7
+eil-iitg               IN              A        54.85.93.7
+vlsi-iitg               IN              A        54.85.93.7
+htv-au                  IN              A        54.85.93.7
+emv-au                  IN              A        54.85.93.7
+cbII-au                 IN              A        54.85.93.7
+cbI-au                  IN              A        54.85.93.7
+ov-au                  IN              A        54.85.93.7
+fmc-nitk                  IN              A        54.85.93.7
+vmt-iitg                  IN              A        54.85.93.7
+mfts-iitg                  IN              A        54.85.93.7
+mv-iitg                  IN              A        54.85.93.7
+hci-iitg                  IN              A        54.85.93.7
+tel-iitb                IN             A           54.85.93.7
+ml-iitb                IN             A           54.85.93.7
+vm-dei			IN		A 	54.85.93.7
+idte-dei		IN		A	54.85.93.7
+icv-au                  IN              A       54.85.93.7
+biotech01                  IN              A       54.85.93.7
+mbvII-au                  IN              A       54.85.93.7
+phy-sc22-au                  IN              A       54.85.93.7
+pcv-au                  IN              A       54.85.93.7
+aacv-au                  IN              A       54.85.93.7
+ocv-au                  IN              A       54.85.93.7
+civ02                   IN             A        54.85.93.7
+outreach-demo                IN              A       54.85.93.7
+outreach               IN              A        54.85.93.7
+vlabs-analytics               IN              A        54.85.93.7
+analytics-api               IN              A        54.85.93.7
+;outreach-staging               IN              A        54.85.93.7
+;old-outreach               IN              A        54.85.93.7
+;outreach-vlead1               IN              A        54.85.93.7
+;outreach-vlead3              IN              A        54.85.93.7
+data	               IN              A        54.85.93.7
+feedback               IN              A        54.85.93.7
+experiment-server              IN              A        54.85.93.7
+;test-outreach          IN              A        54.85.93.7
+;t4e2015                 IN	        A       52.26.141.190
+courses			IN		A	54.183.54.86
+
+info			IN		A	54.193.31.73
+edx-courses		IN		A	52.67.24.251
+open-edx		IN		A	54.183.30.65
+;open-edx1		IN		A	54.183.50.1
+;test.t4e2015                 IN	        A       10.4.14.187
+openedx			IN		A	54.67.89.24
+platform		IN		A	54.183.81.143
+vlabs-lms		IN		A	52.53.230.142
+;analytics-api		IN		A	52.53.189.188
+vlabs-insights		IN		A	54.153.22.134
+xblocks-test		IN		A	52.67.110.60
+notebook		IN		A	52.53.227.220
+;vlabs-analytics		IN		A	54.67.27.39
+elk-stack		IN		A	52.53.201.170
+openvz			IN		A	10.2.57.61
+
+;feedback-stage		IN		A	10.4.12.2
+feedback-stage		IN		A	10.4.12.9
+outreach-stage		IN		A	10.4.12.13
+ads-base2		IN		A	10.4.15.91
+;outreach-stage          IN              A       54.85.93.7
+;===================================================================
+;router          IN      A       10.4.12.155 Delete by March 12
+;testproxy       IN      A       10.4.12.156 Delete by March 12
+;===================================================================
+;stats           IN      A       10.4.12.159 doesnt exist
+;vpn             IN      A       10.4.12.160 doesnt exist
+;old-ras         IN      A       10.4.12.162 doesnt exist
+;redmine-test    IN      A       10.4.12.166 doesnt exist
+;eee07           IN      A       10.4.12.62 doesnt exist
+;ocpl            IN      A       10.4.12.182 doesnt exist
+;nitk            IN      A       10.4.13.193 doesnt exist
+;travula         IN      A       10.2.56.186 doesnt exist
+;civil11         IN      A       10.4.12.175 doesnt exist
+;swrt            IN      CNAME   vlabs.ac.in. doesnt exist
+;candyman        IN      CNAME   vlabs.ac.in doesnt exist
+;emcee           IN      A       10.2.56.57 doesnt exist
+;iitd-mirror     IN      A       10.4.12.251 doesnt exist
+;ishan           IN      A       10.4.12.220 doesnt exist
+;juju            IN      A       10.4.12.241 doesnt exist
+;git             IN      A       10.4.12.199 doesnt exist
+;svn             IN      A       10.4.12.199 doesnt exist
+;bzr             IN      A       10.4.12.199 doesnt exist
+;ssh.cse09       IN      A       10.4.13.150 doesnt exist
+;ssh.cse05       IN      A       10.4.13.150 doesnt exist
+;ntfs            IN      A       10.4.13.150 doesnt exist
+;ldap-users      IN      A       10.4.13.151 doesnt exist
+;eval            IN      A       10.4.13.152 doesnt exist
+;login           IN      A       10.4.12.221 doesnt exist
+;code            IN      A       10.4.12.222 doesnt exist
+;erp             IN      A       10.4.12.224 doesnt exist
+;issues-clone    IN      A       10.4.12.214 doesnt exist	
+;audit           IN      A       10.4.12.223 doesnt exist
+;ui1             IN      A       10.4.12.232 doesnt exist
+;interns         IN      A       10.4.12.181 doesnt exist
+;====================================================================
+;announce        IN      A       10.4.12.191 deleted
+;nagios1         IN      A       10.4.14.104 deleted container
+;issues          IN      A       10.4.12.170 deleted 
+
+;====================================================================
+;nms             IN      A       10.4.12.205 stopped
+;ui2             IN      A       10.4.12.238 stopped
+;ganglia         IN      A       10.4.12.250 stopped
+;uir             IN      A       10.4.12.243 stopped no desc on wiki
+;ssad            IN      A       10.4.12.212 stopped no desc on wiki  
+;=====================================================================
+;imaginate1      IN      A       10.4.12.225 no desc in wiki
+;imaginate2      IN      A       10.4.12.226 no desc in wiki
+;imaginate3      IN      A       10.4.12.227 no desc in wiki
+
+
+$ORIGIN base1.virtual-labs.ac.in.
+@ IN NS ns.base1.virtual-labs.ac.in.
+public-dns 	IN 	A 	10.4.14.150  ;glue record
+ns		IN	A	10.4.14.150
+
+;Subzone delegation of base1.vlabs.ac.in
+$ORIGIN base1.vlabs.ac.in.
+@ IN NS ns.base1.vlabs.ac.in.
+public-dns 	IN 	A 	10.4.14.150 ;glue record
+ns		IN	A	10.4.14.150
+
+
+;Subzone delegation of base4.vlabs.ac.in
+$ORIGIN base4.virtual-labs.ac.in.
+@ IN NS public-dns.base4.virtual-labs.ac.in.
+
+public-dns IN A 10.4.12.25  ;glue record
+ns		IN	A	10.4.12.25
+$ORIGIN base4.vlabs.ac.in.
+@ IN NS public-dns.base4.vlabs.ac.in.
+
+public-dns IN A 10.4.12.25 ;glue record
+ns		IN	A	10.4.12.25
+
+
+;Added on 18th November for testing bootstrap steps
+$ORIGIN bstest.virtual-labs.ac.in.
+@ IN NS public-dns.bstest.virtual-labs.ac.in.
+
+public-dns IN A 10.2.57.62  ;glue record
+
+;Subzone delegation of bstest.vlabs.ac.in
+$ORIGIN bstest.vlabs.ac.in.
+@ IN NS public-dns.bstest.vlabs.ac.in.
+
+public-dns IN A 10.2.57.62 ;glue record
+
+;Added on 18th November for testing bootstrap steps
+$ORIGIN cluster.virtual-labs.ac.in.
+@ IN NS public-dns.cluster.virtual-labs.ac.in.
+
+public-dns IN A 10.4.14.207  ;glue record
+
+;Subzone delegation of cluster.vlabs.ac.in
+$ORIGIN cluster.vlabs.ac.in.
+@ IN NS public-dns.cluster.vlabs.ac.in.
+
+public-dns IN A 10.4.14.207 ;glue record
+
+
+;;Added on 11th February 2016 testing bootstrap steps on adshookstest cluster in base1-vm
+$ORIGIN adshookstest.virtual-labs.ac.in.
+@ IN NS public-dns.adshookstest.virtual-labs.ac.in.
+
+public-dns IN A 10.4.12.215  ;glue record
+
+;Subzone delegation of adshookstest.vlabs.ac.in
+$ORIGIN adshookstest.vlabs.ac.in.
+@ IN NS public-dns.adshookstest.vlabs.ac.in.
+
+public-dns IN A 10.4.12.215 ;glue record
+
+
+
+$ORIGIN edx.virtual-labs.ac.in.
+@ IN NS public-dns.edx.virtual-labs.ac.in.
+
+public-dns IN A 10.2.57.62  ;glue record
+
+;Subzone delegation of cluster.vlabs.ac.in
+$ORIGIN edx.vlabs.ac.in.
+@ IN NS public-dns.edx.vlabs.ac.in.
+
+public-dns IN A 10.2.57.62 ;glue record
+
+
+$ORIGIN docker.virtual-labs.ac.in.
+@ IN NS public-dns.docker.virtual-labs.ac.in.
+
+public-dns IN A 10.2.58.37 ;glue record
+
+;Subzone delegation of cluster.vlabs.ac.in
+$ORIGIN docker.vlabs.ac.in.
+@ IN NS public-dns.docker.vlabs.ac.in.
+
+public-dns IN A 10.2.58.37 ;glue record
+
