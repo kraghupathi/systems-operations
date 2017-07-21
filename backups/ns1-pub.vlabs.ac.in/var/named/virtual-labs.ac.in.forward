@@ -1,0 +1,438 @@
+$TTL 600
+@ SOA   ns1.virtual-labs.ac.in. engg.virtual-labs.ac.in. (2017071801 15m 5m 30d 2h)
+        NS ns1.virtual-labs.ac.in.
+        NS ns2.virtual-labs.ac.in.
+        ;IN      A       54.85.93.7
+        IN      A   	13.56.35.86
+;We are using google apps for email, so all MX records refer to gmail servers
+        IN      MX      10 ASPMX.L.GOOGLE.COM.
+        IN      MX      20 ALT1.ASPMX.L.GOOGLE.COM.
+        IN      MX      20 ALT2.ASPMX.L.GOOGLE.COM.
+        IN      MX      30 ASPMX2.GOOGLEMAIL.COM.
+        IN      MX      30 ASPMX3.GOOGLEMAIL.COM.
+;	IN		TXT	"v=spf1 +a +mx +all"
+	IN		TXT	"v=spf1 include:_spf.google.com ~all"
+	
+
+_amazonses.vlabs.ac.in	IN	TXT	"F7VY+b7qcaBrb8mniIpo0k63CXoDADUnqO18kOcSExc="
+
+ns		IN	A	54.85.93.7
+
+;;IPs of both public DNS
+ns1		IN	A	196.12.53.134
+ns1-pub		IN	CNAME	ns1
+ns2		IN	A	196.12.53.130
+ns2-pub		IN	CNAME	ns2
+
+;;ns1		IN	A	54.85.93.7
+;;ns1-pub		IN	CNAME	ns1
+;;ns2		IN	A	54.85.93.7
+;;ns2-pub		IN	CNAME	ns2
+;Perhaps Godaddy ownership verification record, need to validate this
+dzc             IN      TXT     "J01I0FT"
+
+;Just for safety so that localhost always resolves to loop-back
+localhost       IN      A       127.0.0.1
+localhost       IN      AAAA    ::1
+
+;Main www.virtual-labs.ac.in or virtual-labs.ac.in website
+;www             IN      A       196.12.53.130
+;www             IN      A       54.85.93.7
+;www             IN      A       54.67.48.43
+;www             IN      A       54.183.30.65
+www             IN      A       13.56.35.86
+
+;Main container where all the labs are hosted on a single container 
+;deploy           IN      CNAME	www
+deploy           IN      A	196.12.53.130
+openvz           IN      A	196.12.53.130
+
+;Container where portable USB drives images are stored 
+;portable-media	IN	CNAME	www
+portable-media	IN	A	196.12.53.130
+
+;Container where portable USB drives images are stored 
+;lik		IN	CNAME	www
+lik		IN	A	196.12.53.130
+
+;Container for testing labs before they are deployed
+;test		IN	CNAME	www
+test		IN	A	196.12.53.130
+
+;Container for Hindustani music virtual-lab
+;music		IN	CNAME	www
+;staging.music	IN	CNAME	www
+music		IN	A	196.12.53.130
+staging.music	IN	A	196.12.53.130
+;container for iiith outreach
+;iiith-outreach	IN	CNAME	www
+iiith-outreach	IN	A	196.12.53.130
+;Google apps mail server
+mail		IN	CNAME   ghs.googlehosted.com.
+
+;VLEAD blog and VLEAD wiki
+;vlead		IN	CNAME	www
+vlead		IN	A	196.12.53.130
+
+;sage is for a database lab -- **Validate details**
+;sage		IN	CNAME	www
+sage		IN	A	196.12.53.130
+
+;community wiki for all events 
+;community		IN	CNAME	www
+community	IN	A	196.12.53.130
+
+;community wiki for all events 
+;civil11			IN	CNAME	www
+civil11		IN	A	196.12.53.130
+
+;TODO
+;nitk		IN	CNAME	www
+nitk		IN	A	196.12.53.130
+
+;Gatewone - TODO
+gateone.cse09   IN      A       14.139.82.11
+gateone.cse05   IN      CNAME   gateone.cse09
+
+;Used for accessing in and out from IIIT-H by VLEAD team without firewall / proxy restrictions
+ssh-tunnel	IN	A	196.12.53.133
+aws-backup	IN	A	196.12.53.133
+
+;Used for testing connectivity to http container and also for checking SSL certificates
+;http		IN	CNAME	www
+http		IN	A	196.12.53.130
+
+;Used for vlabs files
+glpi		IN	A	196.12.53.130
+ci		IN	A	196.12.53.130
+
+;Used for vlabs files
+files		IN	A	196.12.53.130
+
+;Used for dash-board
+;labs-info	IN	CNAME	www
+labs-info	IN	A	196.12.53.130
+
+;For virtual-labs analytics page - Hosted on AWS - Contact Soumya
+;analytics	IN	CNAME	www
+analytics	IN	A	196.12.53.130
+
+
+
+outreach-demo.base4	IN	A	196.12.53.130
+
+;Used for testing ADS source code
+;ads-test	IN	CNAME	www
+ads-test	IN	A	196.12.53.130
+cstest		IN	A	196.12.53.130
+;Used for accessing outreach portal from internet
+;outreach-portal IN	CNAME	www
+outreach-portal IN	A	196.12.53.130
+
+;;Bunch of labs deployed by Yogesh and Sanchita on 23rd March
+;;These labs belong to IIT-K or Dalaybagh.  Containers are on base3
+;mech26			IN		CNAME	www	
+mech26			IN	A	196.12.53.130
+	
+;eee06                	IN		CNAME	www
+eee06                	IN	A	196.12.53.130
+	
+;mech08           	IN		CNAME	www
+mech08           	IN	A	196.12.53.130
+	
+;phy01            	IN		CNAME	www
+phy01            	IN	A	196.12.53.130
+	
+;chs13			IN		CNAME	www
+chs13			IN	A	196.12.53.130
+	
+;aerospaceengg		IN		CNAME	www
+aerospaceengg		IN	A	196.12.53.130
+	
+;combustion		IN		CNAME	www
+combustion		IN	A	196.12.53.130
+
+files			IN	A	196.12.53.130
+	
+
+;;Modified by Yogesh on March 03, 2016
+;;Container hosts t4e2015 website
+;t4e2015			IN		CNAME	www
+t4e2015			IN		A	196.12.53.130
+;t4e2015			IN		A	52.26.141.190
+;test.t4e2015		IN		A	196.12.53.130
+
+;;Added by Soumya on 2015-08-08 for renarration website on request by anon
+renarration		IN	A	196.12.53.130
+;; Labs deployed on Base3 for the deploy-clean up project on 14th April 2015.
+;; Added by Soumya.
+;cse04-iiith             IN      CNAME	www       
+cse04-iiith            IN	A	196.12.53.130 
+;cse06-iiith             IN      CNAME   www      
+cse06-iiith            IN	A	196.12.53.130 
+;cse07-iiith             IN      CNAME   www      
+cse07-iiith            IN	A	196.12.53.130 
+;cse09-iiith             IN      CNAME   www       
+cse09-iiith            IN	A	196.12.53.130 
+;cse05-iiith             IN      CNAME   www       
+cse05-iiith            IN	A	196.12.53.130 
+;cse13-iiith             IN      CNAME   www       
+cse13-iiith            IN	A	196.12.53.130 
+;cse16-iiith             IN      CNAME   www      
+cse16-iiith            IN	A	196.12.53.130 
+;cse17-iiith             IN      CNAME   www      
+cse17-iiith            IN	A	196.12.53.130 
+;cse21-iiith             IN      CNAME   www       
+cse21-iiith            IN	A	196.12.53.130 
+;cse24-iiith             IN      CNAME   www       
+cse24-iiith            IN	A	196.12.53.130 
+;cse30-iiith             IN      CNAME   www       
+cse30-iiith            IN	A	196.12.53.130 
+;eerc02-iiith            IN      CNAME   www       
+eerc02-iiith           IN	A	196.12.53.130 
+;eerc04-iiith            IN      CNAME   www       
+eerc04-iiith           IN	A	196.12.53.130 
+;eerc05-iiith            IN      CNAME   www       
+eerc05-iiith           IN	A	196.12.53.130 
+;cse23-iiith             IN      CNAME   www       
+cse23-iiith            IN	A	196.12.53.130 
+;cse10-iitkgp            IN      CNAME   www       
+cse10-iitkgp           IN	A	196.12.53.130 
+;civil13-iitb            IN      CNAME   www       
+civil13-iitb           IN	A	196.12.53.130 
+;ccnsb01-iiith           IN      CNAME   www       
+ccnsb01-iiith          IN	A	196.12.53.130 
+;ccnsb02-iiith           IN      CNAME   www       
+ccnsb02-iiith          IN	A	196.12.53.130 
+;ccnsb03-iiith           IN      CNAME   www      
+ccnsb03-iiith          IN	A	196.12.53.130 
+;ccnsb04-iiith           IN      CNAME   www      
+ccnsb04-iiith          IN	A	196.12.53.130 
+;ccnsb05-iiith           IN      CNAME   www      
+ccnsb05-iiith          IN	A	196.12.53.130 
+;ccnsb07-iiith           IN      CNAME   www      
+ccnsb07-iiith          IN	A	196.12.53.130 
+;mech01-iitg		IN	CNAME	www
+mech01-iitg	IN	A	196.12.53.130	
+;eee06-dei		IN	CNAME	www
+eee06-dei	IN	A	196.12.53.130	
+;vlabs-dependencies	IN	CNAME	www
+vlabs-dependencies IN	A	196.12.53.130	
+;redmine
+issues  	IN	A	196.12.53.130
+qa.vlead	IN	A	196.12.53.130
+feedback-stage	IN	A	196.12.53.130
+outreach-stage	IN	A	196.12.53.130
+vlead-wiki	IN	A	196.12.53.130
+webhooks        IN      A       196.12.53.130
+vlabs-dev        IN      A       196.12.53.130
+translators	IN	A	196.12.53.130
+resource-generator	IN	A	196.12.53.130
+content-server	IN	A	196.12.53.130
+csnginx		IN	A	196.12.53.130
+dev	         IN      CNAME   vlabs-dev
+staging-dev        IN      A       196.12.53.130
+ldappasswd.vlead   IN		A	196.12.53.130 ;; Added for ldap password change
+old-outreach    IN      A 196.12.53.130
+vlabs-stage	IN	A	196.12.53.130
+;;;;;;;;;;;;;;;;;;;;Amazon Cloud ;;;;;;;;;;;;;;;;;;
+;mage-processing        IN      A       196.12.53.130
+;ds	                IN      A       196.12.53.130
+;cpl                     IN      A       196.12.53.130
+;nagios                  IN      A       54.85.93.7
+;reverseproxy            IN      A       54.85.93.7
+;hybrid-electronic       IN      A       196.12.53.130
+;virtual-english         IN      A       196.12.53.130
+;cdpeslab                IN      A       196.12.53.130
+;mmlaboratory            IN      A       196.12.53.130
+;industrial-automation   IN      A       196.12.53.130
+;emt                     IN      A       196.12.53.130
+;nlp                     IN      A       196.12.53.130
+;dld                     IN      A       196.12.53.130
+;computer-graphics       IN      A       196.12.53.130
+;pattern-recognition     IN      A       196.12.53.130
+;cryptography            IN      A       196.12.53.130
+;metal-forming           IN      A       54.85.93.7
+;virtual-power           IN      A       54.85.93.7
+;artificial-nn		IN	A	54.85.93.7
+;geo			IN	A	54.85.93.7
+;iiith-co                IN      A       54.85.93.7
+;iiith-vlsi              IN      A       54.85.93.7
+;iitk-mrmst		IN	A	54.85.93.7
+;iitk-va                 IN      A       54.85.93.7
+;iitk-ufls               IN      A       54.85.93.7
+;iitk-ae                 IN      A       54.85.93.7
+;iitk-ca                 IN      A       54.85.93.7
+;integration-team	IN	A	54.85.93.7
+ansible			IN		A	52.4.150.142
+router			IN		A	54.85.93.7
+nagios			IN		A	54.85.93.7
+ads			IN		A	54.85.93.7
+ossec-server		IN		A	54.85.93.7
+reverseproxy		IN		A	54.85.93.7
+bandwidthd		IN		A	54.85.93.7
+stats			IN		A	54.85.93.7
+cse01-iiith		IN		A	54.85.93.7
+cse02-iiith		IN		A	54.85.93.7
+cse15-iiith		IN		A	54.85.93.7
+cse18-iiith		IN		A	54.85.93.7
+cse19-iiith		IN		A	54.85.93.7
+cse20-iiith		IN		A	54.85.93.7
+emt-iiith		IN		A	54.85.93.7
+cse29-iiith		IN		A	54.85.93.7
+cse22-iiith		IN		A	54.85.93.7
+cse11-iiith		IN		A	54.85.93.7
+cse14-iiith		IN		A	54.85.93.7
+eerc03-iiith		IN		A	54.85.93.7
+phy14-iiith		IN		A	54.85.93.7
+ccnsb06-iiith		IN		A	54.85.93.7
+eerc01-iiith		IN		A	54.85.93.7
+csc-iiith		IN		A	54.85.93.7
+bmi-iitr                IN              A       54.85.93.7
+bmsip-iitr              IN              A       54.85.93.7
+em-iitr                 IN              A       54.85.93.7
+sl-iitr                 IN              A       54.85.93.7
+va-iitk                 IN              A       54.85.93.7
+ufls-iitk               IN              A       54.85.93.7
+vlae-iitk               IN              A       54.85.93.7
+vcal-iitk               IN              A       54.85.93.7
+pev-au                  IN              A       54.85.93.7
+pevii-au                IN              A       54.85.93.7
+mrmsmtbs-iitk           IN              A       54.85.93.7
+ve-iitg			IN		A	54.85.93.7
+vem-iitg                IN              A       54.85.93.7
+ergonomics-iitg         IN              A       54.85.93.7
+anthropology-iitg       IN              A       54.85.93.7
+sl-coep		        IN              A       54.85.93.7
+plc-coep	        IN      	A       54.85.93.7
+em-coep 		IN      	A       54.85.93.7
+va-coep 		IN    		A       54.85.93.7
+mm-coep 		IN     		A       54.85.93.7
+fab-coep        	IN   		A       54.85.93.7
+bmsp-coep      		IN     		A       54.85.93.7
+ial-coep      		IN     		A       54.85.93.7
+ied-nitk                IN              A       54.85.93.7
+sa-nitk                 IN              A       54.85.93.7
+fm-nitk                 IN              A       54.85.93.7
+sm-nitk                 IN              A       54.85.93.7
+mm-nitk                 IN              A       54.85.93.7
+mdmv-nitk               IN              A       54.85.93.7
+uorepc-nitk             IN              A       54.85.93.7
+vssd-iitd               IN              A       54.85.93.7
+qnm-iitd                IN              A       54.85.93.7
+msvs-dei                IN              A       54.85.93.7
+vp-dei	                IN              A       54.85.93.7
+he-coep	                IN              A       54.85.93.7
+eem-iitd                IN              A       54.85.93.7
+pe-iitb	                IN              A       54.85.93.7
+ce-iitb	                IN              A       54.85.93.7
+ee-iitb	                IN              A       54.85.93.7
+vc-dei			IN		A	54.85.93.7
+ssl-iitg		IN		A	54.85.93.7
+eil-iitg                IN              A       54.85.93.7
+vlsi-iitg                IN              A       54.85.93.7
+htv-au                   IN              A       54.85.93.7
+emv-au                   IN              A       54.85.93.7
+cbII-au                  IN              A       54.85.93.7
+cbI-au                   IN              A       54.85.93.7
+ov-au                   IN              A       54.85.93.7
+outreach		IN		A	54.85.93.7
+outreach-demo           IN              A       54.85.93.7
+;old-outreach		IN		A	54.85.93.7
+;outreach-staging	IN		A	54.85.93.7
+;outreach-stage          IN              A       54.85.93.7
+data			IN		A	54.85.93.7
+feedback		IN		A	54.85.93.7
+feedback-new		IN		A	54.85.93.7
+mas-iiith               IN              A       54.85.93.7
+ps-iiith		IN		A	54.85.93.7
+smfe-iiith		IN		A       54.85.93.7
+mi-iiith		IN		A       54.85.93.7
+ge-iiith                IN              A       54.85.93.7
+bsa-iiith               IN              A       54.85.93.7
+ssp-iiith               IN              A       54.85.93.7
+cds-iiith               IN              A       54.85.93.7
+cl-iiith               	IN              A       54.85.93.7
+nlp-iiith               IN              A       54.85.93.7
+mfs-iiith               IN              A       54.85.93.7
+eerc01-iiith            IN              A       54.85.93.7
+sd-iiith                IN              A       54.85.93.7
+fmc-nitk                IN              A       54.85.93.7
+vmt-iitg                IN              A       54.85.93.7
+mfts-iitg               IN              A       54.85.93.7
+mv-iitg                 IN              A       54.85.93.7
+hci-iitg                IN              A       54.85.93.7
+tel-iitb                IN              A       54.85.93.7
+ml-iitb                 IN              A       54.85.93.7
+vm-dei			IN		A 	54.85.93.7	
+idte-dei		IN		A       54.85.93.7
+icv-au                  IN              A       54.85.93.7
+biotech01               IN              A       54.85.93.7
+mbvII-au                IN              A       54.85.93.7
+phy-sc22-au             IN              A       54.85.93.7
+pcv-au                  IN              A       54.85.93.7
+aacv-au                 IN              A       54.85.93.7
+ocv-au                  IN              A       54.85.93.7
+civ02                   IN              A       54.85.93.7
+vlabs-analytics                  IN              A       54.85.93.7
+analytics-api                  IN              A       54.85.93.7
+experiment-server                  IN              A       54.85.93.7
+
+
+courses			IN		A	54.183.54.86
+info			IN		A	54.193.31.73
+
+edx-courses		IN		A	52.67.24.251
+
+open-edx1		IN		A	54.183.50.1
+open-edx		IN		A	54.183.30.65
+openedx			IN		A	54.67.89.24  ;; Open edX Platform testing. This VM is running in US-west region. We can remove this entry once it is moved to prodction.
+
+platform                     IN              A       54.183.81.143
+;analytics-api                IN              A       52.53.189.188
+xblocks-test			IN		A	52.67.110.60
+notebook			IN		A	52.53.227.220
+;vlabs-analytics			IN	A	54.67.27.39
+elk-stack		IN		A	52.53.201.170
+
+vlabs-lms                IN              A      52.53.230.142
+vlabs-insights		IN		A	54.153.22.134
+
+
+
+
+
+
+
+$ORIGIN base1.virtual-labs.ac.in.
+@ IN NS ns.base1.virtual-labs.ac.in.
+public-dns      IN      A       196.12.53.130  ;glue record
+ns              IN      A       196.12.53.130
+
+;Subzone delegation of base1.vlabs.ac.in
+$ORIGIN base1.vlabs.ac.in.
+@ IN NS ns.base1.vlabs.ac.in.
+public-dns      IN      A       196.12.53.130 ;glue record
+ns              IN      A       196.12.53.130
+
+
+
+
+
+
+
+
+
+
+
+;Subzone delegation of base4.vlabs.ac.in
+$ORIGIN base4.virtual-labs.ac.in.
+@ IN NS public-dns.base4.virtual-labs.ac.in.
+
+public-dns IN A 196.12.53.130  ;glue record
+ns              IN      A	196.12.53.130
+$ORIGIN base4.vlabs.ac.in.
+@ IN NS public-dns.base4.vlabs.ac.in.
+
+public-dns IN A 196.12.53.130 ;glue record
+ns              IN      A       196.12.53.130

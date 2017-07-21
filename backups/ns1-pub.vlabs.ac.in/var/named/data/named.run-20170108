@@ -1,0 +1,422 @@
+reloading configuration succeeded
+reloading zones succeeded
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 141.212.122.68#49911: query (cache) 'c.afekv.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 208.115.109.170#58705: query (cache) 'poolsafely.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 74.82.47.14#59450: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 104.255.70.247#51917: query (cache) 'census.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 198.48.92.104#42381: query (cache) 'satellite.cs.washington.edu/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 74.82.47.2#58189: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 104.255.70.247#40398: query (cache) 'gransy.com/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 82.221.131.112#46524: query (cache) './ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 204.42.253.2#36823: query (cache) '8d457ccf.openresolvertest.net/A/IN' denied
+client 74.82.47.6#17414: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 104.255.70.247#59284: query (cache) 'defcon.org/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 191.96.249.49#33451: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 209.126.136.2#38694: query (cache) 'a.gtld-servers.net/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 185.35.62.49#60164: query (cache) 'www.google.com/A/IN' denied
+client 85.159.233.131#49359: query (cache) 'cpsc.gov/ANY/IN' denied
+client 106.184.2.29#27770: query (cache) 'www.qq.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 178.17.174.45#35363: query (cache) './ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 74.82.47.62#21511: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 104.255.70.247#51506: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 141.212.122.16#13259: zone transfer 'vlabs.ac.in/AXFR/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 208.115.109.170#34282: query (cache) 'defcongroups.org/ANY/IN' denied
+client 71.6.146.186#59536: query (cache) 'direct.shodan.io/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 45.32.87.30#59863: query (cache) 'sa6y.com/ANY/IN' denied
+client 141.212.122.36#45785: query (cache) 'c.afekv.com/A/IN' denied
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 218.241.98.198#33441: query (cache) 'cnnic.cn/A/IN' denied
+client 89.248.160.146#60493: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 185.55.218.243#53563: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 2.105.13.142#34427: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 74.82.47.38#18235: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+no IPv6 interfaces found
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017010601
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017010601)
+virtual-labs.ac.in.forward:394: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:416: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017010601
+zone vlabs.ac.in/IN: sending notifies (serial 2017010601)
+client 10.4.12.202#57564: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#57564: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR ended
+client 10.4.12.202#38684: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#38684: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR ended
+client 104.255.70.247#37072: query (cache) 'sema.cz/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 89.248.168.91#46933: query (cache) 'rnp.br/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 106.184.2.29#44636: query (cache) 'www.qq.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 45.76.4.135#42756: query (cache) './ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 74.82.47.50#35034: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 104.192.3.34#37447: query (cache) 'isc.org/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 134.147.203.115#29567: query (cache) 'lkjh.86350cc4.wc.syssec.rub.de/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 74.82.47.54#31763: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 204.42.253.2#52674: query (cache) '8d457ccf.openresolverproject.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 158.69.225.109#51719: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+no IPv6 interfaces found
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default

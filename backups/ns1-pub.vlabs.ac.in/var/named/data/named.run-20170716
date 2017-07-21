@@ -1,0 +1,825 @@
+reloading configuration succeeded
+reloading zones succeeded
+client 2.105.13.142#35659: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 78.129.171.187#58884: query (cache) 'defcon.org/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 106.184.2.29#33148: query (cache) 'www.qq.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 141.212.122.59#48960: query (cache) 'c.afekv.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 74.82.47.38#61277: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 5.34.183.44#57145: query (cache) 'x.privetrc.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 158.69.225.109#37379: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 94.102.52.76#43755: query (cache) '1x1.cz/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 178.62.207.238#57699: query (cache) './ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 191.96.249.49#43812: query (cache) 'cpsc.gov/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 93.174.93.30#49011: query (cache) 'defcongroups.org/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 183.56.172.145#20000: query (cache) '2251623620.www.baidu.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 107.6.121.148#57976: query (cache) 'rnp.br/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 204.42.253.2#58429: query (cache) '8d457ccf.openresolvertest.net/A/IN' denied
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017010601
+virtual-labs.ac.in.forward:394: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:416: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017010601
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33457
+running
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017010601)
+zone vlabs.ac.in/IN: sending notifies (serial 2017010601)
+error (network unreachable) resolving './DNSKEY/IN': 208.67.222.123#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 208.67.222.123#53
+error (network unreachable) resolving './DNSKEY/IN': 208.67.220.123#53
+error (network unreachable) resolving 'dlv.isc.org/DNSKEY/IN': 208.67.220.123#53
+managed-keys-zone ./IN: Unable to fetch DNSKEY set '.': failure
+managed-keys-zone ./IN: Unable to fetch DNSKEY set 'dlv.isc.org': failure
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+no longer listening on 127.0.0.1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017010601
+virtual-labs.ac.in.forward:394: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:416: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017010601
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33459
+running
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017010601)
+zone vlabs.ac.in/IN: sending notifies (serial 2017010601)
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+no longer listening on 127.0.0.1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017010601
+virtual-labs.ac.in.forward:394: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:416: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017010601
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33459
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017010601)
+zone vlabs.ac.in/IN: sending notifies (serial 2017010601)
+running
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+no longer listening on 127.0.0.1#53
+no longer listening on 10.4.12.161#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017010601
+virtual-labs.ac.in.forward:394: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:416: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017010601
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33459
+zone vlabs.ac.in/IN: sending notifies (serial 2017010601)
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017010601)
+running
+client 10.2.58.179#33683: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#33683: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#37854: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#37854: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#59461: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#59461: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#59461: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#59461: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#42107: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#42107: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+no longer listening on 127.0.0.1#53
+no longer listening on 10.4.12.161#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33459
+running
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017010601
+virtual-labs.ac.in.forward:394: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:416: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017010601
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33460
+running
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017010601)
+zone vlabs.ac.in/IN: sending notifies (serial 2017010601)
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 10.2.58.179#45837: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#43084: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#43084: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#45837: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#39055: query (cache) '1.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#39055: query (cache) '1.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#59975: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#39055: query (cache) '1.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#39055: query (cache) '1.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#59975: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#53533: query (cache) '1.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#53533: query (cache) '1.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#47487: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#53533: query (cache) '1.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#53533: query (cache) '1.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#47487: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#46464: query (cache) '2.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#46464: query (cache) '2.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#36975: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#46464: query (cache) '2.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#46464: query (cache) '2.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#36975: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#38641: query (cache) '2.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#38641: query (cache) '2.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#38641: query (cache) '2.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#38641: query (cache) '2.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#52712: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#52712: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#45937: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#45937: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#45937: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#45937: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#51633: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#35945: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#51633: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#35945: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#35945: query (cache) '0.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#35945: query (cache) '0.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#36435: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#37885: query (cache) '3.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#37885: query (cache) '3.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#36435: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#37885: query (cache) '3.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#37885: query (cache) '3.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#33357: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#50122: query (cache) '3.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#50122: query (cache) '3.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#33357: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.4.12.161#43567: query (cache) 'ftp.iitm.ac.in/A/IN' denied
+client 10.4.12.161#43567: query (cache) 'ftp.iitm.ac.in/AAAA/IN' denied
+client 10.2.58.179#50122: query (cache) '3.ubuntu.pool.ntp.org/AAAA/IN' denied
+client 10.2.58.179#50122: query (cache) '3.ubuntu.pool.ntp.org/A/IN' denied
+client 10.2.58.179#54047: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.4.12.161#43567: query (cache) 'ftp.iitm.ac.in/A/IN' denied
+client 10.4.12.161#43567: query (cache) 'ftp.iitm.ac.in/AAAA/IN' denied
+client 10.2.58.179#56631: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#56631: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#54047: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.4.12.161#42952: query (cache) 'centos.excellmedia.net/A/IN' denied
+client 10.4.12.161#42952: query (cache) 'centos.excellmedia.net/AAAA/IN' denied
+client 10.4.12.161#42952: query (cache) 'centos.excellmedia.net/AAAA/IN' denied
+client 10.4.12.161#42952: query (cache) 'centos.excellmedia.net/A/IN' denied
+client 10.2.58.179#56631: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#56631: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#41084: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.4.12.161#41242: query (cache) 'mirror.nbrc.ac.in/A/IN' denied
+client 10.4.12.161#41242: query (cache) 'mirror.nbrc.ac.in/AAAA/IN' denied
+client 10.2.58.179#49602: query (cache) 'daisy.ubuntu.com/A/IN' denied
+client 10.2.58.179#49602: query (cache) 'daisy.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#56505: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#56505: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#41084: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.4.12.161#41242: query (cache) 'mirror.nbrc.ac.in/A/IN' denied
+client 10.4.12.161#41242: query (cache) 'mirror.nbrc.ac.in/AAAA/IN' denied
+client 10.2.58.179#49602: query (cache) 'daisy.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#49602: query (cache) 'daisy.ubuntu.com/A/IN' denied
+client 10.2.58.179#56505: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#56505: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#53603: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.4.12.161#46262: query (cache) 'mirror.vbctv.in/A/IN' denied
+client 10.4.12.161#46262: query (cache) 'mirror.vbctv.in/AAAA/IN' denied
+client 10.4.12.161#46262: query (cache) 'mirror.vbctv.in/A/IN' denied
+client 10.4.12.161#46262: query (cache) 'mirror.vbctv.in/AAAA/IN' denied
+client 10.2.58.179#45278: query (cache) 'daisy.ubuntu.com/A/IN' denied
+client 10.2.58.179#45278: query (cache) 'daisy.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#57739: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#57739: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#53603: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#45278: query (cache) 'daisy.ubuntu.com/A/IN' denied
+client 10.2.58.179#45278: query (cache) 'daisy.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#57739: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#57739: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#47989: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#39524: query (cache) 'daisy.ubuntu.com/A/IN' denied
+client 10.2.58.179#39524: query (cache) 'daisy.ubuntu.com/AAAA/IN' denied
+client 10.2.58.179#53717: query (cache) 'ntp.ubuntu.com/A/IN' denied
+client 10.2.58.179#53717: query (cache) 'ntp.ubuntu.com/AAAA/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 209.126.136.2#48213: query (cache) 'a.gtld-servers.net/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 34.229.46.79#11037: query (cache) 'www.yahoo.com/A/IN' denied
+client 62.112.10.242#54592: query (cache) 'hoffmeister.be/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 198.20.69.74#57638: query (cache) 'direct.shodan.io/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 62.112.10.242#60342: query (cache) 'leth.cc/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 62.112.10.242#34635: query (cache) '1x1.cz/ANY/IN' denied
+client 74.82.47.34#17984: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 94.177.180.119#80: query (cache) 'cg2.pw/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 10.2.58.179#53182: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#42447: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#37979: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#42083: query (cache) 'google.com/A/IN' denied
+client 10.2.58.179#36014: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#36014: query (cache) 'proxy.iiit.ac.in/AAAA/IN' denied
+client 10.2.58.179#39772: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#39772: query (cache) 'proxy.iiit.ac.in/AAAA/IN' denied
+client 10.2.58.179#46469: query (cache) 'proxy.iiit.ac.in/AAAA/IN' denied
+client 10.2.58.179#46469: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#58798: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#58798: query (cache) 'proxy.iiit.ac.in/AAAA/IN' denied
+client 10.2.58.179#47451: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#47451: query (cache) 'proxy.iiit.ac.in/AAAA/IN' denied
+client 10.2.58.179#44085: query (cache) 'proxy.iiit.ac.in/A/IN' denied
+client 10.2.58.179#44085: query (cache) 'proxy.iiit.ac.in/AAAA/IN' denied
+received control channel command 'stop'
+shutting down: flushing changes
+stopping command channel on 127.0.0.1#953
+stopping command channel on ::1#953
+no longer listening on 127.0.0.1#53
+no longer listening on 10.4.12.161#53
+no longer listening on ::1#53
+exiting
+zone 0.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:403: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:422: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:425: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017071301
+virtual-labs.ac.in.forward:395: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:397: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:417: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:420: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017071301
+zone localhost.localdomain/IN: loaded serial 0
+zone localhost/IN: loaded serial 0
+managed-keys-zone ./IN: loaded serial 33493
+zone vlabs.ac.in/IN: sending notifies (serial 2017071301)
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017071301)
+running
+client 10.4.12.202#47848: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#47848: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR ended
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 10.4.12.202#48125: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#48125: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR ended
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:403: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:404: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:423: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:425: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:426: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017071302
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017071302)
+client 10.4.12.202#52562: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR started
+virtual-labs.ac.in.forward:396: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:397: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:398: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:418: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:420: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017071302
+client 10.4.12.202#52562: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR ended
+zone vlabs.ac.in/IN: sending notifies (serial 2017071302)
+client 10.4.12.202#58832: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#58832: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR ended
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+virtual-labs.ac.in.forward:403: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:404: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:405: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:426: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:427: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017071303
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017071303)
+client 10.4.12.202#55883: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR started
+virtual-labs.ac.in.forward:397: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:398: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:399: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:419: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:421: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:422: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+client 10.4.12.202#55883: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR ended
+zone vlabs.ac.in/IN: loaded serial 2017071303
+zone vlabs.ac.in/IN: sending notifies (serial 2017071303)
+client 10.4.12.202#56482: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#56482: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR ended
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 191.96.249.12#39593: query (cache) 'leth.cc/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 141.212.122.58#39894: query (cache) 'c.afekv.com/A/IN' denied
+client 74.82.47.30#10048: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 162.244.80.70#48725: query (cache) './ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 185.188.204.13#48598: query (cache) 'leth.cc/ANY/IN' denied
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+virtual-labs.ac.in.forward:406: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:407: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:408: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:427: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:429: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:430: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017071403
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017071403)
+virtual-labs.ac.in.forward:400: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:401: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:402: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:422: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:424: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:425: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+client 10.4.12.202#35882: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR started
+zone vlabs.ac.in/IN: loaded serial 2017071403
+zone vlabs.ac.in/IN: sending notifies (serial 2017071403)
+client 10.4.12.202#35882: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR ended
+client 10.4.12.202#49224: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#49224: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR ended
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 185.188.204.13#58168: query (cache) 'hoffmeister.be/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 141.212.122.48#11520: zone transfer 'vlabs.ac.in/AXFR/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+virtual-labs.ac.in.forward:410: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:411: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:412: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:431: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:433: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:434: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: loaded serial 2017071404
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017071404)
+virtual-labs.ac.in.forward:404: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:405: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:406: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+client 10.4.12.202#47261: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR started
+virtual-labs.ac.in.forward:426: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:428: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:429: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: loaded serial 2017071404
+zone vlabs.ac.in/IN: sending notifies (serial 2017071404)
+client 10.4.12.202#47261: transfer of 'virtual-labs.ac.in/IN': AXFR-style IXFR ended
+client 10.4.12.202#43800: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR started
+client 10.4.12.202#43800: transfer of 'vlabs.ac.in/IN': AXFR-style IXFR ended
+client 185.188.204.13#51830: query (cache) 'activum.nu/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+virtual-labs.ac.in.forward:413: ignoring out-of-zone data (base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:414: ignoring out-of-zone data (public-dns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:415: ignoring out-of-zone data (ns.base1.vlabs.ac.in)
+virtual-labs.ac.in.forward:434: ignoring out-of-zone data (base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:436: ignoring out-of-zone data (public-dns.base4.vlabs.ac.in)
+virtual-labs.ac.in.forward:437: ignoring out-of-zone data (ns.base4.vlabs.ac.in)
+zone virtual-labs.ac.in/IN: zone serial (2017071404) unchanged. zone may fail to transfer to slaves.
+zone virtual-labs.ac.in/IN: loaded serial 2017071404
+zone virtual-labs.ac.in/IN: sending notifies (serial 2017071404)
+virtual-labs.ac.in.forward:407: ignoring out-of-zone data (base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:408: ignoring out-of-zone data (public-dns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:409: ignoring out-of-zone data (ns.base1.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:429: ignoring out-of-zone data (base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:431: ignoring out-of-zone data (public-dns.base4.virtual-labs.ac.in)
+virtual-labs.ac.in.forward:432: ignoring out-of-zone data (ns.base4.virtual-labs.ac.in)
+zone vlabs.ac.in/IN: zone serial (2017071404) unchanged. zone may fail to transfer to slaves.
+zone vlabs.ac.in/IN: loaded serial 2017071404
+zone vlabs.ac.in/IN: sending notifies (serial 2017071404)
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 54.158.136.108#36704: query (cache) 'www.yahoo.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default
+reloading configuration succeeded
+reloading zones succeeded
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 54.152.26.99#34969: query (cache) 'www.yahoo.com/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 71.6.167.142#44652: query (cache) 'direct.shodan.io/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 74.82.47.30#44007: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 101.100.146.140#45965: query (cache) 'activum.nu/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 141.212.122.48#52115: zone transfer 'vlabs.ac.in/AXFR/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 134.147.203.115#30107: query (cache) '6jbt.86350cc4.wc.syssec.rub.de/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 185.188.204.13#59370: query (cache) 'leth.cc/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+client 198.20.69.74#52926: query (cache) 'direct.shodan.io/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 74.82.47.6#8052: query (cache) 'dnsscan.shadowserver.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 185.188.204.13#37549: query (cache) 'activum.nu/ANY/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+client 129.250.206.86#12995: query (cache) '8d457ccf.openresolverproject.org/A/IN' denied
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for 'dlv.isc.org': success
+managed-keys-zone ./IN: No DNSKEY RRSIGs found for '.': success
+received control channel command 'reload'
+loading configuration from '/etc/named.conf'
+reading built-in trusted keys from file '/etc/named.iscdlv.key'
+using default UDP/IPv4 port range: [1024, 65535]
+using default UDP/IPv6 port range: [1024, 65535]
+sizing zone task pool based on 8 zones
+using built-in DLV key for view _default

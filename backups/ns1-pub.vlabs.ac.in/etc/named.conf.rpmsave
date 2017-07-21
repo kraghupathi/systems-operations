@@ -1,0 +1,73 @@
+//
+// named.conf
+//
+// Provided by Red Hat bind package to configure the ISC BIND named(8) DNS
+// server as a caching only nameserver (as a localhost DNS resolver only).
+//
+// See /usr/share/doc/bind*/sample/ for example named configuration files.
+//
+
+options {
+	listen-on port 53 { 127.0.0.1; 10.4.12.161;};
+	listen-on-v6 port 53 { ::1;  };
+	directory 	"/var/named";
+	dump-file 	"/var/named/data/cache_dump.db";
+        statistics-file "/var/named/data/named_stats.txt";
+        memstatistics-file "/var/named/data/named_mem_stats.txt";
+	allow-query     { 127.0.0.1; localhost; 10.0.0.0/8; any; }; //allow query from anyone
+	recursion no; //external/public server so no recursion, if needed set it per view
+	filter-aaaa-on-v4 yes;
+
+	forwarders {208.67.222.123; 208.67.220.123; };
+	forward only;
+
+	dnssec-enable no;
+	dnssec-validation no;
+	dnssec-lookaside auto;
+
+	/* Path to ISC DLV key */
+	bindkeys-file "/etc/named.iscdlv.key";
+
+	managed-keys-directory "/var/named/dynamic";
+};
+
+logging {
+        channel default_debug {
+                file "data/named.run";
+                severity dynamic;
+        };
+};
+
+#view "external" {
+#
+#	//options in the view override the global options, and options in the zone override everything else
+#	match-clients		{ !10.0.0.0/8; };  //Any one can query
+#	allow-query		{ any; };  //default, allows any hosts to query
+#	recursion		no;	 //as this is a public DNS
+#	notify			yes;	//notifies all slave DNSs found in the zones about their records
+
+
+	zone "virtual-labs.ac.in." IN {
+		type master;
+		file "virtual-labs.ac.in.forward";
+		allow-transfer {10.4.12.202; 127.0.0.1; }; //allow tranfer to localhost and slave .202, default is any
+		also-notify { 10.4.12.202; };
+};
+
+	zone "vlabs.ac.in." IN {
+		type master;
+		file "virtual-labs.ac.in.forward";
+		allow-transfer {10.4.12.202; 127.0.0.1; };
+		also-notify { 10.4.12.202; };
+};
+
+
+	zone "." IN {
+		type hint;
+		file "named.ca";
+};
+
+include "/etc/named.rfc1912.zones";
+include "/etc/named.root.key";
+
+#};  //end of view external
