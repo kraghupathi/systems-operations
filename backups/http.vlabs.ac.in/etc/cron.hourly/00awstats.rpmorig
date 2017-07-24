@@ -1,0 +1,109 @@
+#!/bin/bash
+
+if [ -f /var/log/httpd/access_log ] ; then
+    grep cse01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse01.virtual-labs.ac.in-access_log
+    grep cse02 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse02.virtual-labs.ac.in-access_log
+    grep cse03 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse03.virtual-labs.ac.in-access_log
+    grep cse04 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse04.virtual-labs.ac.in-access_log
+    grep cse05 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse05.virtual-labs.ac.in-access_log
+    grep cse06 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse06.virtual-labs.ac.in-access_log
+    grep cse07 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse07.virtual-labs.ac.in-access_log
+    grep cse08 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse08.virtual-labs.ac.in-access_log
+    grep cse09 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse09.virtual-labs.ac.in-access_log
+    grep cse10 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse10.virtual-labs.ac.in-access_log
+    grep cse11 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse11.virtual-labs.ac.in-access_log
+    grep cse12 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse12.virtual-labs.ac.in-access_log
+    grep cse13 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse13.virtual-labs.ac.in-access_log
+    grep cse14 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse14.virtual-labs.ac.in-access_log
+    grep cse15 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse15.virtual-labs.ac.in-access_log
+    grep cse16 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse16.virtual-labs.ac.in-access_log
+    grep cse17 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse17.virtual-labs.ac.in-access_log
+    grep cse18 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse18.virtual-labs.ac.in-access_log
+    grep cse19 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse19.virtual-labs.ac.in-access_log
+    grep cse20 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse20.virtual-labs.ac.in-access_log
+    grep cse21 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse21.virtual-labs.ac.in-access_log
+    grep cse22 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse22.virtual-labs.ac.in-access_log
+    grep cse23 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse23.virtual-labs.ac.in-access_log
+    grep cse24 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse24.virtual-labs.ac.in-access_log
+    grep cse25 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse25.virtual-labs.ac.in-access_log
+    grep cse26 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse26.virtual-labs.ac.in-access_log
+    grep cse27 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse27.virtual-labs.ac.in-access_log
+    grep cse28 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse28.virtual-labs.ac.in-access_log
+    grep cse29 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse29.virtual-labs.ac.in-access_log
+    grep cse30 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/cse30.virtual-labs.ac.in-access_log
+
+    grep ece01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece01.virtual-labs.ac.in-access_log
+    grep ece02 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece02.virtual-labs.ac.in-access_log
+    grep ece03 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece03.virtual-labs.ac.in-access_log
+    grep ece04 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece04.virtual-labs.ac.in-access_log
+    grep ece05 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece05.virtual-labs.ac.in-access_log
+    grep ece06 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece06.virtual-labs.ac.in-access_log
+    grep ece07 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece07.virtual-labs.ac.in-access_log
+    grep ece08 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece08.virtual-labs.ac.in-access_log
+    grep ece09 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece09.virtual-labs.ac.in-access_log
+    grep ece10 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece10.virtual-labs.ac.in-access_log
+    grep ece11 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece11.virtual-labs.ac.in-access_log
+
+    grep bio15 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/bio15.virtual-labs.ac.in-access_log
+    grep bio16 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/bio16.virtual-labs.ac.in-access_log
+	grep ccnsb01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb01.virtual-labs.ac.in-access_log
+	grep ccnsb02 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb02.virtual-labs.ac.in-access_log
+	grep ccnsb03 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb03.virtual-labs.ac.in-access_log
+	grep ccnsb04 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb04.virtual-labs.ac.in-access_log
+	grep ccnsb05 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb05.virtual-labs.ac.in-access_log
+	grep ccnsb06 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb06.virtual-labs.ac.in-access_log
+	grep ccnsb07 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ccnsb07.virtual-labs.ac.in-access_log
+
+	grep chem01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/chem01.virtual-labs.ac.in-access_log
+
+
+	grep civil09 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/civil09.virtual-labs.ac.in-access_log
+	grep civil13 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/civil13.virtual-labs.ac.in-access_log
+   	grep civil15 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/civil15.virtual-labs.ac.in-access_log
+	grep civil16 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/civil16.virtual-labs.ac.in-access_log
+
+    grep engg01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/engg01.virtual-labs.ac.in-access_log
+
+    grep hss01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/hss01.virtual-labs.ac.in-access_log
+    grep hss02 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/hss02.virtual-labs.ac.in-access_log
+    grep hss03 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/hss03.virtual-labs.ac.in-access_log
+
+    grep mech01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/mech01.virtual-labs.ac.in-access_log
+    grep mech04 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/mech04.virtual-labs.ac.in-access_log
+    grep mech17 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/mech17.virtual-labs.ac.in-access_log
+    grep mech18 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/mech18.virtual-labs.ac.in-access_log
+
+    grep phy14 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/phy14.virtual-labs.ac.in-access_log
+    grep phy19 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/phy19.virtual-labs.ac.in-access_log
+
+    grep sample1 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/sample1.virtual-labs.ac.in-access_log
+    grep sample13 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/sample13.virtual-labs.ac.in-access_log
+    grep sample16 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/sample16.virtual-labs.ac.in-access_log
+    grep sample2 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/sample2.virtual-labs.ac.in-access_log
+    grep sample20 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/sample20.virtual-labs.ac.in-access_log
+    grep sample21 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/sample21.virtual-labs.ac.in-access_log
+
+    grep ece18 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece18.virtual-labs.ac.in-access_log
+    grep ece19 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece19.virtual-labs.ac.in-access_log
+    grep ece21 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece21.virtual-labs.ac.in-access_log
+    grep ece26 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/ece26.virtual-labs.ac.in-access_log
+    grep eee03 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee03.virtual-labs.ac.in-access_log
+    grep eee05 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee05.virtual-labs.ac.in-access_log
+    grep eee07 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee07.virtual-labs.ac.in-access_log
+    grep eee08 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee08.virtual-labs.ac.in-access_log
+    grep eee09 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee09.virtual-labs.ac.in-access_log
+    grep eee10 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee10.virtual-labs.ac.in-access_log
+    grep eee12 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eee12.virtual-labs.ac.in-access_log
+    grep eerc01 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eerc01.virtual-labs.ac.in-access_log
+    grep eerc02 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eerc02.virtual-labs.ac.in-access_log
+    grep eerc03 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eerc03.virtual-labs.ac.in-access_log
+    grep eerc04 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eerc04.virtual-labs.ac.in-access_log
+    grep eerc05 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eerc05.virtual-labs.ac.in-access_log
+    grep eerc06 /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/eerc06.virtual-labs.ac.in-access_log
+    grep emt /var/log/httpd/deploy.virtual-labs.ac.in-access_log > /var/log/httpd/emt.virtual-labs.ac.in-access_log
+   
+
+    exec /usr/bin/awstats_updateall.pl now         -confdir="/etc"         -awstatsprog="/var/www/awstats/awstats.pl" >/dev/null
+fi
+
+exit 0

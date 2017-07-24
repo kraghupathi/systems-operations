@@ -1,0 +1,2 @@
+none	/dev/pts	devpts	rw,gid=5,mode=620	0	0
+none	/dev/shm	tmpfs	defaults		0	0

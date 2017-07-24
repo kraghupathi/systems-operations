@@ -1,0 +1,11 @@
+/var/log/httpd/*log {
+#The rotate vlaue was added on 19/08/2015, for having logs as far as 400 weeks
+    rotate 400
+    missingok
+    notifempty
+    sharedscripts
+    delaycompress
+    postrotate
+        /sbin/service httpd reload > /dev/null 2>/dev/null || true
+    endscript
+}

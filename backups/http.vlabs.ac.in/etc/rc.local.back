@@ -1,0 +1,39 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+
+#Add default gw as router.virtual-labs.ac.in for Internet access
+#route add default gw 10.4.12.155
+
+# Add two tables (SIFY & STPI) in /etc/iproute2/rt_tables
+# Build a route to the gateway and build a default route via that gateway in a separate table per provider. Note that the network route suffices, as it tells you how to find any host in that network, which includes the gateway.
+
+ip route add 119.226.28.160/28 dev eth1 src 10.4.12.159 table SIFY
+ip route add default via 10.4.12.155 table SIFY
+ip route add 196.12.53.128/28 dev eth2 src 10.4.13.159 table STPI
+ip route add default via 10.4.12.236 table STPI
+
+#Set up the main routing table to use appropriate nearest gateway for local routing
+
+ip route add 119.226.28.160/28 dev eth1 src 10.4.12.159
+ip route add 196.12.53.128/28 dev eth2 src 10.4.13.159
+
+# Set default route to load balance between the two
+
+ip route add default scope global nexthop via 10.4.12.236 dev eth2 nexthop via 10.4.12.155 dev eth1
+
+# Routing rules - for the interface to use appropriate tables
+ip rule add from 10.4.12.159 table SIFY
+ip rule add from 10.4.13.159 table STPI
+
+
+#Add routes for local networks via Local L3 Gateway
+route add -net 10.0.0.0/8 gw 10.4.12.1
+route add -net 172.16.0.0/12 gw 10.4.12.1
+route add -net 192.168.0.0/16 gw 10.4.12.1
+
+
