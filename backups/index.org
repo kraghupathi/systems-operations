@@ -14,3 +14,7 @@
             that, even if you loose regular backup on physical
             machine( rsnapshot)( worst case), we can get backup from
             the backups that are version controled
+* How to restore from backup
+  To restore containers from backup configuration files ( which are
+  checked into bitbucket) use the following steps written in
+  [[../projects/report-on-base2-down.org][steps to restore]]
