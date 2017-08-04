@@ -53,6 +53,14 @@
     backed up.
   - Till today ( 2017/07/27 ), all files are getting backed up in
     =/mnt/das1/backup-snapshots/=.
+** Cronjobs on base3 for root
+   #+BEGIN_EXAMPLE
+   0 1,5,9,13,17,21 * * *       /usr/bin/rsnapshot hourly
+   45 23 * * *       /usr/bin/rsnapshot daily
+   30 22 * * 0       /usr/bin/rsnapshot weekly
+   10 3 16 * *       /usr/bin/rsnapshot monthly
+   5 11,15 * * * /usr/bin/tail /var/log/rsnapshot
+   #+END_EXAMPLE
 * BASE4
   - BASE4 machine is for Testing environment for VLEAD employees
   - It also has =/mnt/san1= storage to have backups. But as of today,
@@ -134,7 +142,6 @@
 
 
 
-  
 * How to restore from the backup files
   Please refer the file [[../projects/report-on-base2-down.org][restoring-steps.org]] for restoring VLEAD
   servers from backups.

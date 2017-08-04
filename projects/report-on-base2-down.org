@@ -108,7 +108,19 @@
     chown -R ldap:ldap /var/lib/ldap
     service slapd start
     #+END_EXAMPLE
-
+**** Set cronjob in LDAP server for LDAP database backup
+     - Set cronjob in LDAP server for LDAP database backup in root
+       account.
+     #+BEGIN_EXAMPLE
+     0 23 6 * * sh ~/ldap_database/ldap_database_backup.sh
+     #+END_EXAMPLE
+     The above cronjob runs every 23rd hour, 6th day of every month
+     - =ldap_database_backup.sh= file has following content
+       #+BEGIN_EXAMPLE
+       cd ~/ldap_database/
+       /usr/sbin/slapcat -l ldap_database-$(date +'%Y-%m-%d').ldif -f /etc/openldap/slapd.conf
+       cd ..
+       #+END_EXAMPLE
 *** On Host/Base3 machine
     #+BEGIN_EXAMPLE
     rsync /mnt/das1/restore/ldap.virtual-labs.ac.in/vz/private/13165/etc/ /vz/private/13165/etc/
