@@ -29,5 +29,8 @@
     1 23 * * * /usr/bin/rsync -ir --progress -e "ssh -i ~/OpenedX.pem" ubuntu@13.56.35.86:backup-* ~/backup/edx-production-backup/
     #+END_EXAMPLE
     + This backup again backed up in =/mnt/san1/=
-
+* Restoration
+  Once we have backup, to restore production courses from this
+  backup. To dump databases into new edx platform refer this link
+  https://github.com/openedx-vlead/port-labs-to-openedx/blob/master/src/platform-install-configure/backup.org
 
