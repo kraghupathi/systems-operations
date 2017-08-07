@@ -1,0 +1,33 @@
+#+Title: Backup of Production server ( vlabs.ac.in) 
+* Introduction
+  Backup the production server ( vlabs.ac.in ) databases and this
+  backup can be restored again on edx-platform.
+
+  OpenedX platform uses two databases, they are 1. mysql
+  and 2. mongodb.
+* Implement
+  - Backup script =backup-script.sh=
+    - Write shell script =backup-script.sh= for taking backup
+      #+BEGIN_EXAMPLE
+      mkdir ~/backup-$(date +'%Y-%m-%d')
+      cd ~/backup-$(date +'%Y-%m-%d')
+      sudo mysqldump -u root --all-databases > ./backup.sql
+      sudo mongodump -o ./mongo-backup
+      #+END_EXAMPLE
+    - Set cronjob
+      #+BEGIN_EXAMPLE
+      0 23 * * * sh ~/backup-script.sh
+      #+END_EXAMPLE
+      
+      - Cronjob runs everyday at 23:00 ( 11:00 PM IST)
+ 
+  - Rsync this backup from OpenedX platform to IIIT-Hyderabad
+    Infrastructure. 
+    + Add a cronjob in ssh-tunnel container ( which is running on
+      base3 machine)
+    #+BEGIN_EXAMPLE
+    1 23 * * * /usr/bin/rsync -ir --progress -e "ssh -i ~/OpenedX.pem" ubuntu@13.56.35.86:backup-* ~/backup/edx-production-backup/
+    #+END_EXAMPLE
+    + This backup again backed up in =/mnt/san1/=
+
+
