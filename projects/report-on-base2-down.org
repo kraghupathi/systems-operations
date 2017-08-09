@@ -191,12 +191,10 @@
     rsync -ar --progress /mnt/das1/restore/http.virtual-labs.ac.in/vz/private/12159/var/ /vz/private/12159/var/
     #+END_EXAMPLE
 
-** TODO Pascal
 *** On base/host machine
     #+BEGIN_EXAMPLE
     vzctl create 12159 --ostemplate centos-6-x86_64 --hostname http.virtual-labs.ac.in --diskspace 10G:20G    
     #+END_EXAMPLE
-** TODO vlead-assets
 ** Pascal
    #+BEGIN_EXAMPLE
    vzctl create 12165 --ostemplate centos-6-x86_64 --hostname pascal.vlabs.ac.in --diskspace 300G:350G    
@@ -210,6 +208,7 @@
     rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/home/* /vz/private/12165/home/ (in process)
     vzctl restart 12165
     #+END_EXAMPLE
+** TODO vlead-assets
 * What we have?
   We have backup configuration files of following containers at
   =/mnt/san1/backup_snapshots/= till *11th Jan 2017*. We have no idea
