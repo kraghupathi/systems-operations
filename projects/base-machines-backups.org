@@ -1,4 +1,4 @@
-#+Title: Backups
+#+Title: Backups of IIIT-Hyderabad Base machines' containers
 #+Author: VLEAD Systems Team
 * Introduction
   Purpose of this document/project is to have backups of VLEAD servers
@@ -65,83 +65,6 @@
   - BASE4 machine is for Testing environment for VLEAD employees
   - It also has =/mnt/san1= storage to have backups. But as of today,
     there are no backups happening on base4 machine.
-* AWS-Backups-Production.
-  - On AWS( Amazon Web Services ), various production servers are
-    running. they are
-    1. router 
-    2. osse-server 
-    3. public-dns
-    4. Private-dns
-    5. reverse proxy
-    6. nagios
-    7. rsnapshot
-    8. Outreach portal ( outreach.vlabs.ac.in )
-    9. analytics-server( stats.vlabs.ac.in )
-    10. feedback.vlabs.ac.in
-
-   
-  All the above servers configuration files and databases from
-  outreach-portal and feedback servers are backed up in
-  rsnapshot-server. 
-
-** Backup of Backup( rsnapshot) serever
-   In rnsnapshot server has all back ups of production servers, so
-   need to be backed up this server in IIIT-H infrastructure.
-   
-   + I have done following steps
-     1. Added NAT rule in Router vm
-	#+BEGIN_EXAMPLE
-	#Forward incoming SSH connection on TCP port 2424 to rsnapshot server
-	-A PREROUTING -d 10.100.1.1 -p tcp -m tcp --dport 2424 -j DNAT --to-destination 10.100.1.10:22
-	#+END_EXAMPLE
-	#+BEGIN_EXAMPLE
-	service iptables restart
-	#+END_EXAMPLE
-
-     2. Update Security-Group on AWS router VM
-	 Accept connections on tcp port number 2424	from
-         196.12.53.130/32, 10.100.0.0/22	
-     3. Added another Firewall rule in rsnapshot-server in
-           =/etc/sysconfig/iptables=
-	   #+BEGIN_EXAMPLE
-	   #Allow incoming connections from http container on base on TCP port 22
-	   -A INPUT -m state --state NEW -s 196.12.53.130 -p tcp -m tcp --dport 22 -j ACCEPT
-	   #+END_EXAMPLE
-	   #+BEGIN_EXAMPLE
-	   service restart iptables
-	   #+END_EXAMPLE
-
-     4. From ssh-tunnel from shankar account.
-	   #+BEGIN_EXAMPLE
-	   /usr/bin/rsync -azvv -e "ssh -p 2424 -i /home/shankar/aa1.pem"  root@54.85.93.7:/.snapshots/hourly.0   /home/shankar/backup/aws-backup/ --exclude ads/ --exclude reverseproxy/awstats/ --exclude reverseproxy/var/
-	   #+END_EXAMPLE
-	In above command, excluding some of the files, because we
-	will have the same files from =stats.vlabs.ac.in= in the
-	backup
-     5. ssh-tunnel automatically backed up into
-           =/mnt/san1/backup_snapshots/=
-     6. Added cronjob too in ssh-tunnel
-	- =script.sh=
-	#+BEGIN_EXAMPLE
-	/usr/bin/rsync -azvv -e "ssh -p 2424 -i /home/shankar/aa1.pem"  root@54.85.93.7:/.snapshots/hourly.0   /home/shankar/backup/aws-backup/ --exclude ads/ --exclude reverseproxy/awstats/ --exclude reverseproxy/var/ > logs.txt 2>&1
-	#+END_EXAMPLE
-	- cron job added in crontab using =crontab -e=
-	#+BEGIN_EXAMPLE
-	0 23 * * * sh /home/shankar/backup/aws-backup/script.sh
-	#+END_EXAMPLE
-   
-	
-   - So we have backup of backup server ( production AWS-rsnapshot
-     server) in ssh-tunnel in
-     =/home/shankar/backup/aws-backup/=. Again, these backups are
-     rsynced to
-     =/mnt/san1/backup-snapshots/hourly.0/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/home/shankar/backup/aws-backup/hourly.0/=
-
-  
-  
-
-
-
 * How to restore from the backup files
   Please refer the file [[../projects/report-on-base2-down.org][restoring-steps.org]] for restoring VLEAD
   servers from backups.

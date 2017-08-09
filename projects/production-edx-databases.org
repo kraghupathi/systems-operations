@@ -9,8 +9,8 @@
   - Backup script =backup-script.sh=
     - Write shell script =backup-script.sh= for taking backup
       #+BEGIN_EXAMPLE
-      mkdir ~/backup-$(date +'%Y-%m-%d')
-      cd ~/backup-$(date +'%Y-%m-%d')
+      mkdir ~/backup-edx
+      cd ~/backup-edx
       sudo mysqldump -u root --all-databases > ./backup.sql
       sudo mongodump -o ./mongo-backup
       #+END_EXAMPLE
@@ -26,7 +26,7 @@
     + Add a cronjob in ssh-tunnel container ( which is running on
       base3 machine)
     #+BEGIN_EXAMPLE
-    1 23 * * * /usr/bin/rsync -ir --progress -e "ssh -i ~/OpenedX.pem" ubuntu@13.56.35.86:backup-* ~/backup/edx-production-backup/
+    1 23 * * * /usr/bin/rsync -ir --progress -e "ssh -i /home/shankar/OpenedX.pem" ubuntu@13.56.35.86:backup-edx ~/backup/edx-production-backup/
     #+END_EXAMPLE
     + This backup again backed up in =/mnt/san1/=
 * Restoration
