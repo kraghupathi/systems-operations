@@ -198,15 +198,35 @@
 ** Pascal
    #+BEGIN_EXAMPLE
    vzctl create 12165 --ostemplate centos-6-x86_64 --hostname pascal.vlabs.ac.in --diskspace 300G:350G    
-   vzctl set 12165 --netif_add eth0,,,,br1 --save
+   vzctl set 12165 --netif_add eth1,,,,br1 --save
    vzctl set 12165 --onboot yes --save
    #+END_EXAMPLE
 *** On host/base3 machine
     #+BEGIN_EXAMPLE
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/var/* /vz/private/12165/var/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/var/www/* /vz/private/12165/var/www/
     rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/etc/* /vz/private/12165/etc/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/home/* /vz/private/12165/home/ (in process)
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/home/* /vz/private/12165/home/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/opt/* /vz/private/12165/opt/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/root/* /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/d_wordpress_database /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/ldap_database /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/pascal_end /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/pascal_start /vz/private/12165/root/
     vzctl restart 12165
+    #+END_EXAMPLE
+*** Inside the container
+    - Enter into container from base/host machine
+    #+BEGIN_EXAMPLE
+    vzctl enter 12165
+    #+END_EXAMPLE
+    #+BEGIN_EXAMPLE
+    cd ldap_database/
+    service slapd stop
+    mv /var/lib/ldap /var/lib/ldap2
+    mkdir /var/lib/ldap
+    slapadd -l ldap_database.ldif -f /etc/openldap/slapd.conf 
+    chown -R ldap:ldap /var/lib/ldap
+    service slapd start
     #+END_EXAMPLE
 ** TODO vlead-assets
 * What we have?
