@@ -226,21 +226,18 @@
 **** Run LDAP client   
      - setup -  A tool to setup ldap client
      - getent passwd      - check users are getting updated here from ldap users     
-**** Enable User directories over httpd
+**** Enable User directories over httpd for choppell user
      This way we can enable user directories over http
      #+BEGIN_EXAMPLE
-     chmod 711 /home/chopell/
-     chown chopell:chopell /home/unixmenuser/public_html
-     chown chopell:chopell /home/chopell/public_html
-     chmod 755 /home/chopell/public_html
+     chmod 711 /home/choppell/
+     chown choppell:choppell /home/choppell/public_html
+     chmod 755 /home/choppell/public_html
      setsebool -P httpd_enable_homedirs true
-     chcon -R -t httpd_sys_content_t /home/chopell/public_html
-     rm -rf /home/chopell/public_html/index.html 
-     chcon -R -t httpd_sys_content_t /home/chopell/public_html
-     echo "hello" >> /home/chopell/public_html/index.html
-     chmod 644 /home/chopell/public_html/index.html
-     
+     chcon -R -t httpd_sys_content_t /home/choppell/public_html
+     chmod 644 /home/choppell/public_html/index.html
      #+END_EXAMPLE
+     
+     - NOTE :: The above steps applicable to all other users as well.
 **** Restore LDAP database
     - Enter into container from base/host machine
     #+BEGIN_EXAMPLE
@@ -255,7 +252,6 @@
     chown -R ldap:ldap /var/lib/ldap
     service slapd start
     #+END_EXAMPLE
-
 
 *** On host/base3 machine
     #+BEGIN_EXAMPLE
