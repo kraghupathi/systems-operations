@@ -9,6 +9,7 @@
   - Backup script =backup-script.sh=
     - Write shell script =backup-script.sh= for taking backup
       #+BEGIN_EXAMPLE
+      sudo rm -rf ~/backup-edx
       mkdir ~/backup-edx
       cd ~/backup-edx
       sudo mysqldump -u root --all-databases > ./backup.sql
@@ -18,15 +19,22 @@
       #+BEGIN_EXAMPLE
       0 23 * * * sh ~/backup-script.sh
       #+END_EXAMPLE
-      
-      - Cronjob runs everyday at 23:00 ( 11:00 PM IST)
+      + Cronjob runs everyday at 23:00 ( 11:00 PM IST)
  
   - Rsync this backup from OpenedX platform to IIIT-Hyderabad
     Infrastructure. 
+    + Write a shell script =edx-script.sh= to backup databases from
+      production edx. This script removes 4 days older backups and
+      keeps latest 3 days backups. So that, disk space will not be
+      used much.
+      #+BEGIN_EXAMPLE
+      rm -rf ~/backup/edx-production-backup/backup-edx-$(date -d '-4 day' +'%Y-%m-%d')
+      /usr/bin/rsync -ir --progress -e "ssh -i /home/shankar/OpenedX.pem" ubuntu@13.56.35.86:backup-edx ~/backup/edx-production-backup/backup-edx-$(date +'%Y-%m-%d')
+      #+END_EXAMPLE
     + Add a cronjob in ssh-tunnel container ( which is running on
       base3 machine)
     #+BEGIN_EXAMPLE
-    1 23 * * * /usr/bin/rsync -ir --progress -e "ssh -i /home/shankar/OpenedX.pem" ubuntu@13.56.35.86:backup-edx ~/backup/edx-production-backup/
+    30 23 * * 0 sh /home/shankar/backup/aws-backup/edx-script.sh
     #+END_EXAMPLE
     + This backup again backed up in =/mnt/san1/=
 * Restoration
