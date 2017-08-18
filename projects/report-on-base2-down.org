@@ -207,14 +207,23 @@
 *** Inside the container
 **** Install ldap related packages
      #+BEGIN_EXAMPLE
-     yum install nss-pam-ldapd pam_ldap
+     yum -y install epel-release
+     yum -y upadte
+     yum install mod_authz_ldap
+     yum -y install nss-pam-ldapd pam_ldap
+     yum -y install openldap openldap-clients openldap-servers
+     yum -y install mod_fcgid.x86_64
+     yum install -y mod_fcgid.x86_64 fcgi.x86_64 mod_proxy_fcgi.x86_64
+     yum -y install httpd mod_fastcgi
      service slapd start
      service nslcd start
+     vim /etc/httpd/conf/httpd.conf  ---comment 221 line and save the file
+     service httpd restart
      #+END_EXAMPLE
 **** Enable service start up on boot     
      - chkconfig nslcd on  - start on boot
      - chkconfig slapd on - start on boot
-**** Run LDAP client
+**** Run LDAP client   
      - setup -  A tool to setup ldap client
      - getent passwd      - check users are getting updated here from ldap users     
 **** Enable User directories over httpd
