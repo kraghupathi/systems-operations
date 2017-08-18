@@ -196,25 +196,43 @@
     vzctl create 12159 --ostemplate centos-6-x86_64 --hostname http.virtual-labs.ac.in --diskspace 10G:20G    
     #+END_EXAMPLE
 ** Pascal
+*** On host/base3 machine
    #+BEGIN_EXAMPLE
    vzctl create 12165 --ostemplate centos-6-x86_64 --hostname pascal.vlabs.ac.in --diskspace 300G:350G    
+   rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/etc/sysconfig/network-scripts/ /vz/private/12165/etc/sysconfig/network-scripts/
    vzctl set 12165 --netif_add eth1,,,,br1 --save
    vzctl set 12165 --onboot yes --save
+   vzctl restart 12165
    #+END_EXAMPLE
-*** On host/base3 machine
-    #+BEGIN_EXAMPLE
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/var/www/* /vz/private/12165/var/www/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/etc/* /vz/private/12165/etc/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/home/* /vz/private/12165/home/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/opt/* /vz/private/12165/opt/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/root/* /vz/private/12165/root/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/d_wordpress_database /vz/private/12165/root/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/ldap_database /vz/private/12165/root/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/pascal_end /vz/private/12165/root/
-    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/pascal_start /vz/private/12165/root/
-    vzctl restart 12165
-    #+END_EXAMPLE
 *** Inside the container
+**** Install ldap related packages
+     #+BEGIN_EXAMPLE
+     yum install nss-pam-ldapd pam_ldap
+     service slapd start
+     service nslcd start
+     #+END_EXAMPLE
+**** Enable service start up on boot     
+     - chkconfig nslcd on  - start on boot
+     - chkconfig slapd on - start on boot
+**** Run LDAP client
+     - setup -  A tool to setup ldap client
+     - getent passwd      - check users are getting updated here from ldap users     
+**** Enable User directories over httpd
+     This way we can enable user directories over http
+     #+BEGIN_EXAMPLE
+     chmod 711 /home/chopell/
+     chown chopell:chopell /home/unixmenuser/public_html
+     chown chopell:chopell /home/chopell/public_html
+     chmod 755 /home/chopell/public_html
+     setsebool -P httpd_enable_homedirs true
+     chcon -R -t httpd_sys_content_t /home/chopell/public_html
+     rm -rf /home/chopell/public_html/index.html 
+     chcon -R -t httpd_sys_content_t /home/chopell/public_html
+     echo "hello" >> /home/chopell/public_html/index.html
+     chmod 644 /home/chopell/public_html/index.html
+     
+     #+END_EXAMPLE
+**** Restore LDAP database
     - Enter into container from base/host machine
     #+BEGIN_EXAMPLE
     vzctl enter 12165
@@ -228,6 +246,22 @@
     chown -R ldap:ldap /var/lib/ldap
     service slapd start
     #+END_EXAMPLE
+
+
+*** On host/base3 machine
+    #+BEGIN_EXAMPLE
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/var/www/* /vz/private/12165/var/www/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/etc/* /vz/private/12165/etc/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/home/* /vz/private/12165/home/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/opt/* /vz/private/12165/opt/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/vz/private/12165/root/* /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/d_wordpress_database /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/ldap_database /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/pascal_end /vz/private/12165/root/
+    rsync -ar --progress /mnt/das1/restore/pascal.iiit.ac.in/pascal_start /vz/private/12165/root/
+    vzctl restart 12165
+    #+END_EXAMPLE
+
 ** TODO vlead-assets
 * What we have?
   We have backup configuration files of following containers at
