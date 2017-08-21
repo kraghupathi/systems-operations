@@ -1,0 +1,17 @@
+#+Title: VLEAD-IIIT-Hyderabad infrastructure information
+#+Author: VLEAD Systems Team
+
+
+* Introduction
+  The base-machines-docs directory contains the information about base
+  machines.
+* Base1
+  - [[base1-docs.org][Base1 machine documents]] 
+* Base2
+  - [[base2-docs.org][Base2 machine documents]] 
+* Base3
+  - [[base3-docs.org][Base3 machine documents]] 
+* Base4 
+  - [[base4-docs.org][Base4 machine documents]]   
+ 
+
