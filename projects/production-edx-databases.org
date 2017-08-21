@@ -14,6 +14,8 @@
       cd ~/backup-edx
       sudo mysqldump -u root --all-databases > ./backup.sql
       sudo mongodump -o ./mongo-backup
+      cd ..
+      tar -zvcf backup-edx.tar.gz backup-edx
       #+END_EXAMPLE
     - Set cronjob
       #+BEGIN_EXAMPLE
@@ -29,7 +31,7 @@
       used much.
       #+BEGIN_EXAMPLE
       rm -rf ~/backup/edx-production-backup/backup-edx-$(date -d '-4 day' +'%Y-%m-%d')
-      /usr/bin/rsync -ir --progress -e "ssh -i /home/shankar/OpenedX.pem" ubuntu@13.56.35.86:backup-edx ~/backup/edx-production-backup/backup-edx-$(date +'%Y-%m-%d')
+      /usr/bin/rsync -ir --progress -e "ssh -i /home/shankar/OpenedX.pem" ubuntu@13.56.35.86:backup-edx.tar.gz ~/backup/edx-production-backup/backup-edx-$(date +'%Y-%m-%d')
       #+END_EXAMPLE
     + Add a cronjob in ssh-tunnel container ( which is running on
       base3 machine)
