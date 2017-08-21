@@ -1,0 +1,26 @@
+#+Title: VLEAD AWS "How To" documents
+#+Author: VLEAD Systems Team
+
+* Introduction
+  This document contains the information about AWS services such as
+  What to do and how to do things? on aws cloud.
+* How to Resize the EC2 Instance Volume size
+  To increase/decrease EC2 Instance volume/ Disk space we need to
+  follow the bellow steps.
+** For CentOS Instances
+   Refer this link http://issues.vlabs.ac.in/issues/1070
+** For Ubuntu Instances
+   1. Stop the Instance
+   2. Detach the Volume from stopped instance
+   3. Create a snapshot form detached volume 
+   4. Create new Volume ( by giving required Volume size/Disk Space)
+      from newly created snapshot. 
+      + NOTE :: Make sure that Volume that you are creating should be
+                in same region as it was in original instance( stopped
+                Instance)
+   5. Attach newly created volume to the stopped Instance ( stopped in
+      1st step) as =/dev/sda1=.
+   6. Finally start the Instance
+ 
+   Refer this link for more information
+   http://issues.vlabs.ac.in/issues/833
