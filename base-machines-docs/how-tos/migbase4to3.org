@@ -1,59 +1,83 @@
-Steps to migrate a container from one HN (Hardware Node) to another.
 
-A container (otherwise known as CT, Virtual Environment (VE), Virtual Private Server (VPS) etc.) is one of the main concepts of OpenVZ. ontainer is an isolated entity which performs and executes 
-exactly like a stand-alone server. Container can be rebooted independently and have root access, users/groups, IP address(es), memory, processes, files, applications, system libraries and 
-configuration files.
+* Steps to migrate a container from one HN (Hardware Node) to another.
 
-OpenVZ allows to have multiple CTs (as many as several hundreds) on a single Hardware Node.
+  A container (otherwise known as CT, Virtual Environment
+  (VE),VirtualPrivate Server (VPS) etc.) is one of the main concepts
+  of OpenVZ. ontainer is an isolated entity which performs and
+  executes exactly like a stand-alone server. Container can be
+  rebooted independently and have root access, users/groups, IP
+  address(es), memory, processes, files, applications, system
+  libraries and configuration files.
 
-If we are entrusted with a task to create and then migrate  Container from one HN (Base4) to another HN (Base3), it is imperative to know the IP ADDRESS of the HN to which the container is being
-migrated.
+  OpenVZ allows to have multiple CTs (as many as several hundreds) on
+  a single Hardware Node.
 
-Note the IP ADDR of Base4. 
+  If we are entrusted with a task to create and then migrate Container
+  from one HN (Base4) to another HN (Base3), it is imperative to know
+  the IP ADDRESS of the HN to which the container is being migrated.
 
-1. Login to Base4 as follows:
+  Note the IP ADDR of Base4. 
 
-   ssh userid@XXX.XXX.XXX.XXX 
+  1. Login to Base4 as follows:
+     #+BEGIN_EXAMPLE
+     ssh userid@XXX.XXX.XXX.XXX      
+     #+END_EXAMPLE
 
-2. Enter password
 
-3. enter sudo su - to go to the root.
+  2. Enter password
 
-4. Try to create a container first. Check if the Container ID is already existing by giving the command vzlist -a. 
+  3. enter sudo su - to go to the root.
 
-5. If the CTID is not present in the list, select a CTID of your choice as follows:
-   [root@base4 cache]# vzctl create NNN --ostemplate ubuntu-16.04-x86_64
+  4. Try to create a container first. Check if the Container ID is
+     already existing by giving the command =vzlist -a=.
+
+  5. If the CTID is not present in the list, select a CTID of your
+     choice as follows: 
+     #+BEGIN_EXAMPLE
+     [root@base4 cache]# vzctl create NNN --ostemplate ubuntu-16.04-x86_64    
+     #+END_EXAMPLE
    
-   In this case, the OpenVZ software will create a Container with ID NNN, the private area based on the ubuntu-16.04-x86_64 OS template, and configuration parameters taken from the 
-   ve-basic.conf-sample sample configuration file.
+     In this case, the OpenVZ software will create a Container with ID
+     NNN, the private area based on the ubuntu-16.04-x86_64 OS
+     template, and configuration parameters taken from the
+     ve-basic.conf-sample sample configuration file.
    
-   You can specify an OS template nor a sample configuration
-
+     You can specify an OS template nor a sample configuration
    
-6. Now assign the container created to an IP ADDRESS in Base4 which is available as follows:
-   [root@base4 cache]# vzctl set NNN --ipadd XXX.XXX.XXX.XXX --save
-
-7. We can also assign the container a hostname as follows:
-   [root@base4 cache]# vzctl set NNN --hostname serverNNN.mydomain.com --save
-
-8. Start the Container using the vzctl command as follows:
-   [root@base4 cache]# vzctl start NNN
-
-9. To check the status of a Container, use the vzctl status command as follows:
-   [root@base4 cache]# vzctl status NNN
-
-10. The following command is used to stop a Container:
-    [root@base4 cache]# vzctl stop NNN
-
-11. Here is the command (vzmigrate) for migrating any container NNN from the current HN to one at 10.4.12.23 (Base3):
-    [root@base4 cache]# vzmigrate 10.4.12.23 NNN
-
-12. Once migrated, the Container with CTID NNN will not be in Base4 anymore.
+  6. Now assign the container created to an IP ADDRESS in Base4 which
+     is available as follows: 
+     #+BEGIN_EXAMPLE
+     [root@base4 cache]# vzctl set NNN --ipadd XXX.XXX.XXX.XXX --save  
+     #+END_EXAMPLE
+  7. We can also assign the container a hostname as follows:
+     #+BEGIN_EXAMPLE
+     [root@base4 cache]# vzctl set NNN --hostname serverNNN.mydomain.com --save     
+     #+END_EXAMPLE
 
 
- 
+  8. Start the Container using the vzctl command as follows:
+     #+BEGIN_EXAMPLE
+     [root@base4 cache]# vzctl start NNN     
+     #+END_EXAMPLE
 
-References:
+  9. To check the status of a Container, use the vzctl status command
+     as follows:
+     #+BEGIN_EXAMPLE
+     [root@base4 cache]# vzctl status NNN     
+     #+END_EXAMPLE
 
-https://wiki.openvz.org/User_Guide/Operations_on_Containers
-https://openvz.org/Migration_from_one_HN_to_another
+  10. The following command is used to stop a Container:
+      #+BEGIN_EXAMPLE
+      [root@base4 cache]# vzctl stop NNN      
+      #+END_EXAMPLE
+  11. Here is the command (vzmigrate) for migrating any container NNN
+      from the current HN to one at 10.4.12.23 (Base3): 
+      #+BEGIN_EXAMPLE
+      [root@base4 cache]# vzmigrate 10.4.12.23 NNN      
+      #+END_EXAMPLE
+  12. Once migrated, the Container with CTID NNN will not be in Base4 anymore.
+
+
+* References:
+  https://wiki.openvz.org/User_Guide/Operations_on_Containers
+  https://openvz.org/Migration_from_one_HN_to_another
