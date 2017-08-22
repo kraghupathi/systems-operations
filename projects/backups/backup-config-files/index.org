@@ -14,6 +14,58 @@
             that, even if you loose regular backup on physical
             machine( rsnapshot)( worst case), we can get backup from
             the backups that are version controled
+* What to backup
+  - On base3 machine
+    1. Clone the repository on base3 machine and change directory to  systems repo
+#+begin_example
+       git clone https://<UserName>@bitbucket.org/vlead/systems.git
+       cd /root/systems/projects/backups/backup-config-files
+#+end_example
+    2. Perform below steps
+** Base3 configuration files 
+#+begin_example
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/base3/etc/sysconfig/network-scripts/ base3/network-scripts/
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/base3/etc/rsnapshot.conf base3/rsnapshot.conf 
+#+end_example
+
+** Reverse proxy
+#+begin_example
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/http.virtual-labs.ac.in/vz/private/12159/etc/ http.vlabs.ac.in
+#+end_example
+** LDAP
+#+begin_example
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/ldap.virtual-labs.ac.in/vz/private/13165/etc/openldap/slapd.conf ldap.vlabs.ac.in/etc/openldap/slapd.conf
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/ldap.virtual-labs.ac.in/vz/private/13165/root/ldap_database/ldap_database_backup.sh  ldap.vlabs.ac.in/root/ldap_database/ldap_database_backup.sh 
+#+end_example
+** Public-DNS
+#+begin_example
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/ns1-pub.virtual-labs.ac.in/vz/private/12161/etc/ ns1-pub.vlabs.ac.in/etc/
+ rsync -r --progress /mnt/san1/backup-snapshots/hourly.0/ns1-pub.virtual-labs.ac.in/vz/private/12161/var/named/virtual-labs.ac.in.forward ns1-pub.vlabs.ac.in/var/named/
+#+end_example
+
+** Private-DNS
+#+begin_example
+ rsync -ar --progress /mnt/san1/backup-snapshots/hourly.0/ns3-pvt.virtual-labs.ac.in/vz/private/12160/etc/ ns3-pvt.vlabs.ac.in/etc/
+ rsync -ar --progress /mnt/san1/backup-snapshots/hourly.0/ns3-pvt.virtual-labs.ac.in/vz/private/12160/var/named/virtual-labs.ac.in.internal.zone  ns3-pvt.vlabs.ac.in/var/named/
+#+end_example
+
+** ssh-tunnel
+#+begin_example
+ rsync -ra --progress  /mnt/san1/backup-snapshots/hourly.0/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/etc/sysconfig/network-scripts/ ssh-tunnel.vlabs.ac.in/etc/sysconfig/network-scripts/
+ rsync -ra --progress /mnt/san1/backup-snapshots/hourly.0/ssh-tunnel.virtual-labs.ac.in/vz/private/12169/etc/sysconfig/iptables ssh-tunnel.vlabs.ac.in/etc/sysconfig/iptables
+#+end_example
+** stpi-proxy
+#+begin_example
+ rsync -ra --progress /mnt/san1/backup-snapshots/hourly.0/stpi-proxy.virtual-labs.ac.in/vz/private/12237/etc/squid stpi-proxy.virtual-labs.ac.in/
+ rsync -ra --progress /mnt/san1/backup-snapshots/hourly.0/stpi-proxy.virtual-labs.ac.in/vz/private/12237/etc/squid stpi-proxy.virtual-labs.ac.in/etc/
+#+end_example
+
+
+** stpi-router
+#+begin_example
+ rsync -rai --progress /mnt/san1/backup-snapshots/hourly.0/stpi-router.virtual-labs.ac.in/vz/private/12236/etc/sysconfig/iptables stpi-router.vlabs.ac.in/sysconfig/
+ rsync -rai --progress /mnt/san1/backup-snapshots/hourly.0/stpi-router.virtual-labs.ac.in/vz/private/12236/etc/sysconfig/network-scripts stpi-router.vlabs.ac.in/sysconfig/
+#+end_example
 * How to restore from backup
   To restore containers from backup configuration files ( which are
   checked into bitbucket) use the following steps written in
