@@ -1,5 +1,5 @@
 $TTL 600
-@ SOA   ns1.virtual-labs.ac.in. engg.virtual-labs.ac.in. (2017071801 15m 5m 30d 2h)
+@ SOA   ns1.virtual-labs.ac.in. engg.virtual-labs.ac.in. (2017081801 15m 5m 30d 2h)
         NS ns1.virtual-labs.ac.in.
         NS ns2.virtual-labs.ac.in.
         ;IN      A       54.85.93.7
@@ -105,6 +105,8 @@ http		IN	A	196.12.53.130
 ;Used for vlabs files
 glpi		IN	A	196.12.53.130
 ci		IN	A	196.12.53.130
+feedback-analytics		IN	A	196.12.53.130
+lbd		IN	A	196.12.53.130
 
 ;Used for vlabs files
 files		IN	A	196.12.53.130
@@ -377,6 +379,7 @@ civ02                   IN              A       54.85.93.7
 vlabs-analytics                  IN              A       54.85.93.7
 analytics-api                  IN              A       54.85.93.7
 experiment-server                  IN              A       54.85.93.7
+lds			IN 		A	54.85.93.7
 
 
 courses			IN		A	54.183.54.86
@@ -385,7 +388,8 @@ info			IN		A	54.193.31.73
 edx-courses		IN		A	52.67.24.251
 
 open-edx1		IN		A	54.183.50.1
-open-edx		IN		A	54.183.30.65
+;open-edx		IN		A	54.183.30.65
+open-edx		IN		A	13.56.35.86	
 openedx			IN		A	54.67.89.24  ;; Open edX Platform testing. This VM is running in US-west region. We can remove this entry once it is moved to prodction.
 
 platform                     IN              A       54.183.81.143
@@ -399,40 +403,36 @@ vlabs-lms                IN              A      52.53.230.142
 vlabs-insights		IN		A	54.153.22.134
 
 
+qnm-test.base4		IN		A	196.12.53.130
+ads.base4		IN		A	196.12.53.130
 
 
+;$ORIGIN base1.virtual-labs.ac.in.
+;@ IN NS ns.base1.virtual-labs.ac.in.
+;public-dns      IN      A       196.12.53.130  ;glue record
+;ns              IN      A       196.12.53.130
+;
+;;Subzone delegation of base1.vlabs.ac.in
+;$ORIGIN base1.vlabs.ac.in.
+;@ IN NS ns.base1.vlabs.ac.in.
+;public-dns      IN      A       196.12.53.130 ;glue record
+;ns              IN      A       196.12.53.130
+;
 
 
-
-$ORIGIN base1.virtual-labs.ac.in.
-@ IN NS ns.base1.virtual-labs.ac.in.
-public-dns      IN      A       196.12.53.130  ;glue record
-ns              IN      A       196.12.53.130
-
-;Subzone delegation of base1.vlabs.ac.in
-$ORIGIN base1.vlabs.ac.in.
-@ IN NS ns.base1.vlabs.ac.in.
-public-dns      IN      A       196.12.53.130 ;glue record
-ns              IN      A       196.12.53.130
-
-
-
-
-
-
-
-
-
-
-
+;base4	IN	NS	public-dns.base4.virtual-labs.ac.in.
+;public-dns	IN	A	10.4.12.25
+;base4	IN	NS	public-dns.base4.vlabs.ac.in.
+;public-dns	IN	A	10.4.12.25
 ;Subzone delegation of base4.vlabs.ac.in
-$ORIGIN base4.virtual-labs.ac.in.
-@ IN NS public-dns.base4.virtual-labs.ac.in.
-
-public-dns IN A 196.12.53.130  ;glue record
-ns              IN      A	196.12.53.130
-$ORIGIN base4.vlabs.ac.in.
-@ IN NS public-dns.base4.vlabs.ac.in.
-
-public-dns IN A 196.12.53.130 ;glue record
-ns              IN      A       196.12.53.130
+;$ORIGIN	base4.virtual-labs.ac.in.
+;@	IN	NS	public-dns.base4.virtual-labs.ac.in.
+;ns	IN      A	10.4.12.25;ns1.virtual-labs.ac.in.
+;public-dns	IN	A	10.4.12.25  ;glue record
+;qnm-test	IN	A	10.4.12.25
+;
+;$ORIGIN	base4.vlabs.ac.in.
+;@	IN	NS	public-dns.base4.vlabs.ac.in.
+;ns	IN	A	10.4.12.25 ;ns1.virtual-labs.ac.in. 
+;public-dns	IN	A	10.4.12.25 ;glue record
+;qnm-test	IN	A	10.4.12.25
