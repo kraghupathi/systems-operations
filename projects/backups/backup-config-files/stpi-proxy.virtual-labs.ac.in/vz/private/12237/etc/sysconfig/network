@@ -1,5 +1,0 @@
-NETWORKING="yes"
-GATEWAYDEV="venet0"
-NETWORKING_IPV6="yes"
-IPV6_DEFAULTDEV="venet0"
-HOSTNAME="stpi-proxy.virtual-labs.ac.in"

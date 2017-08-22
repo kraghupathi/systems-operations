@@ -1,8 +1,0 @@
-10.4.12.152  ldap.virtual-labs.ac.in
-
-#192.30.252.130 github.com
-10.4.12.82  t4e2015.org www.t4e2015.org
-127.0.0.1 localhost.localdomain localhost localhost4.localdomain4 localhost4
-# Auto-generated hostname. Please do not remove this comment.
-10.4.12.236 stpi-proxy.virtual-labs.ac.in  stpi-proxy
-::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
