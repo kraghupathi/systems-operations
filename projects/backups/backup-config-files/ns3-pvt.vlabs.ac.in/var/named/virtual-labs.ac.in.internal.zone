@@ -1,7 +1,7 @@
 ;$ORIGIN virtual-labs.ac.in.
 $TTL 600 ;10 minutes
 @ SOA ns3-pvt.virtual-labs.ac.in. root.virtual-labs.ac.in. (
-				2017071901 ;serial
+				2017081801 ;serial
 				900        ; refresh (15 minutes)
                                 300        ; retry (5 minutes)
                                 2592000    ; expire (4 weeks 2 days)
@@ -118,7 +118,6 @@ mech01-iitg		IN	A	10.4.12.79
 eee06-dei		IN	A	10.4.12.80
 aws-backup		IN	A	10.4.12.81
 attendance              IN      A       10.4.15.202
-lbd			IN      A       10.4.15.134
 ;=================== BASE 4 ===========================
 csnginx			IN      A       10.4.12.251
 translators	IN	A	10.4.12.254
@@ -132,6 +131,8 @@ labs-info       IN      A       10.4.14.225
 analytics	IN	A	10.4.15.177
 glpi		IN	A	10.4.12.135
 ci		IN	A	10.4.12.30
+lbd		IN	A	10.4.12.133
+feedback-analytics		IN	A	10.4.12.46
 stats-demo	IN	A	10.4.15.133
 renarration	IN	A	10.4.15.141 ; renarration created on req by Anon
 gateone.test	IN	A	10.4.14.149 ;added by soumya for testing gateone services by anagh 2015-07-14 expiry Aug-15-2015 contact Apurv
@@ -159,7 +160,7 @@ qa.vlead	IN	A	10.4.14.142 ;entry added on March 16th by yogesh
 cstest		IN	A	10.4.15.144 ; regarding the auto installation of client side dependencies.added by Siva on August 26th 2015.
 test-landing	IN	A	10.4.15.150 ; for the new landing page testing. Added by Soumya 2015-08-31. container owner Madhavi.
 vlead-wiki	IN	A	10.4.12.163
-files		IN	A	10.4.14.189
+;files		IN	A	10.4.14.189
 vlabs-dev	IN	A	10.4.13.252
 dev     	IN	CNAME	vlabs-dev
 staging-dev	IN	A	10.4.13.253
@@ -205,6 +206,7 @@ ossec-server	IN	A	54.85.93.7
 reverseproxy	IN	A	54.85.93.7
 bandwidthd	IN	A	54.85.93.7
 stats		IN	A	54.85.93.7
+lds		IN	A	54.85.93.7
 cse01-iiith             IN              A       54.85.93.7
 cse02-iiith             IN              A       54.85.93.7
 cse15-iiith             IN              A       54.85.93.7
@@ -316,7 +318,8 @@ courses			IN		A	54.183.54.86
 
 info			IN		A	54.193.31.73
 edx-courses		IN		A	52.67.24.251
-open-edx		IN		A	54.183.30.65
+;open-edx		IN		A	54.183.30.65
+open-edx                IN              A       13.56.35.86
 ;open-edx1		IN		A	54.183.50.1
 ;test.t4e2015                 IN	        A       10.4.14.187
 openedx			IN		A	54.67.89.24
@@ -328,12 +331,14 @@ xblocks-test		IN		A	52.67.110.60
 notebook		IN		A	52.53.227.220
 ;vlabs-analytics		IN		A	54.67.27.39
 elk-stack		IN		A	52.53.201.170
+frame			IN		A	54.153.0.244
 openvz			IN		A	10.2.57.61
 
 ;feedback-stage		IN		A	10.4.12.2
 feedback-stage		IN		A	10.4.12.9
 outreach-stage		IN		A	10.4.12.13
 ads-base2		IN		A	10.4.15.91
+
 ;outreach-stage          IN              A       54.85.93.7
 ;===================================================================
 ;router          IN      A       10.4.12.155 Delete by March 12
@@ -472,4 +477,18 @@ $ORIGIN docker.vlabs.ac.in.
 @ IN NS public-dns.docker.vlabs.ac.in.
 
 public-dns IN A 10.2.58.37 ;glue record
+
+
+
+
+
+$ORIGIN base9.virtual-labs.ac.in.
+@ IN NS public-dns.base9.virtual-labs.ac.in.
+
+public-dns IN A 10.2.59.226 ;glue record
+
+;Subzone delegation of cluster.vlabs.ac.in
+$ORIGIN base9.vlabs.ac.in.
+@ IN NS public-dns.base9.vlabs.ac.in.
+public-dns IN A 10.2.59.226 ;glue record
 
