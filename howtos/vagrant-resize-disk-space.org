@@ -1,0 +1,92 @@
+* vagrant setup
+1. Install vagrant 
+#+BEGIN_EXAMPLE
+apt-get install vagrant
+#+END_EXAMPLE
+2. Downoad centos template from http://www.vagrantbox.es/.  I have
+   chosen
+https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box
+3. Add centos box to my local machine 
+   #+BEGIN_EXAMPLE
+   vagrant box add centos-ads https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box
+   #+END_EXAMPLE
+4. Initialize Vagrantfile
+   #+BEGIN_EXAMPLE
+   vagrant init cents-os
+   #+END_EXAMPLE
+5. Bring up vagrant box
+   #+BEGIN_EXAMPLE
+   vagrant up
+   #+END_EXAMPLE
+6. SSH to vagrant box
+   #+BEGIN_EXAMPLE
+   vagrant ssh
+   #+END_EXAMPLE
+7. Check disk space
+   #+BEGIN_EXAMPLE
+   df -h
+   #+END_EXAMPLE
+   Displayed 
+   #+BEGIN_EXAMPLE
+   8 GB which is default
+   #+END_EXAMPLE
+* Steps to Increase Disk Space using Gparted
+  1. Stop your VM
+  2. Change directory to 
+     #+BEGIN_EXAMPLE
+     cd ~/VirtualBox VMs/VM-NAME
+     #+END_EXAMPLE
+  3. Convert vmdk to vdi format
+     #+BEGIN_EXAMPLE
+     VBoxManage clonehd box-disk1.vmdk box-disk1.vdi --format vdi
+     #+END_EXAMPLE
+  4. Resize the disk to 50GB
+     #+BEGIN_EXAMPLE
+     VBoxManage modifyhd box-disk1.vdi --resize 50240
+     #+END_EXAMPLE
+  5. Modify VM to use VDI
+     1. Choose your vm in Virtualbox( It will be highlighted in color )
+     2. Settings --> Storage
+     3. Detach all vmdk files from the controllers by clicking '-'.
+     4. Attach vdi file in SATA controller by clicking "+" symbol.
+	- Click on "Choose existing disk", Here we need to take vdi
+          from local machine and attach vdi file
+
+  6. Download gparted from the url 
+     [[https://sourceforge.net/projects/gparted/files/gparted-live-stable/0.29.0-1/gparted-live-0.29.0-1-amd64.iso/download?use_mirror%3Dexcellmedia][gparted]] of from http://gparted.org/download.php
+  7. Add optical drive on Controller:IDE 
+     1. Choose your vm in Virtualbox( It will be highlighted in color )
+     2. Settings --> Storage
+     4. Attach gparted (downloaded iso ) file in IDE controller by
+        clicking "+" symbol.
+	- Click on "Choose existing disk", Here we need to take
+          "gaprted live iso" file from local machine and attach
+          "gparted live iso" file.
+  8. Change the boot order
+     1. Settings --> System
+     2. On Motherboard tab, we can see boot order section
+	1. Check Optical as the first
+        2. Check Hard disk as well
+	3. Remaining are optional
+        
+  9. Start/Boot the VM
+     1. It will load Gparted by default.
+     2. Proceed by giving appropriate answers.
+     3. After the boot,
+	1. Click on disk that you want to resize
+        2. Look for "Resize/apply" option
+	3. Resize the disk and
+	4. Then "apply" the changes
+  10. Change the Boot Order again to load our actual VM ( that is
+      Hard disk). See the step 8.
+
+  11. Login to your VM
+  12. Check resized disk space by using 
+      #+BEGIN_EXAMPLE
+      df -h
+      #+END_EXAMPLE
+
+
+  Referred 
+  https://tvi.al/resize-sda1-disk-of-your-vagrant-virtualbox-vm/
+  https://github.com/sprotheroe/vagrant-disksize
