@@ -23,15 +23,14 @@
      ssh userid@XXX.XXX.XXX.XXX      
      #+END_EXAMPLE
 
+  1. Enter password
 
-  2. Enter password
+  2. enter sudo su - to go to the root.
 
-  3. enter sudo su - to go to the root.
-
-  4. Try to create a container first. Check if the Container ID is
+  3. Try to create a container first. Check if the Container ID is
      already existing by giving the command =vzlist -a=.
 
-  5. If the CTID is not present in the list, select a CTID of your
+  4. If the CTID is not present in the list, select a CTID of your
      choice as follows: 
      #+BEGIN_EXAMPLE
      [root@base4 cache]# vzctl create NNN --ostemplate ubuntu-16.04-x86_64    
@@ -44,12 +43,12 @@
    
      You can specify an OS template nor a sample configuration
    
-  6. Now assign the container created to an IP ADDRESS in Base4 which
+  5. Now assign the container created to an IP ADDRESS in Base4 which
      is available as follows: 
      #+BEGIN_EXAMPLE
      [root@base4 cache]# vzctl set NNN --ipadd XXX.XXX.XXX.XXX --save  
      #+END_EXAMPLE
-  7. We can also assign the container a hostname as follows:
+  6. We can also assign the container a hostname as follows:
      #+BEGIN_EXAMPLE
      [root@base4 cache]# vzctl set NNN --hostname serverNNN.mydomain.com --save     
      #+END_EXAMPLE
@@ -76,6 +75,66 @@
       [root@base4 cache]# vzmigrate 10.4.12.23 NNN      
       #+END_EXAMPLE
   12. Once migrated, the Container with CTID NNN will not be in Base4 anymore.
+
+* Migration of actual glpi container.
+
+  1. Prior to migrating a Container or a Hostname to a different HN,
+     it is advised to take a backup of the databases associated with
+     that Container or Hostname.  The data for glpi.vlabs.ac.in is in
+     MySQL database.
+
+  2. Enter Container ID (NNN)  which we intend to migrate as follows:
+     #+BEGIN_EXAMPLE
+     vzctl enter NNN     
+     [root@base4 cache]# vzctl enter NNN
+     #+END_EXAMPLE
+
+  3. Now login to mysql as follows:
+     #+BEGIN_EXAMPLE
+     root@glpi:/# mysql -u <username> -p<password>
+     #+END_EXAMPLE
+     where glpi is the hostname for the CTID NNN
+
+  4. Enter the following command to list all databases for that Container ID NNN:
+     #+BEGIN_EXAMPLE
+     mysql> show databases;     
+     #+END_EXAMPLE
+     We can see the following databases:
+
+     |--------------------|
+     | Database           |
+     |--------------------|
+     | information_schema |
+     | glpi               |
+     | mysql              |
+     | performance_schema |
+     |--------------------|
+
+  5. The database for Container ID NNN is glpi. Now exit from mysql as follows:
+     #+BEGIN_EXAMPLE
+     mysql> exit 
+     #+END_EXAMPLE
+     
+  6. Now take a backup of glpi database as follows:
+     #+BEGIN_EXAMPLE
+     root@glpi:/# mysqldump -u <username> -p<password> glpi > glpi-backup.sql
+     #+END_EXAMPLE
+
+  7. Now exit from the Container ID NNN as follows:
+     #+BEGIN_EXAMPLE
+     root@glpi:/# exit
+     #+END_EXAMPLE
+     
+  8. Here is the command (vzmigrate) for migrating any Container with
+     CTID NNN from the current HN to one at YYY.YYY.YYY.YYY (Base3):
+     
+     #+BEGIN_EXAMPLE
+     [root@base4 cache]# vzmigrate YYY.YYY.YYY.YYY NNN
+     #+END_EXAMPLE
+
+  9. Once migrated, the Container with CTID NNN will not be in Base4
+     anymore. Login to Base3 to check if the Container has been
+     migrated or not.
 
 
 * References:
