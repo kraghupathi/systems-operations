@@ -1,0 +1,51 @@
+Based on the documentation and requirement of labs-on-base2.org (vlead@vlead-desktop:~/vlead/projects/cleaning-deploy), we are going to stop containers running on IIITH. This is because, 
+these containers are running on Amazon Web Services as well as IIITH servers.
+
+We have labs hosted on Amazon Web Services (Open-Edx) as well as on IIITH (Base3). It is advised to stop the containers hosted on IIITH for the following labs that are avaiLable and 
+running on Amazon Web Services (AWS) as well as IIITH servers.
+
+Labs hosted on IIITH
+
+http://cse04-iiith.virtual-labs.ac.in/
+
+http://cse24-iiith.vlabs.ac.in/ 
+
+http://eerc04-iiith.vlabs.ac.in/ 
+
+http://cse23-iiith.virtual-labs.ac.in/
+
+http://civil13-iitb.virtual-labs.ac.in
+
+http://ccnsb01-iiith.virtual-labs.ac.in/
+
+http://ccnsb03-iiith.virtual-labs.ac.in/
+
+http://ccnsb07-iiith.virtual-labs.ac.in/
+
+http://mech01-iitg.virtual-labs.ac.in
+
+http://eee06-dei.virtual-labs.ac.in/build/Dreamweaver
+
+
+
+Steps to stop containers hosted on IIITH (Base3)
+
+1. Login to Base3 as follows:
+   ssh username@XXX.XXX.XXX.XXX where XXX.XXX.XXX.XXX is the IP ADDR of Base3
+
+2. Enter password
+
+3. Enter the following command to see the list of all containers that are activa as well as not active:
+
+   [root@base3 ~]# vlist -a
+
+4. To get the CTID for all labs that are available and running on both servers, enter the following command:
+
+   [root@base3 ~]# vlist -a | grep <hostname>, where hostname is the high level qualifier of the lab. For example, the hostname of http://cse04-iiith.virtual-labs.ac.in/ is cse04-iiith.
+
+5. After getting a comprehensive list for all the duplicate labs, we can stop all the containers as follows:
+
+   [root@base3 ~]# for i in {CT ID1 - CT IDn};do vzctl stop $i;done
+
+
+
