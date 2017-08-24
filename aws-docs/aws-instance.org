@@ -1,0 +1,106 @@
+#+TITLE: Create Amazon EC2 Instance
+#+AUTHOR: VLEAD Systems
+#+DATE: 24-Aug-2017
+
+* Instroduction
+ This document describes about to create Amazon EC2 Instance on AWS console.
+
+* Amazon EC2 Instance
+An EC2 instance is a virtual server in Amazon Web services
+terminology. It stands for *Elastic Compute Cloud*. It is a web service
+where an AWS subscriber can request and provision a compute server in
+AWS cloud.
+
+* How to create an amazon EC2 instance
+** Login and access to AWS services
+ *Step1*: 
+ - [[https://vlead.signin.aws.amazon.com/console][Login]] to your AWS account and go to the My Account tab at the top
+   left corner, then click on AWS Management Console and enter the
+   login details.
+ - Click on Services tab at the top right corner, you will see all of
+   the AWS Services categorized as per their area viz. Compute,
+   Storage, Database, etc. For creating an EC2 instance, we have to
+   choose Compute EC2 as in the next step.
+ - Open all the services and click on EC2 under Compute services. This
+   will launch the dashboard of EC2.
+
+ *Step2* :
+ - On the top right corner of the EC2 dashboard, choose the AWS Region in which you want to provision the EC2 server.
+
+ *Step3* :
+ - Once your desired Region is selected, come back to the EC2 Dashboard.
+ - Click on 'Launch Instance' button in the section of Create Instance.
+ - Instance creation wizard page will open as soon as you click 'Launch Instance'.
+
+** Choose AMI
+ - You will be asked to choose an AMI of your choice. (An AMI is an
+   Amazon Machine Image. It is a template basically of an Operating
+   System platform which you can use as a base to create your
+   instance). Once you launch an EC2 instance from your preferred AMI,
+   the instance will automatically be booted with the desired OS.
+
+** Choose Instance Types
+ - In the next step, you have to choose the type of instance you require based on your business needs.
+ - We will choose t2.micro instance type, which is a 1vCPU and 1GB memory server offered by AWS.
+ - Click on *Configure Instance Details* for further configurations
+
+** Configure Instance
+ - No. of instances- you can provision up to 20 instances at a time.
+ - Network section will give a list of VPCs available in our platform.
+ - You have to decide here, in which VPC (Virtual Private Cloud) you
+   want to launch your instance and under which subnets inside your
+   VPC. 
+ - You can choose if you want AWS to assign it an IP automatically, or
+   you want to do it manually later. You can enable/ disable *Auto
+   assign Public IP* feature here likewise.
+ - Click on *Add Storage* to add data volumes to your instance in next step.
+
+** Add Storage
+ - In the Add Storage step, you'll see that the instance has been
+   automatically provisioned a General Purpose SSD root volume of
+   8GB. ( Maximum volume size we can give to a General Purpose volume
+   is 16GB)
+ - Change the *Volume Type* is *Magnetic*
+ - Click on *Add Tags*
+
+** Tag Instance
+ - You can tag your instance with a key-value pair. This gives
+   visibility to the AWS account administrator when there are lot
+   number of instances.
+ - Go to configure Security Groups later
+
+** Configuring Security Groups
+ - In this next step of configuring Security Groups, you can restrict
+   traffic on your instance ports. This is an added firewall mechanism
+   provided by AWS apart from your instance's OS firewall.
+ - Once, the firewall rules are set- Review and launch
+ - Select "continue with Magentic as the boot volume for this instance" and click on *Next".
+
+** Review Instances
+ - In the next step you will be asked to select existing key pair to login to
+   you an instance. A key pair is a set of public-private keys.
+ - Once you are done downloading and saving your key, launch your instance.
+ - You can see the launch status meanwhile.
+ - You can also see the launch log.
+ - Click on the *Instances* option on the left pane where you can see
+   the status of the instance as 'Pending' for a brief while.
+ - Once your instance is up and running, you can see its status as 'Running' now.
+
+** Connect To your Instance
+ - In this step to connect to your instance via terminal using ssh client.
+ - Firstly connect to via ssh-tunnel using LDAP credentials and locate your private key file (Existing key). 
+ - Connect to your instance using its Public DNS: For example
+ #+BEGIN_EXAMPLE
+ ssh <ldap-username>@ssh-tunnel.vlabs.ac.in 
+ ssh -i "existing-key" <name>@<publick-IP>
+ #+END_EXAMPLE
+
+** Install packages
+ - Once you entered in to your instance and run the below script
+ #+BEGIN_EXAMPLE
+ 
+ #+END_EXAMPLE
+ - Once the done script and exit from instance
+
+* How to create an AMI from Amazon EC2 instnace
+ - 
