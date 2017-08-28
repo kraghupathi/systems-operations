@@ -1,4 +1,4 @@
-#+TITLE: Create Amazon EC2 Instance
+#+TITLE: Create an Amazon EC2 Instance and AMI image from existing EC2 instance
 #+AUTHOR: VLEAD Systems
 #+DATE: 24-Aug-2017
 
