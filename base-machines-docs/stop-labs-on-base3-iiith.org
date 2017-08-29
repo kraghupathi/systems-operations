@@ -48,4 +48,13 @@ Steps to stop containers hosted on IIITH (Base3)
    [root@base3 ~]# for i in {CT ID1 - CT IDn};do vzctl stop $i;done
 
 
+* Verification :
 
+1. Checked all the stopped containers which are listed above.  
+2. Started cse24 to run the simulations on open-edx. CSE24 is not hosted on amazon, so running the lab from base3.
+3. As the "http://mech01-iitg.virtual-labs.ac.in" lab is not on open-edx, it should run from base3.
+4. Below labs are running with the different urls on amazon and open-edx:
+               Base3                                             Open-edx
+   - http://ccnsb01-iiith.virtual-labs.ac.in/       http://mfs-iiith.virtual-labs.ac.in/  
+   - http://ccnsb03-iiith.virtual-labs.ac.in/       http://mas-iiith.virtual-labs.ac.in/
+   - http://ccnsb07-iiith.virtual-labs.ac.in/       http://mi-iiith.virtual-labs.ac.in/
