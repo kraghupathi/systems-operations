@@ -12,7 +12,7 @@
     automation with setup-ovpl on local machine.
 
 * Plan 
-** [[https://github.com/vlead/vlabs-landing-pages/milestone/4][Milestone One]]
+** [[https://gitlab.com/vlead-systems/cluster-automation/milestones/5][Milestone One]]
   :PROPERTIES:
   :CUSTOM_ID: plan-for-milestone-one
   :END: 
