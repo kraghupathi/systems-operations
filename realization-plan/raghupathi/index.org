@@ -35,36 +35,40 @@
 
 #+caption:  realization-plan
 #+name: tbl-realization-plan
-|----+------------------------------+--------+----------+--------+------------+------------+-------------+------------|
-| S. | Tasks                        | Github | Expected | Actual |  Estimated |     Actual | Status      | Assignee   |
-| NO |                              | Issues | Effort   | Effort |     Start/ |     Start, |             |            |
-|    |                              |        | (in      | (in    |        End |        End |             |            |
-|    |                              |        | person   | person |      Dates |      Dates |             |            |
-|    |                              |        | hours)   | hours) |            |            |             |            |
-|----+------------------------------+--------+----------+--------+------------+------------+-------------+------------|
-| 1. | Install centos-6.9 os        | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    | 8        | 5      | 09-09-2017 | 11-09-2017 | Done        | Raghupathi |
-|    | and required packages        |        |          |        | 11-09-2017 | 11-09-2017 |             |            |
-|    | for cluster automation       |        |          |        |            |            |             |            |
-|----+------------------------------+--------+----------+--------+------------+------------+-------------+------------|
-| 2. | prepare ansible              | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    | 4        | 3      | 12-09-2017 | 12-09-2017 | Done        | Raghupathi |
-|    | configuration file to        |        |          |        | 13-09-2017 | 13-09-2017 |             |            |
-|    | install openvz without       |        |          |        |            |            |             |            |
-|    | mongodb and install          |        |          |        |            |            |             |            |
-|    | dependecies using            |        |          |        |            |            |             |            |
-|    | setup-ovpl-centos github     |        |          |        |            |            |             |            |
-|    | repository on local machine  |        |          |        |            |            |             |            |
-|----+------------------------------+--------+----------+--------+------------+------------+-------------+------------|
-| 3. | prepare ansible              | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    | 4        | 3      | 12-09-2017 | 12-09-2017 | Done        | Raghupathi |
-|    | configuration file to        |        |          |        | 13-09-2017 | 13-09-2017 |             |            |
-|    | install mongodb and          |        |          |        |            |            |             |            |
-|    | install dependencies         |        |          |        |            |            |             |            |
-|    | without openvz on local      |        |          |        |            |            |             |            |
-|    | machine (for ads )           |        |          |        |            |            |             |            |
-|----+------------------------------+--------+----------+--------+------------+------------+-------------+------------|
-| 3. | prepare ansible              | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    | 8        | 8      | 13-09-2017 |         -- | In progress | Raghupathi |
-|    | configuration file to        |        |          |        | 14-09-2017 |            |             |            |
-|    | install tornado-4.3 on local |        |          |        |            |            |             |            |
-|    | machine                      |        |          |        |            |            |             |            |
-|----+------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+| S. | Tasks                                   | Github | Expected | Actual |  Estimated |     Actual | Status      | Assignee   |
+| NO |                                         | Issues |   Effort | Effort |     Start/ |     Start, |             |            |
+|    |                                         |        |      (in | (in    |        End |        End |             |            |
+|    |                                         |        |   person | person |      Dates |      Dates |             |            |
+|    |                                         |        |   hours) | hours) |            |            |             |            |
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+| 1. | Install centos-6.9 os                   | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    |        8 | 5      | 09-09-2017 | 11-09-2017 | Done        | Raghupathi |
+|    | and required packages                   |        |          |        | 11-09-2017 | 11-09-2017 |             |            |
+|    | for cluster automation                  |        |          |        |            |            |             |            |
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+| 2. | prepare ansible                         | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    |        4 | 3      | 12-09-2017 | 12-09-2017 | Done        | Raghupathi |
+|    | configuration file to                   |        |          |        | 13-09-2017 | 13-09-2017 |             |            |
+|    | install openvz without                  |        |          |        |            |            |             |            |
+|    | mongodb and install                     |        |          |        |            |            |             |            |
+|    | dependecies using                       |        |          |        |            |            |             |            |
+|    | setup-ovpl-centos github                |        |          |        |            |            |             |            |
+|    | repository on local machine             |        |          |        |            |            |             |            |
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+| 3. | prepare ansible                         | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    |        4 | 3      | 12-09-2017 | 12-09-2017 | Done        | Raghupathi |
+|    | configuration file to                   |        |          |        | 13-09-2017 | 13-09-2017 |             |            |
+|    | install mongodb and                     |        |          |        |            |            |             |            |
+|    | install dependencies                    |        |          |        |            |            |             |            |
+|    | without openvz on local                 |        |          |        |            |            |             |            |
+|    | machine (for ads )                      |        |          |        |            |            |             |            |
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+| 3. | prepare ansible                         | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    |        8 | 4      | 13-09-2017 | 13-09-2017 | Done        | Raghupathi |
+|    | configuration file to                   |        |          |        | 14-09-2017 |            |             |            |
+|    | install tornado-4.3 on local            |        |          |        |            |            |             |            |
+|    | machine                                 |        |          |        |            |            |             |            |
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
+| 4. | Update setup-ovpl-centos                | [[https://gitlab.com/vlead-systems/cluster-automation/issues/20][#20]]    |       18 | -      | 13-09-2017 |        --- | In progress | Raghupathi |
+|    | yml files into basemachine-setup.yml on |        |          |        | 14-09-2017 |            |             |            |
+|    | cluster automation                      |        |          |        |            |            |             |            |
+|----+-----------------------------------------+--------+----------+--------+------------+------------+-------------+------------|
 
 #+TBLFM: $total=vsum(@II+1..@-1)
