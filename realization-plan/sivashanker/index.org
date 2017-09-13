@@ -1,0 +1,53 @@
+#+TITLE: Plan for system operation done by Siva Shanker
+#+AUTHOR: Siva Shanker Narimalla
+#+DATE: [2017-09-11 Mon]
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ../org-templates/level-1.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+
+* Introduction
+  - Plan for system operation done by Siva Shanker
+
+* Plan 
+** Milestone
+   [[https://gitlab.com/vlead-systems/systems-operations/milestones/4][Provide vagrant box for edx-platform dogwood.0 version for testing]]
+  
+#+caption:  realization-plan
+#+name: tbl-realization-plan
+|-------+----------------------------------------------------+--------+----------+--------+-----------+--------+--------+--------------|
+| S.    | Tasks                                              | Github | Expected | Actual | Estimated | Actual | Status | Assignee     |
+| NO    |                                                    | Issues | Effort   | Effort | Start/    | Start, |        |              |
+|       |                                                    |        | (in      | (in    | End       | End    |        |              |
+|       |                                                    |        | person   | person | Dates     | Dates  |        |              |
+|       |                                                    |        | hours)   | hours) |           |        |        |              |
+|-------+----------------------------------------------------+--------+----------+--------+-----------+--------+--------+--------------|
+| 1     | Add dogwood vagrantbox to files.vlabs.ac.in server | [[https://gitlab.com/vlead-systems/systems-operations/issues/214][Issue]]  | 8        | 8      |           |        | Done   | Siva Shanker |
+|       |                                                    |        |          |        |           |        |        |              |
+|       |                                                    |        |          |        |           |        |        |              |
+|-------+----------------------------------------------------+--------+----------+--------+-----------+--------+--------+--------------|
+| Total |                                                    |        | 8        |        |           |        |        |              |
+| ^     |                                                    |        | total    |        |           |        |        |              |
+|-------+----------------------------------------------------+--------+----------+--------+-----------+--------+--------+--------------|
+#+TBLFM: $total=vsum(@II+1..@-1)
+
+** Tasks
+#+caption:  realization-plan
+#+name: tbl-realization-plan
+|-------+----------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+----------------|
+| S.    | Tasks                            | Github | Expected | Actual | Estimated        | Actual           | Status | Assignee     | Assigned by    |
+| NO    |                                  | Issues | Effort   | Effort | Start/           | Start,           |        |              |                |
+|       |                                  |        | (in      | (in    | End              | End              |        |              |                |
+|       |                                  |        | person   | person | Dates            | Dates            |        |              |                |
+|       |                                  |        | hours)   | hours) |                  |                  |        |              |                |
+|-------+----------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+----------------|
+| 1.    | Issue restaring an apache server | [[https://gitlab.com/vlead-systems/systems-operations/issues/215][Issue]]  | 1        | 1      | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Sadhana Virago |
+|       |                                  |        |          |        |                  |                  |        |              |                |
+|-------+----------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+----------------|
+| Total |                                  |        | 1        | 1      |                  |                  |        |              |                |
+| ^     |                                  |        | total1   | total2 |                  |                  |        |              |                |
+|-------+----------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+----------------|
+#+TBLFM: $total1=vsum(@II+1..@-1)
+#+TBLFM: $total2=vsum(@II+1..@-1)
+   
