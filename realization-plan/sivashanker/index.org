@@ -35,24 +35,30 @@
 ** Tasks
 #+caption:  realization-plan
 #+name: tbl-realization-plan
-|-------+--------------------------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+--------------------|
-| S.    | Tasks                                            | Github | Expected | Actual | Estimated        | Actual           | Status | Assignee     | Assigned by        |
-| NO    |                                                  | Issues | Effort   | Effort | Start/           | Start,           |        |              |                    |
-|       |                                                  |        | (in      | (in    | End              | End              |        |              |                    |
-|       |                                                  |        | person   | person | Dates            | Dates            |        |              |                    |
-|       |                                                  |        | hours)   | hours) |                  |                  |        |              |                    |
-|-------+--------------------------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+--------------------|
-| 1.    | Issue restaring an apache server                 | [[https://gitlab.com/vlead-systems/systems-operations/issues/215][Issue]]  | 1        | 1      | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Sadhana Virupaksha |
-|-------+--------------------------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+--------------------|
-| 2.    | Provide Test machine of production               | [[https://gitlab.com/vlead-systems/systems-operations/issues/212][Issue]]  | 2        | 3      | [2017-09-12 Tue] | [2017-09-12 Tue] |        |              |                    |
-|       | vlabs landing page without customized theme      |        |          |        | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Madhavi Puliraju   |
-|-------+--------------------------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+--------------------|
-| 3.    | Enable SSL certificates on themeless.vlabs.ac.in | [[https://gitlab.com/vlead-systems/systems-operations/issues/216][Issue]]  | 1        | 1      | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Thirumal Ravula    |
-|       |                                                  |        |          |        |                  |                  |        |              |                    |
-|-------+--------------------------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+--------------------|
-| Total |                                                  |        | 4        | 5      |                  |                  |        |              |                    |
-| ^     |                                                  |        | total1   | total2 |                  |                  |        |              |                    |
-|-------+--------------------------------------------------+--------+----------+--------+------------------+------------------+--------+--------------+--------------------|
-#+TBLFM: $total1=vsum(@II+1..@-1)
-#+TBLFM: $total2=vsum(@II+1..@-1)
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    S. | Tasks                                                   | Github |      Expected |      Actual | Estimated        | Actual           | Status | Assignee     | Assigned by        |
+|    NO |                                                         | Issues |        Effort |      Effort | Start/           | Start,           |        |              |                    |
+|       |                                                         |        |           (in |         (in | End              | End              |        |              |                    |
+|       |                                                         |        |        person |      person | Dates            | Dates            |        |              |                    |
+|       |                                                         |        |        hours) |      hours) |                  |                  |        |              |                    |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    1. | Issue restaring an apache server                        | [[https://gitlab.com/vlead-systems/systems-operations/issues/215][Issue]]  |             1 |           1 | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Sadhana Virupaksha |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    2. | Provide Test machine of production                      | [[https://gitlab.com/vlead-systems/systems-operations/issues/212][Issue]]  |             2 |           3 | [2017-09-12 Tue] | [2017-09-12 Tue] |        |              |                    |
+|       | vlabs landing page without customized theme             |        |               |             | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Madhavi Puliraju   |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    3. | Enable SSL certificates on themeless.vlabs.ac.in        | [[https://gitlab.com/vlead-systems/systems-operations/issues/216][Issue]]  |             1 |           1 | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Thirumal Ravula    |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    4. | Wifi driver installation in the laptop                  | [[https://gitlab.com/vlead-systems/systems-operations/issues/217][Issue]]  |             2 |           1 | [2017-09-13 Wed] | [2017-09-13 Wed] | Done   | Siva Shanker | Sanchita           |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    5. | Setup and configure Prof.Vishwanath Dell Laptop machine | [[https://gitlab.com/vlead-systems/systems-operations/issues/220][Issue]]  |             3 |           8 | [2017-09-14 Thu] | [2017-09-14 Thu] |        |              |                    |
+|       |                                                         |        |               |             | [2017-09-15 Fri] | [2017-09-15 Fri] | Done   | Siva Shanker | Prof. Venkatesh && |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+|    6. | create a open edx vagrant box                           | [[https://github.com/vlead/vlead-onboarding/issues/5][Issue]]  |             2 |           2 | [2017-09-19 Tue] | [2017-09-19 Tue] | Done   | Siva Shanker | Thirumal Ravula    |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+| Total |                                                         |        |            11 |          16 |                  |                  |        |              |                    |
+|     ^ |                                                         |        | ExpectedTotal | ActualTotal |                  |                  |        |              |                    |
+|-------+---------------------------------------------------------+--------+---------------+-------------+------------------+------------------+--------+--------------+--------------------|
+#+TBLFM: $ExpectedTotal=vsum(@II+1..@-1)
+#+TBLFM: $ActualTotal=vsum(@II+1..@-1)
    
