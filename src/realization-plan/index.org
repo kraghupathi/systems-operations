@@ -30,7 +30,7 @@
   #+TBLFM: @4$4=remote(tbl-oct, $Estimated)
   #+TBLFM: @4$5=remote(tbl-oct, $Actual)
   #+TBLFM: $et=vsum(@II+1..@-1)
-  #+TBLFM: $at=vsum(@II+1..@-x1)
+  #+TBLFM: $at=vsum(@II+1..@-1)
 
 
   
