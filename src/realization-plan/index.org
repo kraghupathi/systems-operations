@@ -13,22 +13,26 @@
 
 
 * Operations Snapshot
-  |---+------+-----------+-------+-------+--------|
-  |   | S.no | Month     |   Est |   Act | Issues |
-  |   |      |           |   hrs |   hrs |        |
-  |---+------+-----------+-------+-------+--------|
-  |   |   1. | September |    19 |    24 | [[https://gitlab.com/vlead-systems/systems-operations/issues?scope%3Dall&utf8%3D%E2%9C%93&state%3Dall&label_name%3DSeptember-2017][ref]]    |
-  |---+------+-----------+-------+-------+--------|
-  |   |   2. | October   |  3.15 |  6.15 | [[https://gitlab.com/vlead-systems/systems-operations/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name=October-2017][ref]]    |
-  |---+------+-----------+-------+-------+--------|
-  |   |      | Total     | 22.15 | 30.15 |        |
-  | ^ |      |           |    et |    at |        |
-  |---+------+-----------+-------+-------+--------|
+  |---+------+------------+--------+-------+--------|
+  |   | S.no | Month/Mile |    Est |   Act | Issues |
+  |   |      |            |    hrs |   hrs |        |
+  |---+------+------------+--------+-------+--------|
+  |   |   1. | September  |   69.1 |    54 | [[https://gitlab.com/vlead-systems/systems-operations/issues?scope%3Dall&utf8%3D%E2%9C%93&state%3Dall&label_name%3DSeptember-2017][ref]]    |
+  |---+------+------------+--------+-------+--------|
+  |   |   2. | October    | 118.95 | 105.7 | [[https://gitlab.com/vlead-systems/systems-operations/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name=October-2017][ref]]    |
+  |---+------+------------+--------+-------+--------|
+  |   |   3. | November   |     2. |    2. |        |
+  |---+------+------------+--------+-------+--------|
+  |   |      | Total      |  22.15 | 30.15 |        |
+  | ^ |      |            |     et |    at |        |
+  |---+------+------------+--------+-------+--------|
   #+TBLFM: $1=@#+1
   #+TBLFM: @3$4=remote(tbl-sept, $Estimated)
   #+TBLFM: @3$5=remote(tbl-sept, $Actual)
   #+TBLFM: @4$4=remote(tbl-oct, $Estimated)
   #+TBLFM: @4$5=remote(tbl-oct, $Actual)
+  #+TBLFM: @5$4=remote(tbl-nov, $Estimated)
+  #+TBLFM: @5$5=remote(tbl-nov, $Actual)
   #+TBLFM: $et=vsum(@II+1..@-1)
   #+TBLFM: $at=vsum(@II+1..@-1)
 
@@ -72,76 +76,104 @@
 #+TBLFM: $Estimated=vsum(@II+1..@-1)
 #+TBLFM: $Actual=vsum(@II+1..@-1)
 
+** October
+    #+caption: October 
+    #+name: tbl-oct
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    S. | Tasks                                                   | Github |  Expected | Actual | Estimated        | Actual           | Status   | Assignee        | Assigned by |
+    |    NO |                                                         | Issues |    Effort | Effort | Start/           | Start,           |          |                 |             |
+    |       |                                                         |        |       (in |    (in | End              | End              |          |                 |             |
+    |       |                                                         |        |    person | person | Dates            | Dates            |          |                 |             |
+    |       |                                                         |        |    hours) | hours) |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    1. | Virtual Box download link on vlabs landing page         | [[https://gitlab.com/vlead-systems/systems-operations/issues/254][Issue]]  |         3 |      6 | [2017-10-24 Tue] | [2017-10-26 Thu] | Done     | Siva Shanker    | Priya       |
+    |       |                                                         |        |           |        |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    2. | assign public access to domain header.vlabs.ac.in       | [[https://gitlab.com/vlead-systems/systems-operations/issues/255][Issue]]  |      0.15 |   0.15 | [2017-10-26 Thu] | [2017-10-26 Thu] | Done     | Siva Shanker    | Sripathi    |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    3. | Request to configure flask server on container no 45    |        |           |        |                  |                  |          |                 |             |
+    |       | on base4 such way that it should be able to             | [[https://gitlab.com/vlead-systems/systems-operations/issues/259][#259]]   |         1 |   0.75 | [2017-11-02 Thu] | [2017-11-01 Wed] | Done     | Siva Shanker    | Madhavi     |
+    |       | send emails to registered users.                        |        |           |        |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    4. | Hosting LDS on Base1 machine                            | [[https://gitlab.com/vlead-systems/systems-operations/issues/241][Issue]]  |      0.30 |   0.30 | [2017-10-10 Tue] | [2017-10-12 Thu] | Done     | Raghupathi      | Madhavi     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    5. | Hosting vlabs landing page on Base1 machine             | [[https://gitlab.com/vlead-systems/systems-operations/issues/239][Issue]]  |      0.30 |   0.30 | [2017-10-05 Thu] | [2017-10-05 Thu] | Done     | Raghupathi      | Madhavi     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    6. | Hosting footer service on Base1 machine                 | [[https://gitlab.com/vlead-systems/systems-operations/issues/238][Issue]]  |      0.30 |   0.30 | [2017-10-04 Wed] | [2017-10-12 Thu] | Done     | Raghupathi      | Balamma     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    7. | Hosting footer service on Production                    | [[https://gitlab.com/vlead-systems/systems-operations/issues/244][Issue]]  |      0.30 |   0.30 | [2017-10-12 Thu] | [2017-10-12 Thu] | Done     | Raghupathi      | Mrudhvika   |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    8. | Give Base1 access to CDAC user from sshu-tunnel         | [[https://gitlab.com/vlead-systems/systems-operations/issues/237][Issue]]  |      0.10 |   0.10 | [2017-10-03 Tue] | [2017-10-04 Wed] | Done     | Raghupathi      | Raghupathi  |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |    9. | Create a LDAP account for CDAC                          | [[https://gitlab.com/vlead-systems/systems-operations/issues/236][Issue]]  |      0.10 |   0.10 | [2017-10-03 Tue] | [2017-10-04 Wed] | Done     | Raghupathi      | Raghupathi  |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   10. | Request to install Windows 8 in a laptop for            |        |           |        | [2017-10-03 Tue] | [2017-10-04 Wed] | Done     | Raghupathi      | Ravikiran   |
+    |       | Digital classroom                                       | [[https://gitlab.com/vlead-systems/systems-operations/issues/235][Issue]]  |         2 |      2 |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   11. | Create VLEAD HR project under vlead-administration      | [[https://gitlab.com/vlead-systems/systems-operations/issues/250][Issue]]  |      0.10 |   0.10 | [2017-10-17 Tue] | [2017-10-17 Tue] | Done     | Raghupathi      | Ravikiran   |
+    |       | on gitlab                                               |        |           |        |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   12. | Update Molecular fluorescence spectroscopy              |        |           |        |                  |                  |          |                 |             |
+    |       | lab Image in lds directory on the file server           | [[https://gitlab.com/vlead-systems/systems-operations/issues/242][Issue]]  |      0.10 |   0.10 | [2017-10-11 Wed] | [2017-10-11 Wed] | Done     | Raghupathi      | Mrudhvika   |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   13. | Request to replace the image of                         |        |           |        | [2017-10-12 Thu] | [2017-10-12 Thu] | Done     | Raghupathi      | Balamma     |
+    |       | Biomedical Instrumentation Lab                          | [[https://gitlab.com/vlead-systems/systems-operations/issues/243][Issue]]  |      0.10 |   0.10 |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   14. | Requesting the access for footer service                | [[https://gitlab.com/vlead-systems/systems-operations/issues/234][Issue]]  |      0.10 |   0.10 | [2017-10-03 Tue] | [2017-10-03 Tue] | Done     | Raghupathi      | Balamma     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   15. | Requesting to upload banner image on                    |        |           |        |                  |                  |          |                 |             |
+    |       | lds file server                                         | [[https://gitlab.com/vlead-systems/systems-operations/issues/248][Issue]]  |      0.10 |   0.10 | [2017-10-16 Mon] | [2017-10-16 Mon] | Done     | Raghupathi      | Balamma     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   16. | Request for hosting vlabs landing pages on base1        | [[https://gitlab.com/vlead-systems/systems-operations/issues/257][Issue]]  |      0.30 |   0.30 | [2017-10-31 Tue] | [2017-11-01 Wed] | Done     | Raghupathi      | Madhavi     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   17. | Request for hosting lab data service on base1           | [[https://gitlab.com/vlead-systems/systems-operations/issues/256][Issue]]  |      0.30 |   0.30 | [2017-10-31 Tue] | [2017-11-01 Wed] | Done     | Raghupathi      | Madhavi     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   18. | Requesting to replace the lab images on lds file server | [[https://gitlab.com/vlead-systems/systems-operations/issues/251][Issue]]  |      0.30 |   0.30 | [2017-10-17 Tue] | [2017-10-17 Tue] | Done     | Raghupathi      | Balamma     |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   19. | College cloud analytics demonstration on 17th Oct, 2017 | [[https://gitlab.com/vlead-systems/college-cloud/issues/96][Issue]]  |        10 |     16 | [2017-10-17 Tue] | [2017-10-17 Tue] | Done     | Raghupathi      |             |
+    |       |                                                         |        |           |        |                  |                  |          | Thirumal Ravula | Raghupathi  |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   20. | Justification for extending the [[https://gitlab.com/vlead-systems/cluster-automation/milestones/5][milestone]]               |        |           |        | [2017-10-12 Thu] | [2017-10-12 Thu] | Progress | Raghupathi      | Raghupathi  |
+    |       | from 20th september 2017, to 14th October 2017          | [[https://gitlab.com/vlead-systems/cluster-automation/issues/21][Issue]]  |        50 |     20 |                  |                  |          | Shiva Shankar   |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   21. | Install OpenVZ using ansible script on host machine     | [[https://gitlab.com/vlead-systems/cluster-automation/issues/22][Issue]]  |         8 |      8 | [2017-10-25 Wed] | [2017-10-26 Thu] | Progress | Raghupathi      |             |
+    |       |                                                         |        |           |        |                  |                  |          | Shiva Shankar   | Raghupathi  |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    |   22. | Configure ADS using ansible scripts                     | [[https://gitlab.com/vlead-systems/cluster-automation/issues/23][Issue]]  |        42 |     50 | [2017-10-25 Wed] | [2017-10-26 Thu] | Progress | Raghupathi      |             |
+    |       |                                                         |        |           |        |                  |                  |          | Shiva Shankar   | Raghupathi  |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    | Total |                                                         |        |    118.95 |  105.7 |                  |                  |          |                 |             |
+    |     ^ |                                                         |        | Estimated | Actual |                  |                  |          |                 |             |
+    |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
+    #+TBLFM: $1=@#+1
+    #+TBLFM: $Estimated=vsum(@II+1..@-1)
+    #+TBLFM: $Actual=vsum(@II+1..@-1)
 
-* October
-   #+caption: October 
-   #+name: tbl-oct
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    S. | Tasks                                                   | Github |  Expected | Actual | Estimated        | Actual           | Status   | Assignee        | Assigned by |
-   |    NO |                                                         | Issues |    Effort | Effort | Start/           | Start,           |          |                 |             |
-   |       |                                                         |        |       (in |    (in | End              | End              |          |                 |             |
-   |       |                                                         |        |    person | person | Dates            | Dates            |          |                 |             |
-   |       |                                                         |        |    hours) | hours) |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    1. | Virtual Box download link on vlabs landing page         | [[https://gitlab.com/vlead-systems/systems-operations/issues/254][Issue]]  |         3 |      6 | [2017-10-24 Tue] | [2017-10-26 Thu] | Done     | Siva Shanker    | Priya       |
-   |       |                                                         |        |           |        |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    2. | assign public access to domain header.vlabs.ac.in       | [[https://gitlab.com/vlead-systems/systems-operations/issues/255][Issue]]  |      0.15 |   0.15 | [2017-10-26 Thu] | [2017-10-26 Thu] | Done     | Siva Shanker    | Sripathi    |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    3. | Request to configure flask server on container no 45    |        |           |        |                  |                  |          |                 |             |
-   |       | on base4 such way that it should be able to             | [[https://gitlab.com/vlead-systems/systems-operations/issues/259][#259]]   |         1 |   0.75 | [2017-11-02 Thu] | [2017-11-01 Wed] | Done     | Siva Shanker    | Madhavi     |
-   |       | send emails to registered users.                        |        |           |        |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    4. | Hosting LDS on Base1 machine                            | [[https://gitlab.com/vlead-systems/systems-operations/issues/241][Issue]]  |      0.30 |   0.30 | [2017-10-10 Tue] | [2017-10-12 Thu] | Done     | Raghupathi      | Madhavi     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    5. | Hosting vlabs landing page on Base1 machine             | [[https://gitlab.com/vlead-systems/systems-operations/issues/239][Issue]]  |      0.30 |   0.30 | [2017-10-05 Thu] | [2017-10-05 Thu] | Done     | Raghupathi      | Madhavi     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    6. | Hosting footer service on Base1 machine                 | [[https://gitlab.com/vlead-systems/systems-operations/issues/238][Issue]]  |      0.30 |   0.30 | [2017-10-04 Wed] | [2017-10-12 Thu] | Done     | Raghupathi      | Balamma     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    7. | Hosting footer service on Production                    | [[https://gitlab.com/vlead-systems/systems-operations/issues/244][Issue]]  |      0.30 |   0.30 | [2017-10-12 Thu] | [2017-10-12 Thu] | Done     | Raghupathi      | Mrudhvika   |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    8. | Give Base1 access to CDAC user from sshu-tunnel         | [[https://gitlab.com/vlead-systems/systems-operations/issues/237][Issue]]  |      0.10 |   0.10 | [2017-10-03 Tue] | [2017-10-04 Wed] | Done     | Raghupathi      | Raghupathi  |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |    9. | Create a LDAP account for CDAC                          | [[https://gitlab.com/vlead-systems/systems-operations/issues/236][Issue]]  |      0.10 |   0.10 | [2017-10-03 Tue] | [2017-10-04 Wed] | Done     | Raghupathi      | Raghupathi  |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   10. | Request to install Windows 8 in a laptop for            |        |           |        | [2017-10-03 Tue] | [2017-10-04 Wed] | Done     | Raghupathi      | Ravikiran   |
-   |       | Digital classroom                                       | [[https://gitlab.com/vlead-systems/systems-operations/issues/235][Issue]]  |         2 |      2 |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   11. | Create VLEAD HR project under vlead-administration      | [[https://gitlab.com/vlead-systems/systems-operations/issues/250][Issue]]  |      0.10 |   0.10 | [2017-10-17 Tue] | [2017-10-17 Tue] | Done     | Raghupathi      | Ravikiran   |
-   |       | on gitlab                                               |        |           |        |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   12. | Update Molecular fluorescence spectroscopy              |        |           |        |                  |                  |          |                 |             |
-   |       | lab Image in lds directory on the file server           | [[https://gitlab.com/vlead-systems/systems-operations/issues/242][Issue]]  |      0.10 |   0.10 | [2017-10-11 Wed] | [2017-10-11 Wed] | Done     | Raghupathi      | Mrudhvika   |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   13. | Request to replace the image of                         |        |           |        | [2017-10-12 Thu] | [2017-10-12 Thu] | Done     | Raghupathi      | Balamma     |
-   |       | Biomedical Instrumentation Lab                          | [[https://gitlab.com/vlead-systems/systems-operations/issues/243][Issue]]  |      0.10 |   0.10 |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   14. | Requesting the access for footer service                | [[https://gitlab.com/vlead-systems/systems-operations/issues/234][Issue]]  |      0.10 |   0.10 | [2017-10-03 Tue] | [2017-10-03 Tue] | Done     | Raghupathi      | Balamma     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   15. | Requesting to upload banner image on                    |        |           |        |                  |                  |          |                 |             |
-   |       | lds file server                                         | [[https://gitlab.com/vlead-systems/systems-operations/issues/248][Issue]]  |      0.10 |   0.10 | [2017-10-16 Mon] | [2017-10-16 Mon] | Done     | Raghupathi      | Balamma     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   16. | Request for hosting vlabs landing pages on base1        | [[https://gitlab.com/vlead-systems/systems-operations/issues/257][Issue]]  |      0.30 |   0.30 | [2017-10-31 Tue] | [2017-11-01 Wed] | Done     | Raghupathi      | Madhavi     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   17. | Request for hosting lab data service on base1           | [[https://gitlab.com/vlead-systems/systems-operations/issues/256][Issue]]  |      0.30 |   0.30 | [2017-10-31 Tue] | [2017-11-01 Wed] | Done     | Raghupathi      | Madhavi     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   18. | Requesting to replace the lab images on lds file server | [[https://gitlab.com/vlead-systems/systems-operations/issues/251][Issue]]  |      0.30 |   0.30 | [2017-10-17 Tue] | [2017-10-17 Tue] | Done     | Raghupathi      | Balamma     |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   19. | College cloud analytics demonstration on 17th Oct, 2017 | [[https://gitlab.com/vlead-systems/college-cloud/issues/96][Issue]]  |        10 |     16 | [2017-10-17 Tue] | [2017-10-17 Tue] | Done     | Raghupathi      |             |
-   |       |                                                         |        |           |        |                  |                  |          | Thirumal Ravula | Raghupathi  |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   20. | Justification for extending the [[https://gitlab.com/vlead-systems/cluster-automation/milestones/5][milestone]]               |        |           |        | [2017-10-12 Thu] | [2017-10-12 Thu] | Progress | Raghupathi      | Raghupathi  |
-   |       | from 20th september 2017, to 14th October 2017          | [[https://gitlab.com/vlead-systems/cluster-automation/issues/21][Issue]]  |        50 |     20 |                  |                  |          | Shiva Shankar   |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   21. | Install OpenVZ using ansible script on host machine     | [[https://gitlab.com/vlead-systems/cluster-automation/issues/22][Issue]]  |         8 |      8 | [2017-10-25 Wed] | [2017-10-26 Thu] | Progress | Raghupathi      |             |
-   |       |                                                         |        |           |        |                  |                  |          | Shiva Shankar   | Raghupathi  |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   |   22. | Configure ADS using ansible scripts                     | [[https://gitlab.com/vlead-systems/cluster-automation/issues/23][Issue]]  |        42 |     50 | [2017-10-25 Wed] | [2017-10-26 Thu] | Progress | Raghupathi      |             |
-   |       |                                                         |        |           |        |                  |                  |          | Shiva Shankar   | Raghupathi  |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   | Total |                                                         |        |    118.95 |  105.7 |                  |                  |          |                 |             |
-   |     ^ |                                                         |        | Estimated | Actual |                  |                  |          |                 |             |
-   |-------+---------------------------------------------------------+--------+-----------+--------+------------------+------------------+----------+-----------------+-------------|
-   #+TBLFM: $1=@#+1
-   #+TBLFM: $Estimated=vsum(@II+1..@-1)
-   #+TBLFM: $Actual=vsum(@II+1..@-1)
+** November
+   #+caption: Tasks
+   #+name: tbl-nov
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+   |   |    S. | Tasks                                                      | Github | Expected  | Actual | Estimated        | Actual           | Status | Assignee     | Assigned by |
+   |   |    no |                                                            | Issues | Effort    | Effort | Start/           | Start,           |        |              |             |
+   |   |       |                                                            |        | (in       | (in    | End              | End              |        |              |             |
+   |   |       |                                                            |        | person    | person | Dates            | Dates            |        |              |             |
+   |   |       |                                                            |        | hours)    | hours) |                  |                  |        |              |             |
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+   |   |    1. | assign public domain to analytics services                 | [[https://gitlab.com/vlead-systems/systems-operations/issues/272][#272]]   | 0.5       | 0.5    | [2017-11-10 Fri] | [2017-11-10 Fri] | Done   | Siva Shanker | Sripathi    |
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+   |   |    2. | assing pubic domain to feedback service on stagging server | [[https://gitlab.com/vlead-systems/systems-operations/issues/267][#267]]   | 0.5       | 0.5    | [2017-11-06 Mon] | [2017-11-06 Mon] | Done   | Siva Shanker | Sripathi    |
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+   |   |    3. | Request to configure flask server on container no 45       |        |           |        |                  |                  |        |              |             |
+   |   |       | on base4 such way that it should be able                   | [[https://gitlab.com/vlead-systems/systems-operations/issues/259][#259]]   | 1         | 1      | [2017-11-02 Thu] | [2017-11-02 Thu] | Done   | Siva Shanker | Madhavi     |
+   |   |       | to send emails to registered users.                        |        |           |        |                  |                  |        |              | Puliraju    |
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+   |   |    4. |                                                            |        |           |        |                  |                  |        |              |             |
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+   |   |       |                                                            |        |           |        |                  |                  |        |              |             |
+   |   | Total |                                                            |        | 2.        | 2.     |                  |                  |        |              |             |
+   | ^ |       |                                                            |        | Estimated | Actual |                  |                  |        |              |             |
+   |   |       |                                                            |        |           |        |                  |                  |        |              |             |
+   |---+-------+------------------------------------------------------------+--------+-----------+--------+------------------+------------------+--------+--------------+-------------|
+#+TBLFM: $1=@#+1
+#+TBLFM: $Estimated=vsum(@II+1..@-1)
+#+TBLFM: $Actual=vsum(@II+1..@-1)
