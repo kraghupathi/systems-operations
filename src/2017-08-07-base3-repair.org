@@ -1,0 +1,124 @@
+#+TITLE: Base 3 repair
+#+AUTHOR: VLEAD
+#+DATE: [2018-08-08 Wed]
+#+SETUPFILE: ./org-templates/level-0.org
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+#+OPTIONS: ^:nil
+
+* Introduction
+  This document is about the repair of base3.
+
+* Timeline
+|------------------+-------------------------+-------------+----------------------------+---|
+| Date             | Error                   | Reported by | How                        |   |
+|------------------+-------------------------+-------------+----------------------------+---|
+| [2018-08-07 Tue] | =Read-only file system= | Venkatesh   | When trying to             |   |
+|                  |                         |             | push course material       |   |
+|                  |                         |             | to pascal                  |   |
+|------------------+-------------------------+-------------+----------------------------+---|
+| [2018-08-07 Tue] | =Read-only file system= | Raghupathi  | When trying to create      |   |
+|                  |                         |             | a file on ldap container.  |   |
+|                  |                         |             | Refer [[./img/var-log-msgs.jpeg][logs]].                |   |
+|------------------+-------------------------+-------------+----------------------------+---|
+| [2018-08-07 Tue] | Rebooted the machine    | Thirumal &  | [[./img/reboot-err-msg.jpeg][Error]] repairing /dev/sda1. |   |
+|                  |                         | Raghupathi  |                            |   |
+|------------------+-------------------------+-------------+----------------------------+---|
+| [2018-08-08 Wed] | Repaired the filesystem | Thirumal &  |                            |   |
+|                  |                         | Raghupathi  |                            |   |
+|------------------+-------------------------+-------------+----------------------------+---|
+| [2018-08-08 Wed] | Mounted the partitions  | Thirumal,   |                            |   |
+|                  |                         | Medamsh     |                            |   |
+|                  |                         | Raghupathi  |                            |   |
+
+* Errors
+  There was =Read-only file system= error ans was reported
+  by Venkatesh when he tried to create a directory on
+  =pascal= when he was trying to push his course material.
+
+  Later in the day Raghupathi encountered the same error
+  when trying to create a file on ldap container. 
+
+  The [[./img/var-log-msgs.jpeg][logs]] report =EXT3-fs= error on the partition
+  /dev/sdb1.  =/dev/sdb1= is mounted on =/mnt/das1=.
+
+  Refer the [[./img/base-file-system.jpeg][file system]] on base3 machine.
+
+* Action
+  1. The machine was rebooted.  It took a long time and
+     tried repairing the =/dev/sda1=.  After the repair, the
+     login prompt was given with this [[./img/reboot-err-msg.jpeg][error]].  The error says
+     that is an unexpected inconsistency and suggests to run
+     =fsck= manually to correct this.
+
+  2. =fsck -y -C /dev/sda1= is run to repair the
+     =/dev/sda1=.  The repair went fine. 
+
+  3. The machine is rebooted.  Only 
+     =/dev/sdb3       1.9T  1.5T  305G  84% /mnt/das2= is
+     mounted.  
+
+     =/mnt/san1= and =/mnt/das3= are mounted manually.
+     #+BEGIN_EXAMPLE
+     mkdir /mnt/san1
+     mount /dev/sdc1 /mnt/san1
+
+          
+     mkdir /mnt/das3
+     mount /dev/sda1 /mnt/das3/
+     #+END_EXAMPLE
+
+  4. Current file system (=df -h=)
+
+     |------------+------+------+-------+------+-----------+---------------|
+     | Filesystem | Size | Used | Avail | Use% | Mounted   | Purpose       |
+     |            |      |      |       |      | on        |               |
+     |------------+------+------+-------+------+-----------+---------------|
+     | /dev/sdb1  | 49G  | 25G  | 21G   |  55% | /         | OS            |
+     |------------+------+------+-------+------+-----------+---------------|
+     | tmpfs      | 16G  | 72K  | 16G   |   1% | /dev/shm  |               |
+     |------------+------+------+-------+------+-----------+---------------|
+     | /dev/sdc1  | 1.9T | 1.1T | 717G  |  61% | /mnt/san1 | daily backups |
+     |------------+------+------+-------+------+-----------+---------------|
+     | /dev/sda1  | 1.7T | 1.2T | 387G  |  76% | /mnt/das3 | Containers    |
+     |------------+------+------+-------+------+-----------+---------------|
+     | /dev/sdb3  | 1.9T | 1.5T | 305G  |  84% | /mnt/das2 | earlier base3 |
+     |            |      |      |       |      |           | backups       |
+     |------------+------+------+-------+------+-----------+---------------|
+
+  5. Start the containers
+     1. Created a symbolic link to =/vz= pointing to
+        =/mnt/das3/openvz_files=.
+
+     2. Restarted the containers.
+        #+BEGIN_EXAMPLE
+        for VE in $(vzlist -Ha -o veid); do vzctl start $VE; done
+        #+END_EXAMPLE
+
+     3. Start specific services on the containers
+        1. =httpd= service is started on =12159= which is
+           reverse proxy.
+           #+BEGIN_EXAMPLE
+           service httpd restart
+           #+END_EXAMPLE
+
+        2. =named= service is started on =12161= which is
+           public DNS.
+           #+BEGIN_EXAMPLE
+           service named restart
+           #+END_EXAMPLE
+        3. =httpd= service is started on =12165= which is
+           pascal
+           #+BEGIN_EXAMPLE
+           service httpd restart
+           #+END_EXAMPLE
+
+
+
+
+
+
+
+ 
+
+
