@@ -1,0 +1,32 @@
+#+Title: Base2 machine Configuration details
+#+Author: VLEAD
+#+Date: [2018-08-09 Thu]
+
+* Introduction
+  This document captures the configuration of Base2 machine
+* BAse2 Configuration
+  - Base2 machine :: IBM
+  - RAM :: 32GB
+  - Hard Disk Drive :: 104 GB
+* Operating System
+  - Ubuntu 16.04 LTS Server Operating system as it is stable.
+* User account details
+  User account details as follows:
+  - User name :: vlead
+  - Password :: 
+* Partitions
+  Following partitions are created.
+  - / (root) :: 
+		Separate partition for =/(root)=. This
+                partition contains all OS related files and
+                installed packages.
+
+		=/= = =20 GB=
+
+  - /var/lib/docker  ::
+                       Separate partition for =/var=. Mostly this
+                      partition contains docker.  =/var/lib/docker= = =84 GB=
+ 
+* Packages to be installed
+  - docker
+
