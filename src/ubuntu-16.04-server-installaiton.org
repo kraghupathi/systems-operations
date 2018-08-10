@@ -1,0 +1,70 @@
+#+Title: Document on Ubuntu-16.04 server installation
+#+Author: Vlead
+#+Date:[2018-08-09 Thu]
+
+* Introduction
+  This document has the installation steps to install Ubuntu-16.04
+  server.
+* Machine Confuration
+   - *RAM*  :: 32 GB
+   - *Hard Disk Drive* :: 2 TB
+* Operating System
+   - Ubuntu 16.04 LTS Server Operating system as it is stable.
+* User account details
+   - *User Name* :: vlead
+   - *Password*  :: vlead123
+* Partitions
+  Following partitions are created.
+  - */ (root)* :: 
+                Separate partition for =/(root)=. This
+                partition contains all OS related files and
+                installed packages.
+
+		=/= = =500 GB=
+
+  - */var/lib/docker*  ::
+                Separate partition for =/var=. Mostly this
+                partition contains docker.  =/var/lib/docker= = =1000 GB
+  - *swap*  ::
+	        Separate partition for =swap=. 
+* Packages to be installed
+  - Openssh
+  - Docker
+* Steps to install Ubuntu server 
+  - Insert the pendrive, it gives the screen with the options to
+    install ubuntu server.
+  - Click on *Install buntu Server*
+  - Select the language for installing the system.
+  - Select the region(location) to set the time zone.
+  - Configure the keyboard, select =English (US)=.
+  - Configure the network, give the host name and domain name as
+    =vlead=.
+  - Set password, and confirm the passowrd.
+  - Create partitions manually in the disk.
+  - First partition as  =/= (root) with size 500GB.
+  - Second partition as =/var/lib/docker= with size 1000GB (1TB).
+  - Third partition as =swap= with size 100GB.
+  - Partition is not done for the remaining 400GB.
+  - Click on "Finish partition and write changes to disk".
+  - System is installed.
+  - Set proxy as below in "configure the package manager section".
+    #+BEGIN_EXAMPLE
+    http://proxy.iiit.ac.in:8080
+    #+END_EXAMPLE
+  - Then it asks to select the packages to be installed in the system,
+    the select the below packages and click on continue to install.
+    #+BEGIN_EXAMPLE
+    DNS server
+    LAMP serve
+    Mail server
+    Samba file server
+    Standard system utilities
+    Virtual machine
+    OpenSSH server
+    #+END_EXAMPLE
+  - Then it asks to set root password for MySQL.
+  - Give password and confirm the same passowrd.
+  - Installation process is completed. It prompts to restart the
+    system, then click on continue.
+  - Login to the system.  
+  
