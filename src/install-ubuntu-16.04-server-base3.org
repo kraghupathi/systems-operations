@@ -26,7 +26,22 @@
   - /var/lib/docker  ::
                        Separate partition for =/var=. Mostly this
                       partition contains docker.  =/var/lib/docker= = =84 GB=
- 
+* Setting up network interface
+  - Add the following lines in =/etc/network/interfaces= file
+  #+BEGIN_EXAMPLE
+  auto enp11s0f0
+  iface enp11s0f0 inet static
+    address 10.4.12.22
+    netmask 255.255.252.0
+    broadcast 10.4.15.255
+    gateway 10.4.12.1
+    dns-nameservers 10.4.12.160 10.4.12.221
+    dns-search virtual-labs.ac.in
+  #+END_EXAMPLE
+  - Restart netwokring
+  #+BEGIN_EXAMPLE
+  $ sudo service networking restart
+  #+END_EXAMPLE
 * Installation of Docker
   - Add the following GPG key for the official Docker repository to
     the system
