@@ -27,6 +27,26 @@
                        Separate partition for =/var=. Mostly this
                       partition contains docker.  =/var/lib/docker= = =84 GB=
  
-* Packages to be installed
-  - docker
-
+* Installation of Docker
+  - Add the following GPG key for the official Docker repository to
+    the system
+  #+BEGIN_EXAMPLE
+  $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  #+END_EXAMPLE
+  - Add the Docker repository to APT sources
+  #+BEGIN_EXAMPLE
+  $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  #+END_EXAMPLE
+  - Update the package database with the Docker packages from the
+    newly added repo
+  #+BEGIN_EXAMPLE
+  $ sudo apt-get update
+  #+END_EXAMPLE
+  - Install docker
+  #+BEGIN_EXAMPLE
+  $ sudo apt-get install -y docker-ce
+  #+END_EXAMPLE
+  - Check the status of docker
+  #+BEGIN_EXAMPLE
+  $ sudo systemctl status docker
+  #+END_EXAMPLE
